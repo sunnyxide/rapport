@@ -1,0 +1,33 @@
+{
+  "_note": "Push to Prod SEOUL 심사위원·멘토 — Persona Builder 데모 타깃. footprint·동명이인 위험 사전조사 반영(2026-06-18). demo_role = 무대 활용. 전부 공개 프로필.",
+  "source_pages": [
+    "https://luma.com/elhey8nv",
+    "https://easytoremember.notion.site/Push-to-Prod-Orientation-37ae36fa3983804bbc59eba7fc8ca42a"
+  ],
+  "targets": [
+    {"name": "Yeop Lee", "org": "Anthropic", "role": "APAC Startup Partnerships (OT '염')", "linkedin": "https://www.linkedin.com/in/yeoplee927/", "x": "@yeopleekorea", "seed_query": "Yeop Lee Anthropic APAC startup partnerships", "footprint": "rich", "collision_risk": "low", "demo_role": "LIVE #1", "notes": "활성 X + 다수 이벤트/파트너십 포스트, 이름 깨끗이 식별. 라이브 콜드런 최적 + 우리 입장(스타트업 파트너십) 직결."},
+    {"name": "Hannah Moran", "org": "Anthropic", "role": "Applied AI (OT '헤나')", "linkedin": "https://www.linkedin.com/in/hannahemoran/", "seed_query": "Hannah Moran Anthropic Applied AI", "footprint": "rich", "collision_risk": "med", "demo_role": "LIVE #2", "notes": "Prompting 101 공저·기사 인용·Simon Willison 언급. 'Anthropic'으로 깨끗이 해소. (런던 기반 — APAC 아님)"},
+    {"name": "Dongjin Jang", "org": "Anthropic", "role": "Applied AI, Korea (OT '종진')", "linkedin": "https://www.linkedin.com/in/dongjin-jang-kr/", "seed_query": "Dongjin Jang Anthropic deep research agent", "footprint": "rich", "collision_risk": "med", "demo_role": "LIVE #3 / CACHE", "notes": "GitHub dongjin-ml·오픈소스 Deep Insight·아키텍처 블로그. 빌더 청중에 강함. 한국 이름 약한 collision."},
+    {"name": "Christian Ryan", "org": "Anthropic", "role": "Applied AI (OT '크리스찬')", "linkedin": "https://www.linkedin.com/in/christian-ryan-38549ab4/", "seed_query": "Christian Ryan Anthropic Applied AI prompting", "footprint": "rich", "collision_risk": "high", "demo_role": "CACHE (collision으로 라이브 위험)", "notes": "Weave London talk·Prompting 101 저자. 단 동명이인 多(운동선수 등) → 라이브보다 캐시. (런던 기반)"},
+    {"name": "Rebecca Harbeck", "org": "Anthropic", "role": "International GTM (OT '레베카')", "linkedin": "https://uk.linkedin.com/in/rebecca-harbeck", "seed_query": "Rebecca Harbeck Anthropic GTM startups", "footprint": "moderate", "collision_risk": "med", "demo_role": "CACHE", "notes": "AWS×Anthropic 프로그램·Builder Salon 포스트. 비엔지니어 voice로 캐시 다양화."},
+    {"name": "Wookjae Maeng", "org": "Anthropic", "role": "Applied AI (OT '옥제'?)", "linkedin": "https://www.linkedin.com/in/wookjae-maeng/", "seed_query": "Wookjae Maeng Anthropic AI engineer", "footprint": "moderate", "collision_risk": "high", "demo_role": "DISAMBIGUATION 데모 #1", "notes": "★ 가장 깨끗한 collision: 동명의 도예가(갤러리) vs Google AI 엔지니어 vs Anthropic. 교차도메인이라 무대에서 식별 게이트 시연에 최적."},
+    {"name": "Megan Ruan", "org": "Replit", "role": "Head of International & Growth (OT '매건', 슬라이드 확정)", "linkedin": "https://www.linkedin.com/in/megan-ruan/", "seed_query": "Megan Ruan Replit international growth", "footprint": "moderate", "collision_risk": "med", "demo_role": "CACHE / LIVE 후보", "notes": "bitbean 인터뷰·VC 프로필. ⚠️ 직함 'Partnerships'로도 표기 + VC 동명 가능 → 무대 전 10초 확인."},
+    {"name": "Nick Co", "org": "Replit", "role": "Head of Field Engineering (OT '닉', 슬라이드 확정)", "linkedin": "https://www.linkedin.com/in/nicholas-co/", "seed_query": "Nicholas Co Replit field engineer", "footprint": "thin", "collision_risk": "med", "demo_role": "HONESTY-gate 데모 백업", "notes": "LinkedIn only, talk·기사 없음. 짧은 이름이라 핀 어려움. 빈데이터 정직 폴백 백업."},
+    {"name": "Jooneun Choi", "org": "Anthropic", "role": "Applied AI (OT '조은')", "linkedin": "https://www.linkedin.com/in/jooneun/", "seed_query": "Jooneun Choi Anthropic", "footprint": "thin", "collision_risk": "high", "demo_role": "HONESTY-gate 데모 #1", "notes": "공개 콘텐츠 거의 없음 + 더 유명한 KiYoung Choi(Anthropic Korea)에 묻힘. '공개정보 적음' 정직 폴백 시연에 최적."},
+    {"name": "SoonOuk Jung", "org": "Korea Investment Partners (한국투자파트너스)", "role": "투자이사 — 심사(비즈모델·투자)", "linkedin": "TBD(당일·URL seed)", "seed_query": "SoonOuk Jung 한국투자파트너스 투자이사", "footprint": "unknown", "collision_risk": "med", "demo_role": "LIVE 후보 (VC — 비즈임팩트 직격)", "notes": "★슬라이드 확정 심사(2026-06-18). VC 도시에 = Orbt가 피치하는 chemistry + 40% 비즈임팩트 직격. 한국이름→CSE/한국언론 강함, URL seed 권장."},
+    {"name": "Dongwon Sung", "org": "Korea Investment Partners", "role": "팀장 — 심사", "linkedin": "TBD", "seed_query": "Dongwon Sung 한국투자파트너스 팀장", "footprint": "unknown", "collision_risk": "med", "demo_role": "CACHE/LIVE 후보(VC)", "notes": "슬라이드 확정."},
+    {"name": "Donghun Yu", "org": "Korea Investment Accelerator (한국투자액셀러레이터)", "role": "투자이사·본부장 — 심사", "linkedin": "TBD", "seed_query": "Donghun Yu 한국투자액셀러레이터 본부장", "footprint": "unknown", "collision_risk": "med", "demo_role": "CACHE(VC 시니어)", "notes": "슬라이드 확정. KIAC 본부장=시니어, 비즈/투자 질의 핵심."},
+    {"name": "Sangil Nam", "org": "Korea Investment Accelerator", "role": "수석팀장 — 심사", "linkedin": "TBD", "seed_query": "Sangil Nam 한국투자액셀러레이터 수석팀장", "footprint": "unknown", "collision_risk": "med", "demo_role": "CACHE(VC)", "notes": "슬라이드 확정."},
+    {"name": "Juhyung Lee", "org": "Push to Prod Ambassador", "role": "Ambassador (심사 아님)", "linkedin": "TBD", "seed_query": "", "footprint": "unknown", "collision_risk": "high", "demo_role": "—", "notes": "앰배서더."},
+    {"name": "Seunghyun Kim", "org": "Push to Prod Ambassador", "role": "Ambassador (심사 아님)", "linkedin": "TBD", "seed_query": "", "footprint": "unknown", "collision_risk": "high", "demo_role": "—", "notes": "앰배서더."},
+    {"name": "Seo Ji-young (서지영)", "org": "Korea Investment (한투)", "role": "심사 — 비즈모델·투자", "linkedin": "TBD(당일 URL seed)", "seed_query": "서지영 한국투자 OR Korea Investment Seo Jiyoung", "footprint": "unknown", "collision_risk": "high", "demo_role": "LIVE 후보(VC)", "notes": "★현장 참석 확인(2026-06-18, 위 슬라이드 4인과 별개·함께 심사). ⚠️흔한 이름→한투/투자 컨텍스트+LinkedIn URL로 특정. VC 도시에=비즈임팩트 직격."}
+  ],
+  "recommendation": {
+    "live_cold_run_top3": ["Yeop Lee", "Hannah Moran", "Dongjin Jang"],
+    "pre_cache_top5": ["Christian Ryan", "Yeop Lee", "Hannah Moran", "Dongjin Jang", "Rebecca Harbeck"],
+    "disambiguation_demo": "Wookjae Maeng (도예가 vs Google AI vs Anthropic — 교차도메인 collision)",
+    "honesty_gate_demo": "Jooneun Choi (thin; 백업 Nick Co)",
+    "pre_stage_confirm": ["슬라이드 확정 직함: Megan Ruan=Head of International & Growth, Nick Co=Head of Field Engineering", "Christian Ryan·Hannah Moran은 런던 기반(APAC 아님)", "한투 5인(SoonOuk Jung·Dongwon Sung·Donghun Yu·Sangil Nam·서지영) = 흔한 한국이름 → 라이브/캐시 전 LinkedIn URL 확보해 seed(no-search identity 비결정성 회피)"]
+  },
+  "stage_script_suggestion": "캐시 5명으로 리치 시연 → 라이브 콜드런 1회 Yeop Lee(가장 안전·리치) → 동명이인 게이트는 Wookjae Maeng으로 시연(도예가 vs AI) → 정직 폴백은 Jooneun Choi로. 4박자가 3 게이트를 전부 무대에서 증명."
+}
