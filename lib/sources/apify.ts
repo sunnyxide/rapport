@@ -30,7 +30,7 @@ export async function runActor<T = unknown>(actor: string, input: unknown, timeb
 // renders SPAs) for the top sources so the quote gate has real verbatim text
 // (sim_d: the 0-drop quote enabler). Skip hosts cheerio/crawlers can't help with.
 const ENRICH_SKIP = /linkedin\.com|youtube\.com|youtu\.be|twitter\.com|x\.com|instagram\.com|facebook\.com|namu\.wiki|wikipedia\.org/i;
-const DEEPEN_CAP = 3;
+const DEEPEN_CAP = 2;
 
 export async function enrichWithApify(hits: SourceHit[], emit: Emit): Promise<SourceHit[]> {
   if (!env("APIFY_API_TOKEN")) return hits;
@@ -46,7 +46,7 @@ export async function enrichWithApify(hits: SourceHit[], emit: Emit): Promise<So
       const items = await runActor<{ text?: string; markdown?: string }>(
         "apify~website-content-crawler",
         { startUrls: [{ url: h.url }], maxCrawlPages: 1, maxCrawlDepth: 0, crawlerType: "playwright:firefox", saveMarkdown: true },
-        15000,
+        11000,
       );
       const body = (items?.[0]?.markdown || items?.[0]?.text || "").slice(0, 8000);
       if (body) {

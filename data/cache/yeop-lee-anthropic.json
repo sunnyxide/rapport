@@ -1,0 +1,436 @@
+{
+  "persona": {
+    "output_lang": "en",
+    "status": "ok",
+    "candidates": [],
+    "the_one_thing": "You're pitching Claude adoption to the person whose literal job is onboarding APAC startups onto Claude — so skip the 'why Claude' sell entirely and lead with what's hard/unique about what Orbt has already shipped; he runs 'push to prod' hackathons and builder salons and meets dozens of founders, so traction and a working build win the room, not vision (high confidence; basis: s7/s9/s29 by/about target).",
+    "identity": {
+      "name": "Yeop Lee",
+      "title": "Head of Startup Partnerships, APAC, Anthropic (seed listed 'Software Engineer' — every public source says partnerships/BD)",
+      "company": "Anthropic",
+      "location": "San Francisco, CA (per seed) — but LinkedIn lists Seoul and his work footprint is APAC-wide; unresolved",
+      "confidence": 0.85,
+      "resolved_handle": "yeoplee927",
+      "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQFjhPYQTQf0Eg/profile-displayphoto-shrink_200_200/B56ZeP5ex.GoAY-/0/1750465901079?e=2147483647&v=beta&t=-hYnzAvWlsnZ1xy7wIKmBjAhQ81BVCjMopQlscGXAkk",
+      "photo_source_url": "https://kr.linkedin.com/in/yeoplee927",
+      "photo_provenance": "linkedin"
+    },
+    "snapshot": "Yeop Lee leads Anthropic's startup partnerships across APAC, building the on-ramp that gets founders onto Claude. His work is hands-on and in-person: moderating AI Founder Salons, running developer conferences and hackathons across Seoul, Melbourne, Singapore, Tokyo and Bangalore. He's the ecosystem-builder you go through to plug a startup into Anthropic in the region.",
+    "whats_new": "Over the last ~12 months his footprint visibly scaled from a Korea focus (Jun 2025, ZDNET/'韓 AI hub') to a pan-APAC event cadence: Singapore 'push to prod' hackathon (Mar 2026), Melbourne AI Founder Salon w/ Square Peg (Apr 2026), and a NextRise 2026 keynote announced (May 2026).",
+    "recent_activity": [
+      {
+        "what": "Announced as NextRise 2026 keynote speaker as Head of APAC Startup Partnerships",
+        "date": "2026-05-17",
+        "source_id": "s11"
+      },
+      {
+        "what": "Hosted Melbourne Anthropic x Square Peg AI Founder Salon",
+        "date": "2026-04-06",
+        "source_id": "s23"
+      },
+      {
+        "what": "Ran 'first ever push to prod' hackathon in Singapore",
+        "date": "2026-03-30",
+        "source_id": "s29"
+      },
+      {
+        "what": "Featured by Square Peg in Anthropic's Australian partnership push (press)",
+        "date": "2026-02-12",
+        "source_id": "s24"
+      },
+      {
+        "what": "Moderated AI Founder Salon with Anthropic x Han River Partners x NTTVC (Seoul)",
+        "date": "2025-11-11",
+        "source_id": "s5"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "He is the gatekeeper, not the prospect",
+        "importance_score": 0.9,
+        "fact": "Head of Startup Partnerships, APAC at Anthropic (s7); his role is getting startups onto Claude.",
+        "source_id": "s7",
+        "inference": "He doesn't need convincing that Claude is good — he sells it daily. The scarce thing for him is signal that YOUR startup is worth his ecosystem's attention.",
+        "move": "Don't spend a minute on 'here's why Claude' or generic AI value. Open with what Orbt has built/shipped on Claude and the one metric or hard problem that makes it stand out among the founders he meets."
+      },
+      {
+        "trait": "Builder / ship-fast bias",
+        "importance_score": 0.8,
+        "fact": "Runs a 'push to prod' hackathon (s29) and tags his work #builders (s2); programming is hands-on, not theoretical.",
+        "source_id": "s29",
+        "inference": "He gravitates to people who actually ship, not deck-stage ideas.",
+        "move": "Bring a live demo or a concrete 'we already pushed this to prod' story. Offer to showcase it in one of his founder events — speak his community-of-builders language."
+      },
+      {
+        "trait": "Pan-APAC ecosystem scaler",
+        "importance_score": 0.7,
+        "fact": "Footprint spans Seoul, Melbourne, Singapore, Tokyo, Bangalore (s5, s23, s29, s6, s10) — expanded from Korea-only in 2025.",
+        "source_id": "s23",
+        "inference": "He thinks in regional ecosystems and repeatable programs, not one-off deals.",
+        "move": "Frame Orbt's regional ambition and how a partnership plugs into / amplifies his APAC community programs — give him a reason this is a scalable win, not a single account."
+      }
+    ],
+    "non_obvious": {
+      "insight": "His public posture pivoted from Korea-specific to whole-of-APAC inside ~12 months: Jun 2025 he was amplifying 'Korea as an AI innovation hub' via ZDNET Korea (s25); by early-mid 2026 he's hosting/keynoting in Melbourne, Singapore, Tokyo and Bangalore. He's in the middle of a deliberate regional build-out — being one more Korea founder won't differentiate you; showing regional relevance might.",
+      "source_id": "s25"
+    },
+    "career_arc": [
+      {
+        "period": "current",
+        "org": "Anthropic",
+        "role": "Head of Startup Partnerships, APAC",
+        "what_they_built": "APAC founder on-ramp to Claude: salons, hackathons, developer conferences across the region",
+        "source_id": "s7"
+      },
+      {
+        "period": "education",
+        "org": "Georgetown University",
+        "role": "Alumnus",
+        "what_they_built": "",
+        "source_id": "s1"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "Startup partnerships & ecosystem development (APAC)",
+        "source_id": "s7",
+        "basis": "stated"
+      },
+      {
+        "point": "Founder community & event programming (salons, hackathons, dev conferences)",
+        "source_id": "s23",
+        "basis": "inferred"
+      },
+      {
+        "point": "Regional market development / partnerships across multiple APAC markets",
+        "source_id": "s24",
+        "basis": "inferred"
+      }
+    ],
+    "notable_quotes": [
+      {
+        "quote": "Thank you Yihwan Cho (ZDNET Korea) for highlighting Anthropic's commitment to the Korean markets",
+        "source_id": "s25",
+        "date": "2025-06-22",
+        "why_it_matters": "Shows how he frames the work — market commitment + crediting partners/press; relationship-forward and ecosystem-first.",
+        "original_lang": "en"
+      }
+    ],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "Engage him as a builder-community partner: offer to participate in or contribute a real shipped product to one of his founder salons/hackathons",
+        "evidence": "Runs 'push to prod' hackathon + AI Founder Salons (s29, s23)",
+        "source_id": "s29",
+        "basis": "inferred"
+      },
+      "what_they_care_about": [
+        {
+          "point": "Growing Anthropic's startup ecosystem across APAC",
+          "evidence": "(reported by third party) Head of Startup Partnerships, APAC; multi-city event cadence",
+          "source_id": "s7",
+          "basis": "inferred"
+        },
+        {
+          "point": "Startups that actually build/ship",
+          "evidence": "'push to prod' hackathon; #builders tag",
+          "source_id": "s29",
+          "basis": "inferred"
+        },
+        {
+          "point": "Regional/market commitment beyond one country",
+          "evidence": "Korea→Melbourne/Singapore/Tokyo/Bangalore expansion",
+          "source_id": "s23",
+          "basis": "inferred"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "How is Orbt different from the many startups already in our salons/programs?",
+          "counter": "Lead with a concrete shipped-on-Claude artifact + one differentiating metric or hard technical problem solved, not roadmap.",
+          "source_id": "s29"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Open with what you've already built/shipped and a working demo",
+          "evidence": "His programming centers on shipping ('push to prod')",
+          "source_id": "s29",
+          "basis": "inferred"
+        },
+        {
+          "point": "Connect the ask to his ecosystem/community goals (mutual amplification)",
+          "evidence": "Hosts recurring founder salons and dev events",
+          "source_id": "s23",
+          "basis": "inferred"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Don't pitch 'why AI / why Claude' — he already evangelizes it for a living",
+          "evidence": "He IS Anthropic's APAC partnerships lead",
+          "source_id": "s7",
+          "basis": "stated"
+        },
+        {
+          "point": "Don't position as a narrow, single-market one-off if you can show regional relevance",
+          "evidence": "His 2025→2026 shift from Korea-only to pan-APAC",
+          "source_id": "s25",
+          "basis": "inferred"
+        }
+      ],
+      "shared_hooks": []
+    },
+    "honest_gaps": [
+      "No 'me'/requester profile provided, so no chemistry section and no verified mutual connections/hooks.",
+      "Seed title says 'Software Engineer' but every public source says Head of Startup Partnerships, APAC — confirm his current exact role/scope live.",
+      "Location conflict: seed says San Francisco; LinkedIn lists Seoul and his work is APAC-wide — confirm where he's based and which markets he owns.",
+      "Almost no personal/background detail beyond Georgetown (s1); his pre-Anthropic career is not in these sources.",
+      "Several same-name sources (ophthalmologist Junyeop Lee, K-drama/baseball/poet 'Lee', Lee Kuan Yew) were quarantined as different people and contributed nothing.",
+      "No verbatim first-person voice beyond one LinkedIn line; voice/values read is thin."
+    ],
+    "behavioral_read": {
+      "note": "",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Extraversion (high)",
+          "signal": "Relentless cadence of in-person, public-facing events — moderating panels, hosting salons and hackathons across multiple cities",
+          "source_id": "s23",
+          "confidence": 0.7,
+          "basis": "observed-behavior"
+        },
+        {
+          "trait": "Conscientiousness (moderate-high)",
+          "signal": "Builds repeatable programs — recurring salon series and a 'first ever' structured hackathon — not ad hoc meetings",
+          "source_id": "s29",
+          "confidence": 0.6,
+          "basis": "observed-behavior"
+        },
+        {
+          "trait": "Agreeableness (moderate)",
+          "signal": "Relationship-forward: publicly credits partners/press and frames work as community-building",
+          "source_id": "s25",
+          "confidence": 0.5,
+          "basis": "observed-behavior"
+        }
+      ],
+      "communication_adaptation": "Be concrete, fast and builder-to-the-point; he runs on momentum and in-person energy, so a live demo and a clear, mutual win land better than a slow deck-led narrative.",
+      "predicted_mbti": {
+        "type": "E?FJ",
+        "label": "illustrative · public-signal estimate · not a clinical diagnosis",
+        "basis_per_letter": [
+          {
+            "letter": "E",
+            "signal": "Hosts/moderates frequent public events across cities",
+            "source_id": "s23"
+          },
+          {
+            "letter": "?",
+            "signal": "No groundable N/S signal in public sources — left undetermined",
+            "source_id": ""
+          },
+          {
+            "letter": "F",
+            "signal": "Community/relationship framing; publicly thanks partners and press",
+            "source_id": "s25"
+          },
+          {
+            "letter": "J",
+            "signal": "Builds structured, recurring programs (salon series, planned hackathon)",
+            "source_id": "s29"
+          }
+        ]
+      },
+      "likely_likes": [
+        {
+          "point": "Founders who've actually shipped a working product",
+          "evidence": "'push to prod' hackathon + #builders framing (s29, s2)"
+        },
+        {
+          "point": "Regional/ecosystem thinking and partner amplification",
+          "evidence": "Pan-APAC event build-out (s23, s24)"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Generic AI hype with no working build behind it",
+          "evidence": "Inferred from consistent ship-first programming (s29)"
+        },
+        {
+          "point": "Being treated as a vendor to be 'sold' rather than an ecosystem partner",
+          "evidence": "Inferred from community/partnership orientation (s23, s25)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://kr.linkedin.com/in/yeoplee927",
+        "title": "Yeop Lee - Anthropic | LinkedIn",
+        "date": "2026-02-27",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "identity, education (Georgetown), location (Seoul) conflict"
+      },
+      {
+        "id": "s2",
+        "url": "https://www.linkedin.com/posts/yeoplee927_anthropic-claude-apac-activity-7378964971545792512-y-Sh",
+        "title": "anthropic #claude #apac #startups #builders",
+        "date": "2025-09-30",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "builder framing (#builders)"
+      },
+      {
+        "id": "s3",
+        "url": "https://x.com/yeopleekorea",
+        "title": "Yeop Lee (@yeopleekorea) / X",
+        "date": "August 5, 2017",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "role confirmation (APAC startup partnerships @ Anthropic)"
+      },
+      {
+        "id": "s4",
+        "url": "https://www.linkedin.com/posts/yeoplee927_im-excited-to-partner-with-anthropic-and-activity-7300345442049921025-VVL4",
+        "title": "Yeop Lee's Post (excited to partner with Anthropic)",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "partnership orientation"
+      },
+      {
+        "id": "s5",
+        "url": "https://twocents.xyz/p/ai-9-ai-founder-salon-with-anthropic-16a",
+        "title": "AI Founder Salon with Anthropic x Han River Partners x NTTVC",
+        "date": "2025-11-11",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "moderator role, Seoul salon"
+      },
+      {
+        "id": "s6",
+        "url": "https://www.linkedin.com/posts/yeoplee927_join-our-developer-conference-in-tokyo-activity-7440434899779715072-cyJI",
+        "title": "Join our developer conference in Tokyo",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "Tokyo dev conference activity"
+      },
+      {
+        "id": "s7",
+        "url": "https://theorg.com/org/anthropic/teams/startup-partnerships",
+        "title": "Anthropic - Startup Partnerships | The Org",
+        "date": "",
+        "relation_to_target": "third_party",
+        "author_handle": "",
+        "used_for": "title: Head of Startup Partnerships, APAC"
+      },
+      {
+        "id": "s8",
+        "url": "https://luma.com/claudecommunity",
+        "title": "Claude Community Events",
+        "date": "2026-04-19",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Seoul Claude Community / Founder House host"
+      },
+      {
+        "id": "s9",
+        "url": "https://luma.com/ht1jlnwy",
+        "title": "Claude Build Day: Seoul",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "title confirmation, Seoul build day"
+      },
+      {
+        "id": "s10",
+        "url": "https://luma.com/4stzk0ng",
+        "title": "-1 to Anthropic CTO with Rahul Patil, South Park Commons BLR",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "India (Bangalore) event presence"
+      },
+      {
+        "id": "s11",
+        "url": "https://www.linkedin.com/posts/nextrise-_nextrise-2026-keynote-speakers-yeop-lee-activity-7461964964916981760-FhsE",
+        "title": "NextRise 2026 keynote speakers announcement",
+        "date": "2026-05-17",
+        "relation_to_target": "third_party",
+        "author_handle": "nextrise-",
+        "used_for": "fact: NextRise 2026 keynote (facts-only, not voice)"
+      },
+      {
+        "id": "s23",
+        "url": "https://www.linkedin.com/posts/yeoplee927_melbourne-anthropic-x-square-peg-ai-founder-activity-7447106287466876928-aq-W",
+        "title": "Melbourne Anthropic x Square Peg AI Founder Salon",
+        "date": "2026-04-06",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "Melbourne salon, pan-APAC expansion"
+      },
+      {
+        "id": "s24",
+        "url": "https://www.capitalbrief.com/article/anthropic-quietly-begins-its-australian-charm-offensive-398a6aaf-680f-4026-b222-ac32c6d3d066/",
+        "title": "Anthropic quietly begins its Australian charm offensive",
+        "date": "2026-02-12",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "fact: leads Anthropic APAC partnerships, Australia push"
+      },
+      {
+        "id": "s25",
+        "url": "https://www.linkedin.com/posts/yeoplee927_%EC%95%A4%ED%8A%B8%EB%A1%9C%ED%94%BD-%E9%9F%93-ai-%ED%98%81%EC%8B%A0-%EA%B1%B0%EC%A0%90%ED%8C%8C%ED%8A%B8%EB%84%88%EC%8B%AD%ED%88%AC%EC%9E%90-%EC%A7%80%EC%86%8D%ED%95%A0-%EA%B2%83-activity-7342781736700809217-V9z9",
+        "title": "앤트로픽 韓 AI 혁신 거점 (ZDNET Korea)",
+        "date": "2025-06-22",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "Korea focus quote (2025), stance baseline"
+      },
+      {
+        "id": "s26",
+        "url": "https://www.linkedin.com/posts/ankitcc_thrilled-to-share-that-i-will-be-hosting-activity-7421806728318709761-K1Cx",
+        "title": "Ankit Chowdhary's Post",
+        "date": "",
+        "relation_to_target": "third_party",
+        "author_handle": "ankitcc",
+        "used_for": "context only (third-party mention)"
+      },
+      {
+        "id": "s28",
+        "url": "https://luma.com/ob3owjfh",
+        "title": "Boundless × Anthropic: Consumer AI Breakout",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "co-host of consumer AI event"
+      },
+      {
+        "id": "s29",
+        "url": "https://www.linkedin.com/posts/yeoplee927_come-join-us-at-our-first-ever-push-to-prod-activity-7444335735597346816-CHac",
+        "title": "First ever push to prod hackathon in Singapore",
+        "date": "2026-03-30",
+        "relation_to_target": "by_target",
+        "author_handle": "yeoplee927",
+        "used_for": "ship-fast/builder signal, Singapore hackathon"
+      },
+      {
+        "id": "s12",
+        "url": "https://www.linkedin.com/posts/junyeop-lee-099144a4_i-am-honored-to-participate-in-the-retinal-activity-6956394387819966464-E5lX",
+        "title": "Junyeop Lee (ophthalmology)",
+        "date": "2022-07-22",
+        "relation_to_target": "third_party",
+        "author_handle": "junyeop-lee-099144a4",
+        "used_for": "quarantined — different person"
+      }
+    ],
+    "coverage_confidence": 0.25
+  },
+  "chemistry": null,
+  "slug": "yeop-lee-anthropic",
+  "durationMs": 193768,
+  "nSources": 29,
+  "created_at": "2026-06-18T05:49:04.707Z"
+}

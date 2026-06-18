@@ -1,0 +1,39 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Rapport" [level=1] [ref=e5]
+        - generic [ref=e6]: know them before you meet them — and how you'll click
+      - paragraph [ref=e7]: Public-data persona + chemistry. Every claim is clickable or labeled inferred. Built on Claude — no unsourced facts.
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: Name
+          - textbox "Name" [ref=e13]:
+            - /placeholder: Yeop Lee
+        - generic [ref=e14]:
+          - generic [ref=e15]: Company / title
+          - textbox "Company / title" [ref=e16]:
+            - /placeholder: Anthropic
+        - generic [ref=e17]:
+          - generic [ref=e18]: LinkedIn URL (optional)
+          - textbox "LinkedIn URL (optional)" [ref=e19]:
+            - /placeholder: linkedin.com/in/…
+      - generic [ref=e21]:
+        - generic [ref=e22]: Meeting context (optional — sharpens the playbook)
+        - textbox "Meeting context (optional — sharpens the playbook)" [ref=e23]:
+          - /placeholder: 30-min intro; we want them to pilot our agent
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - checkbox "Chemistry vs me-sunwoo-orbt (cache-pair)" [checked] [ref=e26]
+          - text: Chemistry vs
+          - generic [ref=e27]: me-sunwoo-orbt
+          - text: (cache-pair)
+        - button "Build persona" [disabled] [ref=e28]
+      - generic [ref=e29]:
+        - button "Yeop Lee ★ LIVE" [ref=e30]
+        - button "Wookjae Maeng" [ref=e31]
+        - button "Jooneun Choi" [ref=e32]
+        - button "Sunwoo Ju" [ref=e33]
+  - button "Open Next.js Dev Tools" [ref=e39] [cursor=pointer]:
+    - img [ref=e40]
