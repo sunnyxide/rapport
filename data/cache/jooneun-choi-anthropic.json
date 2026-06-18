@@ -1,0 +1,281 @@
+{
+  "persona": {
+    "status": "limited_data",
+    "output_lang": "en",
+    "candidates": [],
+    "the_one_thing": "She is Anthropic's working-level 'Applied AI Architect' for the Korea developer ecosystem — not an exec — so walk in with a concrete, buildable Claude use-case, not a partnership pitch (high confidence; based on her title and recurring hackathon/symposium appearances, s54/s55/s57).",
+    "identity": {
+      "name": "Jooneun Choi",
+      "title": "Applied AI Architect, Anthropic",
+      "company": "Anthropic",
+      "location": "Korea (inferred from Korea-based events; unconfirmed)",
+      "confidence": 0.82,
+      "resolved_handle": "jooneun",
+      "photo_url": "",
+      "photo_source_url": "",
+      "photo_provenance": "none"
+    },
+    "snapshot": "Jooneun Choi is an Applied AI Architect at Anthropic — the hands-on technical role that bridges Claude's capabilities to real-world deployments. She is active in Anthropic's Korea developer push: a panelist on the 'Multimodal AI' track at the Global AI Frontiers Symposium 2026 and part of Anthropic's team for the 'Push to Prod' Anthropic×Replit hackathon series in Seoul and a Daejeon startup event. This sits against the backdrop of Anthropic opening its Seoul office on June 17, 2026.",
+    "whats_new": "Anthropic opened its Seoul office (June 17, 2026, its third in APAC after Tokyo and Bengaluru); Jooneun is appearing as the technical/applied face at Korea AI events — the AI Frontiers Symposium 2026 multimodal panel and the Anthropic×Replit 'Push to Prod' hackathons.",
+    "recent_activity": [
+      {
+        "what": "Panelist, Global AI Frontiers Symposium 2026 — Track B, Multimodal AI (titled 'Applied AI Architect, Anthropic')",
+        "date": "2026",
+        "source_id": "s54"
+      },
+      {
+        "what": "Listed on Anthropic's team for 'Push to Prod SEOUL' hackathon (Anthropic × Replit × Korea Investment)",
+        "date": "2026",
+        "source_id": "s55"
+      },
+      {
+        "what": "Listed among Anthropic participants for a Daejeon startup event co-hosted with Replit",
+        "date": "2026",
+        "source_id": "s57"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "Technical/applied role, not exec",
+        "importance_score": 0.9,
+        "fact": "Titled 'Applied AI Architect, Anthropic' at the AI Frontiers Symposium 2026",
+        "source_id": "s54",
+        "inference": "Her job is to judge real implementation feasibility on Claude, not to sign partnership headlines (that's the Representative Director level).",
+        "move": "Come with one concrete Orbt use-case and the technical specifics of how it would run on Claude — let her evaluate something buildable, not a vision deck."
+      },
+      {
+        "trait": "Shipping / prototyping orientation",
+        "importance_score": 0.8,
+        "fact": "On Anthropic's team for the Anthropic×Replit 'Push to Prod' hackathons in Seoul and Daejeon",
+        "source_id": "s55",
+        "inference": "She works in and around fast prototype-to-production developer culture ('push to prod'), so she rewards things that can ship quickly.",
+        "move": "Frame Orbt as something you could prototype on Claude in days; show or describe what a working v1 looks like rather than a roadmap."
+      },
+      {
+        "trait": "Multimodal AI focus",
+        "importance_score": 0.6,
+        "fact": "Seated on the symposium's 'Multimodal AI' track",
+        "source_id": "s56",
+        "inference": "Multimodal is a topic she engages with publicly and is comfortable going deep on.",
+        "move": "If Orbt touches multimodal at all, lead with it; otherwise ask her view on multimodal applications in Korea to open a real technical exchange."
+      }
+    ],
+    "non_obvious": {
+      "insight": "Anthropic's Korea story is told publicly through KiYoung Choi, the Representative Director/CEO (a different person, no relation implied) — but the recurring Anthropic name at the actual builder events (the Seoul and Daejeon hackathons plus the multimodal symposium) is Jooneun Choi. She reads as the de-facto applied/technical point person for Korea's developer ecosystem, even though the press centers the exec hire.",
+      "source_id": "s57"
+    },
+    "career_arc": [
+      {
+        "period": "current (2026)",
+        "org": "Anthropic",
+        "role": "Applied AI Architect",
+        "what_they_built": "Technical/applied engagement with Korea's developer ecosystem — hackathons (Push to Prod) and the AI Frontiers multimodal panel",
+        "source_id": "s54"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "Applied AI / solutions architecture on Claude",
+        "source_id": "s54",
+        "basis": "stated"
+      },
+      {
+        "point": "Multimodal AI",
+        "source_id": "s56",
+        "basis": "stated"
+      },
+      {
+        "point": "Developer ecosystem enablement / hackathon delivery",
+        "source_id": "s55",
+        "basis": "inferred"
+      }
+    ],
+    "notable_quotes": [],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "A concrete Claude use-case you could ship fast",
+        "evidence": "On Anthropic's 'Push to Prod' hackathon team",
+        "source_id": "s55",
+        "basis": "inferred"
+      },
+      "what_they_care_about": [
+        {
+          "point": "Fast prototype-to-production builds",
+          "evidence": "Part of Anthropic×Replit 'Push to Prod' hackathon series",
+          "source_id": "s55",
+          "basis": "inferred"
+        },
+        {
+          "point": "Multimodal AI applications",
+          "evidence": "Panelist on the Multimodal AI track",
+          "source_id": "s56",
+          "basis": "stated"
+        },
+        {
+          "point": "Growing Korea's Claude developer ecosystem",
+          "evidence": "Recurring at Korea developer events (Seoul, Daejeon)",
+          "source_id": "s57",
+          "basis": "inferred"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "Is this actually feasible/robust to build on Claude, or just a concept?",
+          "counter": "Bring the technical implementation detail up front — what you'd call, where Claude fits, what's already working.",
+          "source_id": "s54"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Bring a concrete, technical, buildable use-case",
+          "evidence": "Her title is Applied AI Architect",
+          "source_id": "s54",
+          "basis": "inferred"
+        },
+        {
+          "point": "Show what ships quickly",
+          "evidence": "Works in 'push to prod' hackathon culture",
+          "source_id": "s55",
+          "basis": "inferred"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Don't pitch her as the decision-maker on a large strategic partnership",
+          "evidence": "Applied/technical role, distinct from the Representative Director level",
+          "source_id": "s54",
+          "basis": "inferred"
+        },
+        {
+          "point": "Don't lead with a generic vision deck without a buildable use-case",
+          "evidence": "Engagement is centered on hackathons and applied work",
+          "source_id": "s55",
+          "basis": "inferred"
+        }
+      ],
+      "shared_hooks": []
+    },
+    "honest_gaps": [
+      "No first-person/authored content was found for Jooneun Choi — no LinkedIn posts, quotes, or interviews confirmed as authored by the target; all sources are about/third-party listings.",
+      "Location, tenure at Anthropic, prior career history, and exact seniority are unconfirmed.",
+      "The handle 'jooneun' from the seed LinkedIn URL was not tied to a verified profile in the sources (several same-name 'Joon/Jooeun/Jooneun' profiles in the source set are different people and were excluded).",
+      "MBTI omitted by design: no grounded signal exists for any letter without first-person data.",
+      "Confirm live: her actual scope (developer relations vs. enterprise solutions), whether multimodal is her core area or one panel topic, and what use-cases she's currently prioritizing in Korea."
+    ],
+    "behavioral_read": {
+      "note": "Thin public footprint — fewer than 3 authored/about sources with substance; low-confidence read.",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Extraversion (moderate)",
+          "signal": "Repeatedly appears in public-facing settings — symposium panel and multiple hackathon teams",
+          "source_id": "s54",
+          "confidence": 0.4,
+          "basis": "observed-behavior"
+        }
+      ],
+      "communication_adaptation": "Keep it concrete and technical — show what's buildable on Claude and let the work speak; skip abstract partnership framing.",
+      "predicted_mbti": {
+        "type": "",
+        "label": "",
+        "basis_per_letter": []
+      },
+      "likely_likes": [
+        {
+          "point": "Concrete, buildable demos and prototypes",
+          "evidence": "Runs/participates in 'push to prod' hackathons"
+        },
+        {
+          "point": "Technical depth on multimodal AI",
+          "evidence": "Multimodal AI panelist"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Vague partnership pitches with no buildable use-case",
+          "evidence": "Applied-architect role centered on implementation"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s54",
+        "url": "https://aifrontiers.kr/speakers",
+        "title": "Speakers | Global AI Frontiers Symposium 2026",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "title, role, multimodal track, event presence"
+      },
+      {
+        "id": "s56",
+        "url": "https://aifrontiers.kr/program",
+        "title": "Program | Global AI Frontiers Symposium 2026",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Multimodal AI track confirmation"
+      },
+      {
+        "id": "s55",
+        "url": "https://luma.com/elhey8nv?locale=ko",
+        "title": "Push to Prod SEOUL [Anthropic X Replit X Korea Investment]",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "hackathon involvement, shipping orientation"
+      },
+      {
+        "id": "s57",
+        "url": "https://www.d-startup.kr/board.es?mid=a11400000000&bid=0013&list_no=17980&act=view&is_recommend=0",
+        "title": "Daejeon startup event (Anthropic × Replit)",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "developer-ecosystem presence, non-obvious point"
+      },
+      {
+        "id": "s9",
+        "url": "https://letsdatascience.com/news/anthropic-opens-seoul-office-to-expand-korea-ties-54895648",
+        "title": "Anthropic opens Seoul office to expand Korea ties",
+        "date": "2026-06-17",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Seoul office context (whats_new)"
+      },
+      {
+        "id": "s2",
+        "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+        "title": "Anthropic opens Seoul office and announces new partnerships",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Korea ecosystem context"
+      },
+      {
+        "id": "s1",
+        "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+        "title": "Anthropic appoints KiYoung Choi as Representative Director of Korea",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "distinguishing the exec (KiYoung) from the target — non_obvious"
+      },
+      {
+        "id": "s3",
+        "url": "https://www.asiae.co.kr/en/article/science/2026052709020555911",
+        "title": "Anthropic Opens Seoul Office, Appoints Ki-Young Choi as CEO",
+        "date": "2026",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "exec-vs-target distinction context"
+      }
+    ],
+    "coverage_confidence": 0.14
+  },
+  "chemistry": null,
+  "slug": "jooneun-choi-anthropic",
+  "durationMs": 232826,
+  "nSources": 57,
+  "created_at": "2026-06-18T07:41:17.069Z"
+}
