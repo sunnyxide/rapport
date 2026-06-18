@@ -65,6 +65,14 @@ export async function runPipeline(seed: Seed, emit: Emit, opts: RunOptions = {})
   let persona = await synthesize({ identity, sources, meeting_context: seed.meeting_context, me_profile, output_lang, mode });
   emit({ stage: "synth", status: "done" });
 
+  // Safety net: the synth's own identity gate can still detect a collision the fast
+  // step missed (cross-domain same-name). Surface chips, don't render a broken card.
+  if (persona.status === "needs_disambiguation") {
+    emit({ stage: "gate", status: "info", gate: 1, message: "synthesis detected same-name collision — disambiguation required" });
+    emit({ stage: "needs_disambiguation", candidates: persona.candidates || [] });
+    return;
+  }
+
   // Gates ②③④ + confidence.
   persona = await applyGates(persona, identity, sources, emit);
 
