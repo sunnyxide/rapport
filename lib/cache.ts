@@ -1,17 +1,11 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { slugify } from "./slug";
 import type { CachedReport, Chemistry, Persona } from "./types";
 
-const CACHE_DIR = join(process.cwd(), "data", "cache");
+export { slugify };
 
-export function slugify(name: string, company?: string): string {
-  return [name, company]
-    .filter(Boolean)
-    .join("-")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+const CACHE_DIR = join(process.cwd(), "data", "cache");
 
 // Cache = encore/fallback + saved-reports list. Live cold-run is the main story.
 export function readReport(slug: string): CachedReport | null {

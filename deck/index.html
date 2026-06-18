@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapport — Push to Prod Seoul</title>
+
+  <!-- reveal.js 5.2.1 pinned + Subresource Integrity (cdnjs, hashes verified via API).
+       Pinned exact version so a moving @5 tag can't silently change under us mid-event. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css"
+        integrity="sha512-ZIo9ivf88U0L1S+0D/npMNTTkjez5B9cK5xIecN4IA2OmtbTNBbPAZo/0cBC195sq7FU7cEOVPwtit37f/+1rQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" id="theme" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/white.min.css"
+        integrity="sha512-UhEXjYpwYXWrVqfUGcYCXKplXsHlJeKovbJE3T7VkLfJRuVh4IQafsngabSUWzki/YyU3J625ChNjGSi06bqvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--
+    DECK SKELETON (producer/QA session) — 7 slides + 4 hidden Q&A backups.
+    Fill [수치]/[스크린샷] day-of (4:00–4:45). Design = Rapport editorial
+    (paper #FBFAF7 · ink #1A1A1A · ink-blue #1F3A5F · serif headers).
+    LANG NOTE: written KO to match DECK_REPLIT.md. Pick EN *or* KO day-of and
+    keep it consistent with the demo language (see DEMO_SHOOT.md).
+    Speaker-note timing = PITCH.md (훅20·데모45·collision30·차별+비즈40·AI툴+해자35·클로즈).
+  -->
+  <style>
+    :root {
+      --paper:#FBFAF7; --ink:#1A1A1A; --ink-blue:#1F3A5F; --muted:#6b6b6b; --rule:#e4e0d8;
+    }
+    .reveal { font-family: Georgia, "Times New Roman", serif; color: var(--ink); }
+    .reveal .slides section { text-align: left; }
+    .reveal-viewport { background: var(--paper); }
+    .reveal h1, .reveal h2, .reveal h3 { font-family: Georgia, serif; color: var(--ink); font-weight: 700; letter-spacing:-0.01em; text-transform:none; }
+    .reveal h2 { font-size: 1.7em; line-height:1.1; margin-bottom:.4em; }
+    .reveal h3 { font-size: 1.1em; color: var(--ink-blue); }
+    .reveal p, .reveal li { color: var(--ink); }
+    .reveal a { color: var(--ink-blue); }
+    .reveal em { color: var(--ink-blue); font-style: italic; }
+    .reveal strong { color: var(--ink); }
+    .wordmark {
+      position: fixed; top: 22px; left: 30px; z-index: 30;
+      font-family: Georgia, serif; font-weight:700; font-size: 22px; color: var(--ink);
+      letter-spacing:-0.02em;
+    }
+    .wordmark .caret { color: var(--ink-blue); }
+    .kicker { font-family: ui-monospace, monospace; font-size:.42em; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:.6em; }
+    .ph { /* placeholder chip — fill day-of */
+      display:inline-block; font-family: ui-monospace, monospace; font-size:.5em;
+      background:#f1ede4; border:1px dashed #c9c2b4; color:#8a7f6a; border-radius:4px; padding:1px 8px; margin:2px;
+    }
+    .big-num { font-size:1.5em; color:var(--ink-blue); font-weight:700; }
+    .lead { font-size:1.15em; color:var(--muted); line-height:1.5; }
+    .reveal ul { margin-left:0; }
+    .reveal li { margin:.28em 0; }
+    .rule { border:none; border-top:1px solid var(--rule); margin:.7em 0; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:1.2em; }
+    .card { border:1px solid var(--rule); border-radius:8px; padding:.7em .9em; background:#fff; }
+    .card h3 { margin:0 0 .25em 0; }
+    .src { font-family: ui-monospace, monospace; font-size:.5em; color:var(--ink-blue); }
+    .reveal .slide-number { background: transparent; color: var(--muted); }
+    .footline { position:fixed; bottom:14px; left:30px; font-family:ui-monospace,monospace; font-size:12px; color:var(--muted); z-index:30; }
+  </style>
+</head>
+<body>
+  <div class="wordmark">Rapport<span class="caret">_</span></div>
+  <div class="footline">Push to Prod Seoul · 2026-06-18 · Orbt</div>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ============ TITLE ============ -->
+      <section data-auto-animate>
+        <p class="kicker">Person intelligence for the meeting you're walking into</p>
+        <h1 style="font-size:2.6em;">Rapport</h1>
+        <p class="lead">Know anyone before you meet them — and how you'll click.</p>
+        <aside class="notes">3-min pitch. Open warm, slow. Product name = Rapport (NOT "Persona Builder").</aside>
+      </section>
+
+      <!-- ============ 1 · PROBLEM (15s / Problem 15%) ============ -->
+      <section>
+        <p class="kicker">01 — Problem</p>
+        <h2>미팅 5분 전, 상대가 누군지 모른다.</h2>
+        <p class="lead">SDR·BD·창업자는 미팅 한 건마다 <strong>30~90분</strong>을 수작업 리서치에 쓴다.
+        링크드인 탭 12개, 검색 결과 짜깁기, 그리고 5분 전엔 결국 빈손.</p>
+        <hr class="rule" />
+        <p><span class="big-num">[숫자]</span> <span class="ph">건당 리서치 분</span> · <span class="ph">주당 미팅 수</span> · <span class="ph">낭비 시간/주</span></p>
+        <aside class="notes">~15s. 첫 20초 안에 타겟(B2B 세일즈/BD/네트워커) + 문제 한 문장. Problem 15% 직격.</aside>
+      </section>
+
+      <!-- ============ 2 · SOLUTION (one-liner) ============ -->
+      <section>
+        <p class="kicker">02 — Solution</p>
+        <h2>이름 하나 → 미팅용 인물 인텔, ~100초.</h2>
+        <p class="lead"><strong>Rapport</strong>: 이름(또는 LinkedIn URL) → 공개데이터 fan-out →
+        출처가 달린 인물 도시에 <em>+ 케미 분석</em>.</p>
+        <p class="lead">요약기가 아니라 <strong>조언자</strong> — "무엇을 아는가"가 아니라 <em>"어떻게 공략하나"</em>.</p>
+        <p><span class="ph">스크린샷: 입력→도시에 1컷</span></p>
+        <aside class="notes">솔루션 한 장. 입력→도시에. "요약 아닌 조언" 프레임을 여기서 심는다.</aside>
+      </section>
+
+      <!-- ============ 3 · LIVE DEMO (45s) ============ -->
+      <section>
+        <p class="kicker">03 — Live demo</p>
+        <h2>직접 봅니다.</h2>
+        <ul>
+          <li><strong>the_one_thing</strong> — 미팅 들어가기 전 알아야 할 단 한 가지</li>
+          <li><strong>출처 각주 클릭</strong> — 모든 주장에 클릭 가능한 출처 (환각 0)</li>
+          <li><strong>sales_playbook</strong> — 오프닝·관심사·예상반론·피할 것</li>
+        </ul>
+        <p><span class="ph">데모영상 임베드 (당일 촬영)</span> · <span class="ph">라이브 URL (Vercel)</span></p>
+        <aside class="notes">~45s. 캐시 재생(안정) → 라이브 콜드런 1컷(Yeop). 출처 각주를 *실제로 클릭*. 깨지면 즉시 캐시 폴백.</aside>
+      </section>
+
+      <!-- ============ 4 · 차별점 + COLLISION (30s) ============ -->
+      <section>
+        <p class="kicker">04 — Why it's different</p>
+        <h2>요약은 누구나. <em>검증</em>은 우리만.</h2>
+        <div class="grid2">
+          <div class="card"><h3>① 출처추적 = 환각 0</h3><p>모든 주장에 출처, 없으면 <code>inferred</code> 라벨.</p></div>
+          <div class="card"><h3>② 선별 · so-what 깊이</h3><p>블라인드 베이크오프 <span class="ph">16점차</span>.</p></div>
+          <div class="card"><h3>③ Gate #4 attribution</h3><p>동명이인이 쓴 글을 본인 발언으로 섞지 않음.</p></div>
+          <div class="card"><h3>④ 동명이인 분리 🔥</h3><p>웹 1위 "Wookjae"=Google/SNU, 심사위원=Anthropic — <strong>우리가 조사·검증해 분리</strong>.</p></div>
+        </div>
+        <aside class="notes">~30s. 킬러 비트: ④. "Google 정보를 섞지 않았다"를 무대에서 칩으로 증명. 신뢰 #1 와우.</aside>
+      </section>
+
+      <!-- ============ 5 · BUSINESS IMPACT (Business 40%) ============ -->
+      <section>
+        <p class="kicker">05 — Business impact · 40%</p>
+        <h2>준비 90분 → 2분. <span class="big-num">45×</span></h2>
+        <ul>
+          <li><strong>측정가능</strong>: 미팅 준비 시간 <span class="ph">90분→2분</span> · 콜당 <span class="ph">수센트</span></li>
+          <li><strong>6주 후 Orbt GTM 스택에서 실제 운영</strong> — 데모가 아니라 제품</li>
+          <li><strong>해자</strong>: 출처추적 + 한국 CSE 심층 + attribution 게이트 + chemistry</li>
+          <li><strong>수평 확장</strong>: 모든 B2B 세일즈 공통 수요 · 이중시장(B2B 엄밀 / 소비자 재미)</li>
+        </ul>
+        <aside class="notes">~20s. Biz 40%가 동점 시 1순위. 수치 + "6주 운영" + moat 한 줄을 반드시 말한다. VC(한투) 직격.</aside>
+      </section>
+
+      <!-- ============ 6 · AI TOOL UTILIZATION (AI 20%) ============ -->
+      <section>
+        <p class="kicker">06 — AI tool utilization · 20%</p>
+        <h2>AI가 제품 그 자체.</h2>
+        <ul>
+          <li><strong>Claude 멀티에이전트</strong>: identity → fan-out → synthesis (opus, xhigh) → chemistry</li>
+          <li><strong>4 검증 게이트</strong>: 환각을 Claude가 직접 게이트</li>
+          <li><strong>research-log 스트림</strong>: "AI가 일하는 걸 *보여주는*" UX</li>
+          <li><strong>Replit 배포 + Claude Code 2h 빌드</strong> — 개발 속도 그 자체가 증거</li>
+        </ul>
+        <p><span class="ph">아키텍처 도식: 4콜 + 4게이트 fan-out</span></p>
+        <aside class="notes">~15s. "보조가 아니라 핵심". research-log 가시화 + Replit 배포를 명시.</aside>
+      </section>
+
+      <!-- ============ 7 · MOAT / EXPANSION + CLOSE ============ -->
+      <section>
+        <p class="kicker">07 — Moat & expansion</p>
+        <h2>Claude를 못 쓰던 모든 회사의 <em>의사결정 두뇌</em>.</h2>
+        <ul>
+          <li>한국 타깃에서 CSE가 web 대비 <span class="ph">2~3배</span> 소스 (벤치마크)</li>
+          <li>케미 / 관계 인텔 — 단순 인물조회를 넘어선 층</li>
+          <li>확장: 미팅 → 채용 → 투자자 리서치</li>
+        </ul>
+        <hr class="rule" />
+        <p class="lead">Rapport — <em>know anyone before you meet them.</em></p>
+        <aside class="notes">~20s 클로즈. 한 문장 비전으로 끝. 그다음 Q&A(백업 슬라이드).</aside>
+      </section>
+
+      <!-- ============ HIDDEN Q&A BACKUPS (4) ============ -->
+      <section data-visibility="hidden">
+        <p class="kicker">Q&A backup</p>
+        <h2>VC (한투): 시장·수익모델·해자?</h2>
+        <p class="lead">모든 B2B 세일즈 공통 수요 → 수평 확장. <strong>출처추적이 해자</strong> — 신뢰가 전환을 만든다.
+        콜당 수센트, 준비 90분→2분. 6주 후 Orbt에서 운영.</p>
+      </section>
+      <section data-visibility="hidden">
+        <p class="kicker">Q&A backup</p>
+        <h2>Anthropic: AI 툴 활용도?</h2>
+        <p class="lead">Claude가 fan-out·합성·<strong>3중+1 검증게이트</strong> 전부. Replit로 당일 빌드·배포.
+        멀티에이전트 + 출처 강제 하네스 = 환각을 구조적으로 차단.</p>
+      </section>
+      <section data-visibility="hidden">
+        <p class="kicker">Q&A backup</p>
+        <h2>"그냥 ChatGPT 쓰면 되잖아?"</h2>
+        <p class="lead">출처추적 + 구조화 + 영업 액션화 + 환각 시 <strong>빈칸 정직</strong>.
+        라이브로 출처 각주를 클릭해 증명 — 일반 LLM 검색은 못 한다.</p>
+      </section>
+      <section data-visibility="hidden">
+        <p class="kicker">Q&A backup</p>
+        <h2>프라이버시?</h2>
+        <p class="lead">전부 <strong>공개 데이터 · 출처표기 · 전문 미팅 브리핑</strong>.
+        민감·사생활 배제. 출처 UI로 증명. 동명이인은 분리해 오귀속 방지.</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"
+          integrity="sha512-lRYVCjdH7dCPCzqLL6eBn78p6WGK5pZxgYBgzTQfWlfX7yiZFLt/qHOMSETHUIz2aZIU/KbjwYHiMsmrcVgJnA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/plugin.min.js"
+          integrity="sha512-SenKuM2a6JEif6Cizc3V3abaggNVomGhyB+ee7zSg/vusFyTVFONodIfd87MKthbtqZRmtVSUuUCwwwA9xIG1Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      progress: true,
+      controls: true,
+      transition: 'fade',
+      plugins: [ RevealNotes ],
+    });
+  </script>
+</body>
+</html>

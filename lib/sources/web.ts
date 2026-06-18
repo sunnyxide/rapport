@@ -52,7 +52,7 @@ Queries to run:
 ${queries.map((q, i) => `${i + 1}. ${q.q}`).join("\n")}`;
 
   const tools = [
-    { type: WEB_SEARCH_TOOL_VERSION, name: "web_search", max_uses: 8 },
+    { type: WEB_SEARCH_TOOL_VERSION, name: "web_search", max_uses: 6 },
     RECORD_TOOL,
   ];
 
@@ -63,7 +63,7 @@ ${queries.map((q, i) => `${i + 1}. ${q.q}`).join("\n")}`;
 
   // Server runs web_search internally; control returns on the client tool_use
   // (record_sources) or pause_turn. Bound the loop.
-  for (let round = 0; round < 6; round++) {
+  for (let round = 0; round < 4; round++) {
     let res: {
       content: Array<{ type: string; name?: string; input?: unknown }>;
       stop_reason: string;

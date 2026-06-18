@@ -8,7 +8,7 @@ import { toSourceHit } from "./util";
 // can't reach the target's OWN posts; harvestapi/linkedin-profile-posts can —
 // that closes the "me voice" gap. by_target for authored; reposts = about_target
 // ("amplified, not authored") — no verbatim voice extracted from a repost.
-const MAX_POSTS = 8;
+const MAX_POSTS = 6;
 
 interface LiPost {
   text?: string;
@@ -32,7 +32,7 @@ export async function linkedInPostsTrack(id: ResolvedIdentity, emit: Emit): Prom
   const items = await runActor<LiPost>(
     "harvestapi~linkedin-profile-posts",
     { profiles: [profileUrl], maxPosts: MAX_POSTS, includeReposts: true },
-    25000,
+    18000,
   );
   if (!items || items.length === 0) return [];
 

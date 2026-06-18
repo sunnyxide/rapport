@@ -8,7 +8,8 @@ import { toSourceHit } from "./util";
 // then the transcript actor pulls captions (no API key, no Whisper/ASR). The
 // captions become substring-verifiable notable_quotes — stage wow. by_target
 // (the target's own spoken words).
-const MAX_VIDEOS = 2;
+// One transcript keeps the moat (verbatim quotes) without the latency of many.
+const MAX_VIDEOS = 1;
 
 interface YtVideo {
   id?: string;
@@ -37,7 +38,7 @@ export async function videoTrack(id: ResolvedIdentity, emit: Emit): Promise<Sour
   const found = await runActor<YtVideo>(
     "scraper_one~youtube-search-scraper",
     { search: `${id.name}${id.company ? " " + id.company : ""} interview OR podcast OR talk`, maxItems: MAX_VIDEOS + 2 },
-    20000,
+    13000,
   );
   if (!found || found.length === 0) return [];
 
@@ -48,7 +49,7 @@ export async function videoTrack(id: ResolvedIdentity, emit: Emit): Promise<Sour
     videos.map(async (v) => {
       const vid = v.videoId || v.id!;
       const url = v.url || `https://www.youtube.com/watch?v=${vid}`;
-      const tr = await runActor<Transcript>("topaz_sharingan~youtube-transcript-scraper-1", { videoUrls: [url] }, 25000);
+      const tr = await runActor<Transcript>("topaz_sharingan~youtube-transcript-scraper-1", { videoUrls: [url] }, 16000);
       const text = tr ? transcriptText(tr[0] || {}) : "";
       if (!text) return;
       const h = toSourceHit({
