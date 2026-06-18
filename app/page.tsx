@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AskPanel } from "@/components/AskPanel";
+import { CalendarStrip } from "@/components/CalendarStrip";
 import { ChemistryBlock } from "@/components/Chemistry";
+import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { ExampleGallery } from "@/components/ExampleGallery";
 import { Header, Wordmark } from "@/components/Header";
 import { PersonaDossier } from "@/components/persona/PersonaDossier";
@@ -45,16 +48,20 @@ export default function Home() {
       />
 
       <main className="mx-auto max-w-reading px-6 pb-24">
-        {/* HERO */}
+        {/* HERO — masthead */}
         {!started && (
           <section className="pt-14 pb-8">
             <Wordmark size="lg" />
-            <p className="mt-4 max-w-xl font-serif text-2xl leading-snug text-ink">
+            <div className="mt-3 flex items-center gap-3">
+              <span className="h-px flex-1 bg-ink" />
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted">person intelligence · sourced · for the room you&apos;re walking into</span>
+            </div>
+            <p className="mt-6 max-w-xl font-serif text-3xl leading-[1.15] text-ink">
               Know anyone before you meet them — and how you&apos;ll click.
             </p>
             <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted">
               Paste a name or LinkedIn URL. Rapport fans out across public data and returns a sourced, meeting-ready
-              briefing — every claim clickable to its source, quotes verified, attribution checked.
+              briefing — every claim clickable to its source, quotes substring-verified, attribution authorship-checked.
             </p>
           </section>
         )}
@@ -105,14 +112,23 @@ export default function Home() {
                 <ChemistryBlock chem={state.chemistry} />
               </div>
             )}
+            {state.slug && state.persona.status !== "needs_disambiguation" && (
+              <div className="mt-8">
+                <AskPanel slug={state.slug} name={state.persona.identity.name} />
+                <FeedbackWidget slug={state.slug} />
+              </div>
+            )}
           </div>
         )}
 
-        {/* GALLERY + RECENT (landing only) */}
+        {/* CALENDAR + GALLERY + RECENT (landing only) */}
         {!started && (
-          <div className="mt-12 grid grid-cols-1 gap-10 border-t border-hair pt-10 md:grid-cols-2">
-            <ExampleGallery cachedSlugs={cachedSlugs} busy={state.busy} onRun={runWithMe} />
-            <RecentReports reports={reports} />
+          <div className="mt-12 border-t border-hair pt-10">
+            <CalendarStrip cachedSlugs={cachedSlugs} busy={state.busy} onRun={runWithMe} />
+            <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+              <ExampleGallery cachedSlugs={cachedSlugs} busy={state.busy} onRun={runWithMe} />
+              <RecentReports reports={reports} />
+            </div>
           </div>
         )}
       </main>
