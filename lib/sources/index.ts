@@ -7,6 +7,7 @@ import { linkedInPostsTrack } from "./linkedin";
 import { dedupeSources } from "./util";
 import { videoTrack } from "./video";
 import { webTrack } from "./web";
+import { xTrack } from "./x";
 
 // Parallel fan-out across data tracks (Promise.allSettled — one failed track
 // never crashes the run). web_search is the always-on floor; cse + LinkedIn +
@@ -17,7 +18,7 @@ export async function fanOut(id: ResolvedIdentity, emit: Emit): Promise<SourceHi
 
   const tracks: Promise<SourceHit[]>[] = [webTrack(id, emit)];
   if (layer === "cse") {
-    tracks.push(cseTrack(id, emit), linkedInPostsTrack(id, emit), videoTrack(id, emit));
+    tracks.push(cseTrack(id, emit), linkedInPostsTrack(id, emit), videoTrack(id, emit), xTrack(id, emit));
   }
 
   const settled = await Promise.allSettled(tracks);

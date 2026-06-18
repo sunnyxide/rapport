@@ -9,6 +9,7 @@ import type { Seed } from "./useStream";
 // meeting-context line, and an output-language toggle (single language, no mix).
 export function SearchForm({ busy, onRun }: { busy: boolean; onRun: (seed: Seed) => void }) {
   const [paste, setPaste] = useState("");
+  const [linkedin, setLinkedin] = useState("");
   const [meeting, setMeeting] = useState("");
   const [lang, setLang] = useState<OutputLang>("en");
   const [showAdvanced, setShowAdvanced] = useState(false);
@@ -17,10 +18,13 @@ export function SearchForm({ busy, onRun }: { busy: boolean; onRun: (seed: Seed)
   function submit() {
     const parsed = parseSeed(paste);
     if (!parsed.name) return;
+    // A dedicated LinkedIn URL pins identity deterministically (anti-collision) —
+    // it overrides any URL pasted in the main box.
+    const li = linkedin.trim() || parsed.linkedin_url;
     onRun({
       name: parsed.name,
       company: company.trim() || parsed.company,
-      linkedin_url: parsed.linkedin_url,
+      linkedin_url: li || undefined,
       meeting_context: meeting.trim() || undefined,
       output_lang: lang,
     });
@@ -29,16 +33,27 @@ export function SearchForm({ busy, onRun }: { busy: boolean; onRun: (seed: Seed)
   return (
     <div className="text-sm">
       <label className="mb-1 block font-mono text-[10px] uppercase tracking-[0.2em] text-muted">Who are you meeting?</label>
-      <textarea
-        className="w-full resize-none rounded border border-hair bg-white px-3 py-2.5 leading-relaxed outline-none focus:border-accent"
-        rows={2}
-        placeholder="Paste a name, a LinkedIn URL, or an email — e.g. “Yeop Lee, Anthropic” or linkedin.com/in/yeoplee927"
+      <input
+        className="w-full rounded border border-hair bg-white px-3 py-2.5 leading-relaxed outline-none focus:border-accent"
+        placeholder="Name, or “Name, Company”, or email — e.g. Yeop Lee, Anthropic"
         value={paste}
         onChange={(e) => setPaste(e.target.value)}
         onKeyDown={(e) => {
-          if ((e.metaKey || e.ctrlKey) && e.key === "Enter") submit();
+          if (e.key === "Enter") submit();
         }}
       />
+      <div className="mt-2 flex items-center gap-2">
+        <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.15em] text-accent">in</span>
+        <input
+          className="w-full rounded border border-hair bg-white px-3 py-2 font-mono text-[13px] outline-none focus:border-accent"
+          placeholder="LinkedIn URL (optional — pins the exact person, beats same-name collisions)"
+          value={linkedin}
+          onChange={(e) => setLinkedin(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") submit();
+          }}
+        />
+      </div>
 
       {showAdvanced && (
         <input
@@ -81,7 +96,7 @@ export function SearchForm({ busy, onRun }: { busy: boolean; onRun: (seed: Seed)
         <button onClick={() => setShowAdvanced((v) => !v)} className="font-mono text-[11px] text-muted hover:text-ink">
           {showAdvanced ? "− company" : "+ company"}
         </button>
-        <span className="font-mono text-[10px] text-muted">⌘↵ to run</span>
+        <span className="font-mono text-[10px] text-muted">↵ to run</span>
       </div>
     </div>
   );
