@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AskPanel } from "@/components/AskPanel";
 import { CalendarStrip } from "@/components/CalendarStrip";
 import { ChemistryBlock } from "@/components/Chemistry";
@@ -12,12 +12,14 @@ import { PersonaDossier } from "@/components/persona/PersonaDossier";
 import { RecentReports } from "@/components/RecentReports";
 import { ResearchLog } from "@/components/ResearchLog";
 import { SearchForm } from "@/components/SearchForm";
-import { useStream } from "@/components/useStream";
+import { type Seed, useStream } from "@/components/useStream";
 import type { ReportSummary } from "@/lib/cache";
+import type { IdentityCandidate } from "@/lib/types";
 
 export default function Home() {
   const { state, run, reset } = useStream();
   const [reports, setReports] = useState<ReportSummary[]>([]);
+  const lastSeed = useRef<Seed | null>(null);
 
   useEffect(() => {
     fetch("/api/reports")
@@ -26,10 +28,27 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  // Inject the active "me" profile (set on /me) so chemistry runs against you.
+  // Inject the active "me" profile (set on /me) so chemistry runs against you,
+  // and remember the seed so a disambiguation pick can re-run with the same context.
   const runWithMe: typeof run = (seed) => {
     const me = typeof window !== "undefined" ? localStorage.getItem("rapport_me") : null;
-    return run(me ? { ...seed, me_slug: me } : seed);
+    const full = me ? { ...seed, me_slug: me } : seed;
+    lastSeed.current = full;
+    return run(full);
+  };
+
+  // Click a "Which one?" candidate → re-resolve seeded with THAT person's
+  // company/title (the disambiguating signal), keeping the original meeting
+  // context + language. This pins the identity and proceeds to synthesis.
+  const pickCandidate = (c: IdentityCandidate) => {
+    const base = lastSeed.current;
+    runWithMe({
+      name: c.name,
+      company: c.company || base?.company,
+      title: c.title || undefined,
+      meeting_context: base?.meeting_context,
+      output_lang: base?.output_lang,
+    });
   };
 
   const cachedSlugs = new Set(reports.map((r) => r.slug));
@@ -82,11 +101,22 @@ export default function Home() {
         {state.candidates && (
           <div className="mt-8 rounded border border-hair bg-white p-5">
             <div className="font-serif text-xl">Which one?</div>
-            <p className="mb-3 mt-1 text-xs text-muted">Same-name collision — confirm before synthesis (anti-collision gate). Re-run with the company or LinkedIn URL that pins the right person.</p>
+            <p className="mb-3 mt-1 text-xs text-muted">Same-name collision — pick the right person to confirm (anti-collision gate), or re-run with a LinkedIn URL that pins them.</p>
             <ul className="space-y-2 text-sm">
               {state.candidates.map((c, i) => (
-                <li key={i} className="border-b border-hair pb-2 last:border-0">
-                  <b>{c.name}</b> — {c.title} @ {c.company} · <span className="text-muted">{c.distinguishing_detail}</span>
+                <li key={i}>
+                  <button
+                    onClick={() => pickCandidate(c)}
+                    disabled={state.busy}
+                    className="group flex w-full items-start justify-between gap-3 rounded border border-hair bg-paper px-3.5 py-2.5 text-left transition hover:border-accent disabled:opacity-50"
+                  >
+                    <span>
+                      <b>{c.name}</b>
+                      {(c.title || c.company) && <> — {[c.title, c.company].filter(Boolean).join(" @ ")}</>}
+                      {c.distinguishing_detail && <span className="text-muted"> · {c.distinguishing_detail}</span>}
+                    </span>
+                    <span className="shrink-0 font-mono text-[10px] text-muted group-hover:text-accent">this one →</span>
+                  </button>
                 </li>
               ))}
             </ul>
