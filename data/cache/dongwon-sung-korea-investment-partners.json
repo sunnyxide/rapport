@@ -1,0 +1,525 @@
+{
+  "persona": {
+    "status": "ok",
+    "output_lang": "en",
+    "candidates": [],
+    "the_one_thing": "Dongwon Sung is a technically-trained VC (Data Scientist at SK hynix → AI Research Fellow at SK innovation → Principal at KIP) who built his reputation on a contrarian deep-tech bet — so walk in leading with the actual AI architecture and a differentiated thesis, not a market-narrative deck; he will evaluate the technical 'why.' (High confidence; basis: sourced career history s2 + first-person posts s27/s32.)",
+    "identity": {
+      "name": "Dongwon Sung",
+      "title": "Principal",
+      "company": "Korea Investment Partners (KIP)",
+      "location": "South Korea",
+      "confidence": 0.88,
+      "resolved_handle": "dsung92",
+      "photo_url": "https://scontent-ord5-1.cdninstagram.com/v/t51.2885-19/106566052_607085436608128_237858007395645438_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40MDAuQzMifQ%3D%3D&_nc_ohc=vku6-t6NFooQ7kNvwGTrpvH&_nc_oc=AdpszS41RVBfYO1zJ4uu3Fke2Cm0p1QJjTyuraR7ajXjF2Td8ZaHN5gOc8L8gOPJ_gc&_nc_zt=24&_nc_ht=scontent-ord5-1.cdninstagram.com&_nc_ss=7c60f&oh=00_Af-AKk-UkJ8EJpFujWaYnH-YXqvMNz-yFbwLXbD0ehq41g&oe=6A38156E",
+      "photo_source_url": "https://www.instagram.com/asiaberlin.official/?hl=en",
+      "photo_provenance": "article"
+    },
+    "snapshot": "Dongwon Sung (LinkedIn shows the name 'Dongwon Ellie Sung') is a Principal at Korea Investment Partners — KIP, the VC/PE arm of Korea Investment Holdings, managing 58 funds and ~US$4B AUM (s4). The path here is unusually technical for a VC: Statistical Consultant at UIUC, Data Scientist at SK hynix (2018–2020), then AI Research Fellow at SK innovation (2020–2022) before joining KIP in April 2022 (s2). Public activity centers on AI and deep tech — quantum, on-device/edge AI, inference hardware, and manufacturing AI.",
+    "whats_new": "In June 2026 Sung posted that Quantinuum's IPO was a personal first exit, framing it as a contrarian quantum bet 'when no one in Korea was willing to look at quantum' that got vindicated (s27). In March 2026 Sung was billed to speak at a KIP × Microsoft 'Synergy Club' session on global AI trends and how startups scale globally (s32).",
+    "recent_activity": [
+      {
+        "what": "Posted that Quantinuum's public listing was a first exit and a vindicated contrarian quantum call",
+        "date": "2026-06-09",
+        "source_id": "s27"
+      },
+      {
+        "what": "Amplified ENERZAi's 'AI on Edge' on-device AI seminar",
+        "date": "2026-03-30",
+        "source_id": "s28"
+      },
+      {
+        "what": "Amplified NeuReality's NR-NEXUS 'token factory OS' / inference-hardware narrative",
+        "date": "2026-03-27",
+        "source_id": "s29"
+      },
+      {
+        "what": "Congratulated QEDMA's Asif Sinay on the Q-Net Award (quantum)",
+        "date": "2026-03-27",
+        "source_id": "s30"
+      },
+      {
+        "what": "Amplified InterX passing KOSDAQ technology evaluation for a 2026 manufacturing-AI IPO",
+        "date": "2026-03-27",
+        "source_id": "s31"
+      },
+      {
+        "what": "Billed to speak at KIP × Microsoft 'Synergy Club' on global AI trends / scaling startups globally",
+        "date": "2026-03-12",
+        "source_id": "s32"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "Technically-trained investor",
+        "importance_score": 0.9,
+        "fact": "Career runs Data Scientist (SK hynix) → AI Research Fellow (SK innovation) → Principal at KIP (s2).",
+        "source_id": "s2",
+        "inference": "He can read model/agent architecture, not just slides — and likely defaults to probing it.",
+        "move": "Open with how Orbt's agents are built and why the reasoning holds up; have an architecture answer ready before the market-size slide. Show the engineering, then the business model."
+      },
+      {
+        "trait": "Contrarian-conviction bias",
+        "importance_score": 0.85,
+        "fact": "On his first exit (Quantinuum) he wrote: 'we invested when no one in Korea was willing to look at quantum. It was a contrarian call' (s27).",
+        "source_id": "s27",
+        "inference": "He is rewarded by — and proud of — non-consensus theses, and is wary of crowded me-too plays.",
+        "move": "Lead with what is genuinely non-obvious or contrarian about Orbt (AI agents replacing parts of cross-border consulting), not with how the AI-consulting category is heating up. Name the bet he'd be making."
+      },
+      {
+        "trait": "Global-scaling lens",
+        "importance_score": 0.75,
+        "fact": "Billed to speak on 'how startups can scale globally' at the KIP × Microsoft session (s32).",
+        "source_id": "s32",
+        "inference": "He frames Korean startups through a cross-border / global expansion thesis.",
+        "move": "Position Orbt's Korean F&B & cosmetics cross-border GTM not as a niche service but as a repeatable global-scaling engine — the exact thesis he's publicly speaking to."
+      }
+    ],
+    "non_obvious": {
+      "insight": "His public amplifications cluster on deep tech and infrastructure — quantum (s27, s30), on-device/edge AI (s28), inference hardware (s29), manufacturing AI (s31) — not application-layer SaaS. Orbt is an application/agent layer, so expect a defensibility probe: 'what's the moat once the model commoditizes?' Pre-empt it; don't be caught framing Orbt as a thin wrapper.",
+      "source_id": "s28"
+    },
+    "career_arc": [
+      {
+        "period": "Jan 2016 – May 2016",
+        "org": "University of Illinois at Urbana-Champaign",
+        "role": "Statistical Consultant",
+        "what_they_built": "Statistical consulting; UIUC is also his alma mater (s1)",
+        "source_id": "s2"
+      },
+      {
+        "period": "Jan 2018 – Jan 2020",
+        "org": "SK hynix",
+        "role": "Data Scientist",
+        "what_they_built": "Data science in a major semiconductor firm",
+        "source_id": "s2"
+      },
+      {
+        "period": "Feb 2020 – Apr 2022",
+        "org": "SK innovation",
+        "role": "AI Research Fellow",
+        "what_they_built": "Applied AI research",
+        "source_id": "s2"
+      },
+      {
+        "period": "Apr 2022 – Present",
+        "org": "Korea Investment Partners (KIP)",
+        "role": "Principal",
+        "what_they_built": "AI & deep-tech investing; portfolio includes Quantinuum (first exit, 2026)",
+        "source_id": "s2"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "Applied AI / data science (semiconductor + energy industry background)",
+        "source_id": "s2",
+        "basis": "stated"
+      },
+      {
+        "point": "Deep-tech VC investing — quantum computing (Quantinuum exit)",
+        "source_id": "s27",
+        "basis": "stated"
+      },
+      {
+        "point": "AI startup evaluation across edge AI, inference hardware, manufacturing AI",
+        "source_id": "s28",
+        "basis": "inferred"
+      }
+    ],
+    "notable_quotes": [
+      {
+        "quote": "we invested when no one in Korea was willing to look at quantum. It was a contrarian call, and today, that conviction has been vindicated in the most decisive way possible.",
+        "source_id": "s27",
+        "date": "2026-06-09",
+        "why_it_matters": "Defines how he sees a good deal — non-consensus conviction, not crowd-following. (original_lang: en)"
+      },
+      {
+        "quote": "I'll be sharing a few perspectives on global AI trends and how startups can scale globally.",
+        "source_id": "s32",
+        "date": "2026-03-12",
+        "why_it_matters": "Confirms a global-scaling frame — map Orbt's cross-border thesis to it. (original_lang: en)"
+      }
+    ],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "Open with the contrarian, technically-substantiated core of Orbt — AI agents actually executing cross-border strategy/revenue/creative — and let him evaluate the build.",
+        "evidence": "Self-described his first exit as a vindicated 'contrarian call' on quantum (s27); technical AI/data-science career (s2).",
+        "source_id": "s27",
+        "basis": "inferred"
+      },
+      "what_they_care_about": [
+        {
+          "point": "Non-consensus theses with conviction",
+          "evidence": "'we invested when no one in Korea was willing to look at quantum… a contrarian call'",
+          "source_id": "s27",
+          "basis": "stated"
+        },
+        {
+          "point": "Real technical substance over narrative",
+          "evidence": "Data Scientist (SK hynix) + AI Research Fellow (SK innovation) before VC",
+          "source_id": "s2",
+          "basis": "inferred"
+        },
+        {
+          "point": "Startups that can scale globally",
+          "evidence": "Billed to speak on 'how startups can scale globally'",
+          "source_id": "s32",
+          "basis": "stated"
+        },
+        {
+          "point": "Deep-tech / infrastructure-grade AI",
+          "evidence": "Amplifies edge AI, inference hardware, manufacturing AI, quantum",
+          "source_id": "s28",
+          "basis": "inferred"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "Application-layer AI consulting — what's the moat once foundation models commoditize the agent layer?",
+          "counter": "Show what's proprietary: accumulated cross-border playbooks/data, agent orchestration over Slack delivery, and execution outcomes for real brands — not the model itself.",
+          "source_id": "s28"
+        },
+        {
+          "objection": "His public interest skews deep-tech/infra, not services — is this 'venture-scale' or a consulting shop?",
+          "counter": "Frame Orbt as a repeatable, agent-driven product that compounds with each country/brand, with the unit economics and traction to back it.",
+          "source_id": "s29"
+        },
+        {
+          "objection": "Why is Claude-native a durable edge vs. switching models?",
+          "counter": "Tie the Claude-native choice to a concrete technical/quality reason for the agent reasoning — present it as an engineering decision, not a marketing line. (Do not assume he already uses Claude.)",
+          "source_id": "s2"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Bring the architecture and reasoning first, then the business model",
+          "evidence": "Technical career (data science → AI research → VC)",
+          "source_id": "s2",
+          "basis": "inferred"
+        },
+        {
+          "point": "Name the contrarian bet you're asking him to make",
+          "evidence": "Frames his best win as a 'contrarian call'",
+          "source_id": "s27",
+          "basis": "stated"
+        },
+        {
+          "point": "Cast cross-border GTM as a global-scaling engine",
+          "evidence": "Public talk on scaling startups globally",
+          "source_id": "s32",
+          "basis": "stated"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Avoid consensus / 'category is hot' positioning",
+          "evidence": "His self-narrated edge is investing against the crowd",
+          "source_id": "s27",
+          "basis": "inferred"
+        },
+        {
+          "point": "Avoid hand-wavy AI claims with no technical backing",
+          "evidence": "He has a data-science + AI-research evaluator's eye",
+          "source_id": "s2",
+          "basis": "inferred"
+        }
+      ],
+      "shared_hooks": [
+        {
+          "point": "AI-native / agentic systems",
+          "evidence": "me: Co-Founder/CTO of AI-native agent platform (orbt); them: AI Research Fellow + invests across AI startups",
+          "source_id": "s2",
+          "basis": "stated"
+        },
+        {
+          "point": "Global / cross-border scaling of Korean startups",
+          "evidence": "me: cross-border F&B & cosmetics GTM; them: speaks on 'how startups can scale globally'",
+          "source_id": "s32",
+          "basis": "stated"
+        },
+        {
+          "point": "Korean startup ecosystem",
+          "evidence": "me: focused on Korean startup ecosystem; them: Principal at KIP backing Korean founders",
+          "source_id": "s4",
+          "basis": "inferred"
+        }
+      ]
+    },
+    "honest_gaps": [
+      "Most of his recent LinkedIn activity is reposts/amplifications of portfolio or deep-tech news, not first-person writing — direct voice signal is limited (s28, s29, s31).",
+      "No public data on his check size, stage focus, or whether KIP invests at Orbt's stage.",
+      "His public interest pattern is deep-tech/infrastructure; whether he backs application-layer AI services is unknown — treat the moat probe as likely, not certain.",
+      "LinkedIn shows 'Dongwon Ellie Sung' (s5); gender/preferred name not confirmed — avoid assumptions.",
+      "No evidence of any prior relationship between the requester and Sung, and no evidence he currently uses Claude — do not imply either."
+    ],
+    "behavioral_read": {
+      "note": "Limited first-person authored footprint (a few authored posts; rest are amplifications) — reads below are low-to-moderate confidence.",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Conscientiousness",
+          "signal": "Methodically built a deep technical base (stats consulting → data science → AI research) before moving into VC",
+          "source_id": "s2",
+          "confidence": 0.5,
+          "basis": "observed-behavior"
+        },
+        {
+          "trait": "Openness (capped — not reliably inferable)",
+          "signal": "Backed quantum 'when no one in Korea was willing to look at' it and amplifies frontier deep tech",
+          "source_id": "s27",
+          "confidence": 0.4,
+          "basis": "observed-behavior"
+        }
+      ],
+      "communication_adaptation": "Bring rigorous reasoning and a differentiated, defensible thesis; he'll probe the technical 'why' and responds to a bold position you can defend over a consensus-safe one. Don't oversell — let the substance carry it.",
+      "predicted_mbti": {
+        "type": "ENTJ",
+        "label": "illustrative · public-signal estimate · not a clinical diagnosis",
+        "basis_per_letter": [
+          {
+            "letter": "E",
+            "signal": "Chooses public speaking and active posting (KIP × Microsoft session)",
+            "source_id": "s32"
+          },
+          {
+            "letter": "N",
+            "signal": "Future-oriented frontier bets; amplifies 'what does this market look like in 24 months'",
+            "source_id": "s27"
+          },
+          {
+            "letter": "T",
+            "signal": "Data-science/AI-research background; frames decisions as analytical 'contrarian calls'",
+            "source_id": "s27"
+          },
+          {
+            "letter": "J",
+            "signal": "Structured, staged career and thesis-driven investing",
+            "source_id": "s2"
+          }
+        ]
+      },
+      "likely_likes": [
+        {
+          "point": "A differentiated, conviction-led thesis",
+          "evidence": "Proud of his contrarian quantum bet (s27)"
+        },
+        {
+          "point": "Technical depth he can interrogate",
+          "evidence": "Built an AI/data-science career before VC (s2)"
+        },
+        {
+          "point": "Credible global-scale ambition",
+          "evidence": "Speaks on scaling startups globally (s32)"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Me-too / consensus positioning",
+          "evidence": "Self-identity built on going against the crowd (s27)"
+        },
+        {
+          "point": "Hand-wavy AI claims with no engineering behind them",
+          "evidence": "Technical evaluator's background (s2)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://www.linkedin.com/in/dsung92/",
+        "title": "Dongwon Sung - Principal - Korea Investment Partners",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "identity, education (UIUC)"
+      },
+      {
+        "id": "s2",
+        "url": "https://contactout.com/dongwon-sung-89428",
+        "title": "Dongwon Sung — ContactOut",
+        "date": "2024-08-27",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "career arc, technical background"
+      },
+      {
+        "id": "s3",
+        "url": "https://www.crunchbase.com/person/dongwon-sung",
+        "title": "Dongwon Sung - Crunchbase",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "role confirmation"
+      },
+      {
+        "id": "s4",
+        "url": "https://contactout.com/company/Korea-Investment-Partners-3249",
+        "title": "Korea Investment Partners - Company Profile",
+        "date": "2025-11-15",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "firm context (AUM, fund count)"
+      },
+      {
+        "id": "s5",
+        "url": "https://www.linkedin.com/posts/dsung92_at-kip-we-are-committed-to-empowering-our-activity-7427882697953275904-nSod",
+        "title": "Dongwon Ellie Sung's Post",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "name variant; founder-empowerment framing (snippet truncated)"
+      },
+      {
+        "id": "s24",
+        "url": "https://www.instagram.com/asiaberlin.official/?hl=en",
+        "title": "asiaberlin.official - Instagram",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "confirms KIP / Gangnam office, ecosystem activity"
+      },
+      {
+        "id": "s27",
+        "url": "https://www.linkedin.com/posts/dsung92_today-quantinuum-officially-begins-trading-activity-7470030938991755265-rUw0",
+        "title": "Dongwon Sung post — Quantinuum IPO",
+        "date": "2026-06-09",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "first exit, contrarian-conviction voice, quote"
+      },
+      {
+        "id": "s28",
+        "url": "https://www.linkedin.com/posts/enerzai_sncrhyrpwstwswmai-smltfmai-ai-ugcPost-7444268729028366336-AV_x",
+        "title": "ENERZAi 'AI on Edge' seminar (reposted by target)",
+        "date": "2026-03-30",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "interest signal — on-device/edge AI (amplified, not authored)"
+      },
+      {
+        "id": "s29",
+        "url": "https://www.linkedin.com/posts/moshe-tanach-9274a03_neureality-appoints-ex-google-ai-director-activity-7442979357196935169-GCvk",
+        "title": "NeuReality NR-NEXUS (reposted by target)",
+        "date": "2026-03-27",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "interest signal — inference hardware (amplified, not authored)"
+      },
+      {
+        "id": "s30",
+        "url": "https://www.linkedin.com/posts/dsung92_where-quantum-leaders-meet-q-net-connect-activity-7443148703785263104-LUbU",
+        "title": "Dongwon Sung post — Q-Net Award / QEDMA",
+        "date": "2026-03-27",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "quantum portfolio involvement"
+      },
+      {
+        "id": "s31",
+        "url": "https://www.linkedin.com/posts/interxlab_%EC%9D%B8%ED%84%B0%EC%97%91%EC%8A%A4-%EA%B8%B0%EC%88%A0%EC%84%B1%ED%8F%89%EA%B0%80-%ED%86%B5%EA%B3%BC%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%8C%80%ED%91%9C-%EC%A0%9C%EC%A1%B0-ai%EC%9E%90%EC%9C%A8-%EC%A0%9C%EC%A1%B0%EB%A1%9C-%EB%82%B4%EB%85%84-ipo-activity-7406919676108263424-q9LK",
+        "title": "InterX KOSDAQ tech evaluation (reposted by target)",
+        "date": "2026-03-27",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "interest signal — manufacturing AI (amplified, not authored)"
+      },
+      {
+        "id": "s32",
+        "url": "https://www.linkedin.com/posts/dsung92_synergy-club-microsoft%EC%99%80-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%8A%A4%EC%BC%80%EC%9D%BC%EC%97%85-activity-7437716001539977219-4UgF",
+        "title": "Dongwon Sung post — KIP × Microsoft Synergy Club",
+        "date": "2026-03-12",
+        "relation_to_target": "by_target",
+        "author_handle": "dsung92",
+        "used_for": "global-scaling lens, public-speaking signal, quote"
+      }
+    ],
+    "coverage_confidence": 0.55
+  },
+  "chemistry": {
+    "overall_read": "A technical founder meeting an unusually technical VC — both anchor identity in demonstrated rigor over narrative, so the conversation should click on substance fast; the main tension is thesis-fit, since orbt's applied consumer-goods AI sits adjacent to (not inside) Sung's deep-tech/infrastructure comfort zone. Moderate confidence given thinner data on his side.",
+    "chemistry_confidence": 0.5,
+    "chemistry_score": 7.3,
+    "mbti_compat": {
+      "me_type": "INTJ",
+      "them_type": "ENTJ",
+      "read": "Two strategy-first N-T types; INTJ brings the build-depth, ENTJ pushes scale and decisiveness — they tend to respect each other and move quickly, with the ENTJ driving tempo. illustrative · not clinical",
+      "label": "directional"
+    },
+    "shared_interests": [
+      {
+        "point": "Frontier / agentic AI as the core game",
+        "me_evidence": "Lists 'AI-native / agentic systems' first among what he cares about; building orbt's agents",
+        "me_source_id": "s1",
+        "them_evidence": "Public activity centers on AI and deep tech; amplifies edge AI, inference hardware, manufacturing AI",
+        "them_source_id": "s28"
+      },
+      {
+        "point": "Helping startups scale across borders / globally",
+        "me_evidence": "Cross-border consumer-goods go-to-market for Korean F&B & cosmetics expanding overseas",
+        "me_source_id": "s1",
+        "them_evidence": "Billed to speak on 'global AI trends and how startups can scale globally' at KIP × Microsoft session",
+        "them_source_id": "s32"
+      }
+    ],
+    "similar_traits": [
+      {
+        "trait": "Proof-over-narrative orientation",
+        "me_signal": "'Olympiad Medalist + CTO is how I frame myself; proof over adjectives'",
+        "them_signal": "Built a deep technical base (stats consulting → data science → AI research) before VC; values 'real technical substance over narrative'",
+        "framework": "comms-accommodation",
+        "basis": "inferred"
+      },
+      {
+        "trait": "Conscientiousness (high)",
+        "me_signal": "'I ship, but I want the reasoning to hold up' — lean, fast, rigorous",
+        "them_signal": "Methodically sequenced a technical career before moving into investing",
+        "framework": "Big Five",
+        "basis": "inferred"
+      }
+    ],
+    "complementary_traits": [
+      {
+        "trait": "Builder depth vs. capital + scaling lens",
+        "me_signal": "Technical engine of orbt — architects the agentic 'intelligence engine'",
+        "them_signal": "Principal at a ~US$4B-AUM VC who frames perspectives on how startups scale globally",
+        "why_it_helps": "Sunwoo can answer 'how does it actually work' to a depth most founders can't, and Sung can map that into a global-scaling and funding thesis — each fills the other's blind spot."
+      },
+      {
+        "trait": "Conviction style: rigor-first vs. contrarian bet",
+        "me_signal": "Trusts durable partnerships over flashy new ideas; wants reasoning to hold up",
+        "them_signal": "Backed quantum 'when no one in Korea was willing to look at it' — rewards non-consensus conviction",
+        "why_it_helps": "If Sunwoo can frame orbt's intelligence engine as a defensible non-consensus bet (not just a services play), it directly meets Sung's deal-making instinct."
+      }
+    ],
+    "potential_friction": [
+      {
+        "point": "Thesis-fit gap: applied consumer-goods AI vs. infrastructure-grade deep tech",
+        "me_signal": "orbt runs strategy and ad creative for F&B and cosmetics brands, delivered via Slack — applied/services-flavored AI",
+        "them_signal": "Amplifies quantum, inference hardware, on-device/edge and manufacturing AI — infrastructure deep tech",
+        "how_to_navigate": "Lead with the 'intelligence-without-search / decision-testing' engine as the defensible tech core, not the consulting wrapper; show why the IP, not the service, is the moat."
+      },
+      {
+        "point": "Both default to driving / being right",
+        "me_signal": "INTJ, frames self by rigor and being the technical authority",
+        "them_signal": "ENTJ investor who frames a vindicated contrarian call as personal conviction",
+        "how_to_navigate": "Treat probing questions as a quality test, not a challenge; concede unknowns explicitly — admitting one open risk will buy more credibility than defending everything."
+      }
+    ],
+    "interaction_simulation": {
+      "opening_30s": "Skip the pitch theater — open on the technical substance: 'orbt's engine does decision-testing for D2C without search.' His data-science/AI-research background means he'll engage on architecture in seconds.",
+      "likely_arc": "Fast convergence on AI mechanics and rigor, then Sung steers toward scale, defensibility, and global expansion — where Sunwoo's cross-border GTM and Meet the Drapers / pre-seed proof points reinforce the case.",
+      "where_it_could_stall": "If it reads as a consulting/services business rather than a deep-tech product, Sung's deep-tech filter may cool; also if both lock into authority mode and stop asking questions.",
+      "how_to_adapt": "Frame orbt's IP as the non-consensus bet, name one hard open problem honestly, and tie the cross-border product explicitly to his 'how startups scale globally' frame."
+    },
+    "honest_gaps": [
+      "chemistry is a low-confidence inference from public text, not a relationship prediction",
+      "Sung's side is thinner (coverage 0.55) and his Openness/communication style is only weakly inferable",
+      "no evidence either has interacted; founder–investor power asymmetry not modeled here"
+    ],
+    "me_name": "Sunwoo Ju"
+  },
+  "slug": "dongwon-sung-korea-investment-partners",
+  "durationMs": 226845,
+  "nSources": 32,
+  "created_at": "2026-06-18T06:57:56.701Z"
+}
