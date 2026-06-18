@@ -1,0 +1,11 @@
+.env
+.env.*
+node_modules/
+.next/
+sims/
+*.log
+ralph_run_*.log
+
+# runtime feedback log
+data/feedback.jsonl
+*.tsbuildinfo
