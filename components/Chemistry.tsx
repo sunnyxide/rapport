@@ -9,7 +9,13 @@ import type { Chemistry as ChemistryType } from "@/lib/types";
 export function ChemistryBlock({ chem }: { chem: ChemistryType }) {
   const [on, setOn] = useState(true);
   const meName = chem.me_name || "Me";
-  const insufficient = chem.chemistry_score <= 0 && chem.shared_interests.length === 0;
+  // Defensive: chemistry comes from looseJson and may omit keys — never let a
+  // missing field crash the whole result view.
+  const score = chem.chemistry_score ?? 0;
+  const shared = chem.shared_interests ?? [];
+  const complementary = chem.complementary_traits ?? [];
+  const friction = chem.potential_friction ?? [];
+  const insufficient = score <= 0 || shared.length === 0;
 
   return (
     <section className="mb-7 border border-accent">
@@ -28,7 +34,7 @@ export function ChemistryBlock({ chem }: { chem: ChemistryType }) {
             <>
               <div className="flex flex-wrap items-end gap-5">
                 <div>
-                  <div className="font-serif text-5xl leading-none text-accent">{chem.chemistry_score.toFixed(1)}</div>
+                  <div className="font-serif text-5xl leading-none text-accent">{score.toFixed(1)}</div>
                   <div className="font-mono text-[9px] text-muted">/10 · heuristic</div>
                 </div>
                 <p className="min-w-0 flex-1 text-[15px] leading-snug">{chem.overall_read}</p>
@@ -41,7 +47,7 @@ export function ChemistryBlock({ chem }: { chem: ChemistryType }) {
               )}
 
               <Block title="Shared ground">
-                {chem.shared_interests.map((s, i) => (
+                {shared.map((s, i) => (
                   <li key={i} className="mb-2 leading-snug">
                     {s.point}
                     <span className="mt-0.5 block font-mono text-[11px] text-muted">
@@ -52,7 +58,7 @@ export function ChemistryBlock({ chem }: { chem: ChemistryType }) {
               </Block>
 
               <Block title="Complementary">
-                {chem.complementary_traits.map((c, i) => (
+                {complementary.map((c, i) => (
                   <li key={i} className="mb-2 leading-snug">
                     <span className="font-medium">{c.trait}</span> — {c.why_it_helps}
                     <span className="mt-0.5 block font-mono text-[11px] text-muted">↳ you: {c.me_signal} · them: {c.them_signal}</span>
@@ -61,7 +67,7 @@ export function ChemistryBlock({ chem }: { chem: ChemistryType }) {
               </Block>
 
               <Block title="Potential friction">
-                {chem.potential_friction.map((f, i) => (
+                {friction.map((f, i) => (
                   <li key={i} className="mb-2 leading-snug">
                     {f.point} — <span className="italic">{f.how_to_navigate}</span>
                   </li>

@@ -58,8 +58,11 @@ export async function videoTrack(id: ResolvedIdentity, emit: Emit): Promise<Sour
         date: v.date || "",
         snippet: text.slice(0, 6000),
         type: "youtube",
-        relation_to_target: "by_target", // the target's own spoken words
-        author_handle: id.resolved_handle || "",
+        // A bare name-search match is NOT verified to be the target — tag
+        // about_target so Gate#4's Stage-2 judge evaluates it (and can demote a
+        // same-name person's interview to third_party). Never assume by_target.
+        relation_to_target: "about_target",
+        author_handle: "",
       });
       hits.push(h);
       emit({ stage: "transcript", status: "hit", host: h.host, title: h.title, quotes: Math.round(text.length / 400) });

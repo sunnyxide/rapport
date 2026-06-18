@@ -82,6 +82,12 @@ export async function looseJson<T>(a: LooseArgs): Promise<T> {
     const repaired = await call(
       `Your previous output was not valid JSON. Re-emit the SAME content as a single valid JSON object only.\n\n${raw.slice(0, 12000)}${directive}`,
     );
-    return JSON.parse(extractJson(repaired)) as T;
+    try {
+      return JSON.parse(extractJson(repaired)) as T;
+    } catch {
+      // Both attempts failed (usually truncation). Never let JSON.parse escape —
+      // throw a clear error the pipeline degrades to a limited_data card.
+      throw new Error("model did not return valid JSON after one repair attempt");
+    }
   }
 }

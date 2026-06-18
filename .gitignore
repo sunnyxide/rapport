@@ -9,3 +9,4 @@ ralph_run_*.log
 # runtime feedback log
 data/feedback.jsonl
 *.tsbuildinfo
+.vercel

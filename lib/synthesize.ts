@@ -50,5 +50,60 @@ export async function synthesize(input: SynthInput): Promise<Persona> {
     effort: synthEffort(mode),
     maxTokens: 16000,
   });
-  return { ...persona, output_lang };
+  return normalizePersona(persona, identity, output_lang);
+}
+
+// Defensive normalize: the model may omit keys (esp. when told to return fewer
+// items + limited_data). The downstream gates + UI dereference these without
+// guards, so default EVERY collection to [] and every nested object to a fully
+// shaped value here — immutably. One cheap pass kills the whole crash class.
+function normalizePersona(p: Partial<Persona>, identity: ResolvedIdentity, output_lang: OutputLang): Persona {
+  const br = p.behavioral_read || ({} as Persona["behavioral_read"]);
+  const pb = p.sales_playbook || ({} as Persona["sales_playbook"]);
+  const mbti = br.predicted_mbti || ({} as Persona["behavioral_read"]["predicted_mbti"]);
+  return {
+    status: p.status || "ok",
+    output_lang,
+    candidates: p.candidates || [],
+    the_one_thing: p.the_one_thing || "",
+    identity: {
+      name: p.identity?.name || identity.name,
+      title: p.identity?.title || identity.title || "",
+      company: p.identity?.company || identity.company || "",
+      location: p.identity?.location || identity.location || "",
+      confidence: p.identity?.confidence ?? identity.confidence ?? 0,
+      resolved_handle: p.identity?.resolved_handle || identity.resolved_handle || "",
+      photo_url: p.identity?.photo_url || "",
+      photo_source_url: p.identity?.photo_source_url || "",
+      photo_provenance: p.identity?.photo_provenance || "none",
+    },
+    snapshot: p.snapshot || "",
+    whats_new: p.whats_new || "",
+    recent_activity: p.recent_activity || [],
+    top_moves: p.top_moves || [],
+    non_obvious: p.non_obvious || { insight: "", source_id: "" },
+    career_arc: p.career_arc || [],
+    skills_expertise: p.skills_expertise || [],
+    notable_quotes: p.notable_quotes || [],
+    sales_playbook: {
+      best_hook: pb.best_hook || { point: "", evidence: "", source_id: "", basis: "inferred" },
+      what_they_care_about: pb.what_they_care_about || [],
+      likely_objections: pb.likely_objections || [],
+      approach_do: pb.approach_do || [],
+      approach_avoid: pb.approach_avoid || [],
+      shared_hooks: pb.shared_hooks || [],
+    },
+    honest_gaps: p.honest_gaps || [],
+    behavioral_read: {
+      note: br.note || "",
+      method_note: br.method_note || "",
+      big_five: br.big_five || [],
+      communication_adaptation: br.communication_adaptation || "",
+      predicted_mbti: { type: mbti.type || "", label: mbti.label || "", basis_per_letter: mbti.basis_per_letter || [] },
+      likely_likes: br.likely_likes || [],
+      likely_dislikes: br.likely_dislikes || [],
+    },
+    sources: p.sources || [],
+    coverage_confidence: p.coverage_confidence ?? 0,
+  };
 }

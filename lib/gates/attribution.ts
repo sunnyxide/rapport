@@ -58,6 +58,11 @@ export async function gateAttribution(
   persona.behavioral_read.big_five.forEach((t) => t.source_id && cited.add(t.source_id));
   persona.behavioral_read.predicted_mbti.basis_per_letter.forEach((b) => b.source_id && cited.add(b.source_id));
   persona.sales_playbook.what_they_care_about.forEach((w) => w.source_id && cited.add(w.source_id));
+  // top_moves (the headline) + non_obvious are INTERPRETIVE claims — gate them too
+  // so a same-name third_party source can't back the dossier's lead. (career_arc /
+  // recent_activity are facts — third_party is allowed to support those.)
+  persona.top_moves.forEach((m) => m.source_id && cited.add(m.source_id));
+  if (persona.non_obvious?.source_id) cited.add(persona.non_obvious.source_id);
 
   const ambiguous = fetched.filter(
     (s) => cited.has(s.id) && !/linkedin\.com\/(posts|in)\//i.test(s.url) && rel.get(s.id) !== "by_target",
@@ -103,6 +108,20 @@ export async function gateAttribution(
     return { ...w, basis: "inferred" as const, evidence: `(reported by ${h ? "@" + h : "third party"}) ${w.evidence}` };
   });
 
+  // top_moves: the headline. A move backed ONLY by a same-name third_party source
+  // must not lead the dossier — drop it (Gate#4's core promise).
+  const topMovesKept = persona.top_moves.filter((m) => {
+    if (eligible(m.source_id)) return true;
+    emit({ stage: "gate", status: "info", gate: 4, message: `dropped top move "${m.trait}" — source @${authorHandle(m.source_id)} is not the target` });
+    return false;
+  });
+
+  // non_obvious: interpretive insight — blank it if its only source is third_party.
+  const nonObvious =
+    persona.non_obvious?.source_id && !eligible(persona.non_obvious.source_id)
+      ? { insight: "", source_id: "" }
+      : persona.non_obvious;
+
   // Propagate Stage-1/2 relations into rendered sources (badges reflect truth).
   const sources = persona.sources.map((s) => ({ ...s, relation_to_target: rel.get(s.id) ?? s.relation_to_target }));
 
@@ -122,6 +141,8 @@ export async function gateAttribution(
   return {
     ...persona,
     notable_quotes: quotesKept,
+    top_moves: topMovesKept,
+    non_obvious: nonObvious,
     sales_playbook: { ...persona.sales_playbook, what_they_care_about: careAbout },
     behavioral_read: {
       ...persona.behavioral_read,
