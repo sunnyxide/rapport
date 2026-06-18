@@ -7,7 +7,7 @@
 A **source-traced person dossier** + your **chemistry** with them, in **~90 seconds**.
 Every claim is clickable. Hallucination is gated out.
 
-<!-- LIVE_DEMO -->**▶ Live demo:** _coming — Vercel URL_ · **Pitch:** 3-min live walkthrough · Built in **2 hours** at **Push to Prod Seoul** (Anthropic × Replit × KIP)
+**▶ [Live demo](https://rapport-delta-green.vercel.app)** · **Pitch:** 3-min live walkthrough · Built in **2 hours** at **Push to Prod Seoul** (Anthropic × Replit × KIP)
 
 ![Rapport showcase](docs/screenshots/showcase.png)
 
