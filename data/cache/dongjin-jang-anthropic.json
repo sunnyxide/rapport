@@ -1,0 +1,533 @@
+{
+  "persona": {
+    "output_lang": "en",
+    "status": "ok",
+    "candidates": [],
+    "the_one_thing": "He personally built and publicly demoed deep-research agents (Bedrock 'Manus' deep research, sample-deep-insight, RAG-over-complex-docs) before joining Anthropic — so walk in with orbt's actual agent architecture and ask how he'd build it on Claude, NOT a Claude-capabilities pitch. (High confidence; basis: his own authored demo posts s16/s17/s19.)",
+    "identity": {
+      "name": "Dongjin Jang",
+      "title": "Research Engineer (seed) — sources list 'Member of Technical Staff at Anthropic | Founding member, Korea office' / 'Applied AI Architect'",
+      "company": "Anthropic",
+      "location": "San Francisco, CA (per seed) — LinkedIn and role signals point to Seoul / Anthropic Korea office",
+      "confidence": 0.92,
+      "resolved_handle": "dongjin-jang-kr",
+      "photo_url": "https://media.licdn.com/dms/image/v2/D4D03AQEvZVR5ZcL00g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1682608026042?e=2147483647&v=beta&t=08wuQpreOlWxpC__s_YbX_OGaJYM8DjfPJcamwOMh6c",
+      "photo_source_url": "https://kr.linkedin.com/in/dongjin-jang-kr",
+      "photo_provenance": "linkedin"
+    },
+    "snapshot": "Dongjin Jang (장동진), Ph.D. (KAIST), is at Anthropic — his own recent posts list him as Member of Technical Staff and a founding member of Anthropic's Korea office (the seed lists Research Engineer, SF). Before Anthropic he was an Applied AI Architect at AWS, where he built and publicly demoed deep-research agents, RAG-over-complex-documents, and report-automation systems on Amazon Bedrock and co-authored AWS's Contextual Retrieval guide. He is a recurring conference speaker (Seoul Meta Week, AWS Summit Seoul) and hackathon host (Push to Prod Seoul).",
+    "whats_new": "In roughly the last 12 months he crossed from the AWS/Bedrock partner side to Anthropic itself as a founding member of its Korea office (MTS), and is now producing Anthropic/Claude content at AWS Summit Seoul (post dated May 2026) and co-hosting the Push to Prod Seoul hackathon (Anthropic x Replit x Korea Investment). That pivot — from building ON Claude via Bedrock to being inside Anthropic — is the key recency anchor.",
+    "recent_activity": [
+      {
+        "what": "Posted AWS Summit Seoul Anthropic/Claude content; bio reads 'MTS at Anthropic | Founding member, Korea office'",
+        "date": "2026-05-19",
+        "source_id": "s27"
+      },
+      {
+        "what": "Listed as host/organizer for Push to Prod Seoul hackathon (Anthropic x Replit x Korea Investment)",
+        "date": "",
+        "source_id": "s29"
+      },
+      {
+        "what": "Posted AWS AI X Industry Week 2025 session (incl. LG전자)",
+        "date": "2025-10-13",
+        "source_id": "s35"
+      },
+      {
+        "what": "Shared aws-samples/sample-deep-insight repo",
+        "date": "",
+        "source_id": "s19"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "Deep-research agent builder",
+        "importance_score": 0.95,
+        "fact": "Authored multiple hands-on demos: deep research on Bedrock 'Manus', data-analysis/report automation, RAG over complex documents (text+table), and a sample-deep-insight repo.",
+        "source_id": "s16",
+        "inference": "He has personally engineered the exact problem orbt is building — multi-step research/report agents — so he will evaluate orbt's design as a practitioner, not a buyer hearing about agents for the first time.",
+        "move": "Open with orbt's concrete agent architecture (planner / retriever / synthesis-report layers, how country-by-country research is decomposed) and ask how he'd structure those stages natively on Claude. Treat it as an architecture review, not a demo-to-impress."
+      },
+      {
+        "trait": "Anthropic Korea founding member",
+        "importance_score": 0.8,
+        "fact": "His own bio: 'Member of Technical Staff at Anthropic | Founding member, Korea office'; he hosts Korea developer events (Push to Prod Seoul).",
+        "source_id": "s27",
+        "inference": "Part of his mandate is growing Korean developer/startup adoption of Claude — a Seoul-based, Claude-native agentic product like orbt is directly aligned with what he's there to cultivate.",
+        "move": "Frame orbt as a candidate Korea-based Claude-native flagship/reference case and surface the shared Korea ecosystem ground; ask what support (credits, hackathon presence, co-marketing) the Korea office offers early builders."
+      },
+      {
+        "trait": "AWS-Bedrock-to-Anthropic insider",
+        "importance_score": 0.7,
+        "fact": "Co-authored AWS's Amazon Bedrock Contextual Retrieval guide and built his deep-research demos on Bedrock; then joined Anthropic directly.",
+        "source_id": "s36",
+        "inference": "He knows the Claude-on-Bedrock enterprise path AND the direct Anthropic-API path intimately, including retrieval/cost/latency tradeoffs.",
+        "move": "Ask his candid view on Bedrock vs. direct Anthropic API for orbt's agent stack and on retrieval design (he literally wrote the contextual-retrieval guide). Do not oversimplify the infra — he'll spot it."
+      }
+    ],
+    "non_obvious": {
+      "insight": "He built his deep-research and RAG agent demos as an AWS Applied AI Architect on Amazon Bedrock (i.e. consuming Claude through the partner channel) through 2025 — and then joined Anthropic directly as a founding member of its Korea office. He has lived both sides of the 'how do you actually ship Claude agents in enterprise' question, which is rare and worth mining.",
+      "source_id": "s36"
+    },
+    "career_arc": [
+      {
+        "period": "before AWS",
+        "org": "KAIST",
+        "role": "Ph.D. (ML/DL; Bio and Brain Engineering signal)",
+        "what_they_built": "ML/DL modeling and recommender systems research",
+        "source_id": "s1"
+      },
+      {
+        "period": "through ~2025",
+        "org": "AWS",
+        "role": "Applied AI Architect",
+        "what_they_built": "Deep-research agents, RAG over complex documents, report automation on Amazon Bedrock; co-authored Bedrock Contextual Retrieval guide; AWS Summit/Industry Week sessions",
+        "source_id": "s36"
+      },
+      {
+        "period": "~2025–present",
+        "org": "Anthropic",
+        "role": "Member of Technical Staff / Applied AI Architect; founding member, Korea office",
+        "what_they_built": "Anthropic/Claude developer presence in Korea; hackathons (Push to Prod Seoul)",
+        "source_id": "s27"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "Agentic deep-research and report-automation systems",
+        "source_id": "s16",
+        "basis": "stated"
+      },
+      {
+        "point": "RAG over complex documents (text + tables)",
+        "source_id": "s18",
+        "basis": "stated"
+      },
+      {
+        "point": "Amazon Bedrock / Contextual Retrieval (co-author of AWS guide)",
+        "source_id": "s36",
+        "basis": "stated"
+      },
+      {
+        "point": "ML/DL modeling and recommender systems",
+        "source_id": "s1",
+        "basis": "stated"
+      },
+      {
+        "point": "Industrial/enterprise LLM & VLM applications",
+        "source_id": "s28",
+        "basis": "stated"
+      }
+    ],
+    "notable_quotes": [],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "Lead with orbt's deep-research agent architecture and ask how he'd build it natively on Claude.",
+        "evidence": "He authored deep-research/RAG/report-automation demos himself",
+        "source_id": "s16",
+        "basis": "stated"
+      },
+      "what_they_care_about": [
+        {
+          "point": "Multi-step deep-research and report-automation agents",
+          "evidence": "Posted 'deep research based on Bedrock Manus' + report-automation demos",
+          "source_id": "s17",
+          "basis": "stated"
+        },
+        {
+          "point": "Retrieval quality over complex/structured documents",
+          "evidence": "Posted 'RAG over complex documents (text, table)'; co-wrote Contextual Retrieval guide",
+          "source_id": "s18",
+          "basis": "stated"
+        },
+        {
+          "point": "Real industrial/enterprise AI deployment",
+          "evidence": "Speaker session 'How Recent Advances in LLMs and VLMs Are Transforming Industrial AI'",
+          "source_id": "s28",
+          "basis": "stated"
+        },
+        {
+          "point": "Growing Korea's Claude developer ecosystem",
+          "evidence": "Founding member of Anthropic Korea office; hosts Push to Prod Seoul",
+          "source_id": "s29",
+          "basis": "stated"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "Is orbt's product genuine agentic depth or a thin prompt-wrapper over Claude?",
+          "counter": "Show the actual multi-agent decomposition (country-by-country research → revenue/ad-creative pipelines) and where reasoning/tool-use lives — he built similar pipelines and will respect depth, not vision.",
+          "source_id": "s16"
+        },
+        {
+          "objection": "Why does this need frontier Claude vs. a cheaper retrieval stack on Bedrock?",
+          "counter": "He co-authored the Bedrock retrieval guide; engage on the tradeoff directly — where the agentic reasoning genuinely needs frontier capability vs. where retrieval/automation suffices.",
+          "source_id": "s36"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Bring a running demo or concrete architecture, not slideware",
+          "evidence": "Every one of his authored posts is a hands-on demo",
+          "source_id": "s19",
+          "basis": "inferred"
+        },
+        {
+          "point": "Talk retrieval and document-grounding specifics",
+          "evidence": "Authored RAG-over-complex-docs + Contextual Retrieval guide",
+          "source_id": "s18",
+          "basis": "stated"
+        },
+        {
+          "point": "Engage on the Korea office / Korean ecosystem angle",
+          "evidence": "Founding member Korea office; hosts Seoul hackathon",
+          "source_id": "s27",
+          "basis": "stated"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Don't pitch Claude's capabilities to him — he works at Anthropic and built on it",
+          "evidence": "MTS at Anthropic, ex-AWS Bedrock architect",
+          "source_id": "s27",
+          "basis": "inferred"
+        },
+        {
+          "point": "Don't lead with adjectives/vision before the engineering",
+          "evidence": "His public footprint is demos and architecture, never marketing",
+          "source_id": "s16",
+          "basis": "inferred"
+        },
+        {
+          "point": "Don't assume he's a generic SF AE — he's a hands-on architect tied to the Korea office",
+          "evidence": "Seoul/Korea-office signals in his own bio",
+          "source_id": "s1",
+          "basis": "inferred"
+        }
+      ],
+      "shared_hooks": [
+        {
+          "point": "Both build agentic AI systems that run multi-step research/work, not chat features",
+          "evidence": "orbt: AI agents run country-by-country strategy/revenue/ad-creative; Dongjin: deep-research/report-automation agent demos",
+          "source_id": "s16",
+          "basis": "stated"
+        },
+        {
+          "point": "Both are anchored in Korea's AI/startup ecosystem",
+          "evidence": "orbt is Seoul-based serving Korean F&B/cosmetics brands; Dongjin is founding member of Anthropic's Korea office and hosts Seoul hackathons",
+          "source_id": "s29",
+          "basis": "stated"
+        }
+      ]
+    },
+    "honest_gaps": [
+      "Title/location conflict: seed says 'Research Engineer, San Francisco' but his own LinkedIn posts say 'Member of Technical Staff at Anthropic | Founding member, Korea office' and LinkedIn lists Seoul — confirm his exact current role and base live.",
+      "No verbatim quotes retrievable — LinkedIn snippets returned 'We cannot provide a description for this page,' so voice/tone is inferred from demo subject-matter, not direct quotes.",
+      "Exact scope of his Anthropic work (customer-facing applied architect vs. internal research) is not pinned down from sources.",
+      "s37 (briandj93, '#퇴사', 'Entrepreneur/Venture Capitalist', 2022) and s38 (kwonyul-choi post) are handle-mismatched to resolved_handle and excluded as voice evidence; the 'entrepreneur/VC' framing may be a different identity and was NOT used.",
+      "Several search results (Jang Jin film director, Jang Jin-sung poet, Jang Yeong-jin, Yoon Dongju, Jang Dong-ju celebrity, Dong Jin Kim, the Hamilton-Ontario Dongjin Jang s14) are different people and were quarantined."
+    ],
+    "behavioral_read": {
+      "note": "",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Conscientiousness",
+          "signal": "Repeatedly ships reproducible hands-on demos and maintains ~30 GitHub repos; co-authored a formal AWS engineering guide",
+          "source_id": "s4",
+          "confidence": 0.75,
+          "basis": "observed-behavior"
+        },
+        {
+          "trait": "Extraversion",
+          "signal": "Recurring conference speaker (Seoul Meta Week, AWS Summit Seoul) and active hackathon host (Push to Prod Seoul)",
+          "source_id": "s28",
+          "confidence": 0.6,
+          "basis": "observed-behavior"
+        }
+      ],
+      "communication_adaptation": "Lead with concrete artifacts — architecture, code, a running demo — and let him interrogate the engineering; he rewards builders who show rather than tell. Skip Claude basics.",
+      "predicted_mbti": {
+        "type": "ENTJ",
+        "label": "illustrative · public-signal estimate · not a clinical diagnosis",
+        "basis_per_letter": [
+          {
+            "letter": "E",
+            "signal": "Frequent public speaking + hosts hackathons",
+            "source_id": "s29"
+          },
+          {
+            "letter": "N",
+            "signal": "Builds toward frontier agentic/deep-research architectures (weak signal — could be S given applied/industrial focus)",
+            "source_id": "s16"
+          },
+          {
+            "letter": "T",
+            "signal": "Engineering-first footprint: retrieval guides, demos, repos — argues from systems, not feelings",
+            "source_id": "s36"
+          },
+          {
+            "letter": "J",
+            "signal": "Organizes and ships structured demos and events; founding-member/org-building role",
+            "source_id": "s27"
+          }
+        ]
+      },
+      "likely_likes": [
+        {
+          "point": "Concrete working demos and architecture diagrams",
+          "evidence": "His entire public output is hands-on demos"
+        },
+        {
+          "point": "Specific retrieval/agent-design discussion",
+          "evidence": "Authored RAG and Contextual Retrieval material"
+        },
+        {
+          "point": "Korea-ecosystem builders",
+          "evidence": "Founding member of Anthropic Korea office; hosts Seoul events"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Claude 101 / capability pitches",
+          "evidence": "He builds Claude/agent systems for a living"
+        },
+        {
+          "point": "Vision-heavy, engineering-light pitches",
+          "evidence": "Public footprint is all implementation, no marketing"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://kr.linkedin.com/in/dongjin-jang-kr",
+        "title": "Dongjin Jang, Ph.D. - Anthropic | LinkedIn",
+        "date": "2026-01-09",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "education (KAIST), ML/DL & recommender background, location, GitHub link"
+      },
+      {
+        "id": "s3",
+        "url": "https://www.researchgate.net/profile/Dongjin-Jang",
+        "title": "Dongjin JANG | KAIST Bio and Brain Engineering",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "KAIST research profile (low-confidence match)"
+      },
+      {
+        "id": "s4",
+        "url": "https://github.com/dongjin-ml",
+        "title": "dongjin-ml (Dongjin Jang) · GitHub",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Applied AI Architect @ Anthropic, ~30 repos (Conscientiousness signal)"
+      },
+      {
+        "id": "s16",
+        "url": "https://www.linkedin.com/posts/dongjin-jang-kr_demo-en-deep-research-based-on-bedrock-manus-activity-7331508390147354624-372n",
+        "title": "Deep research based on Bedrock Manus demo",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "deep-research agent building evidence"
+      },
+      {
+        "id": "s17",
+        "url": "https://kr.linkedin.com/posts/dongjin-jang-kr_demo-bedrock-manus-data-analysis-and-report-activity-7321464450039926785-hd1D",
+        "title": "Data analysis and Report Automation demo",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "report-automation agent evidence"
+      },
+      {
+        "id": "s18",
+        "url": "https://kr.linkedin.com/posts/dongjin-jang-kr_rag-over-complex-documents-text-table-activity-7176126997822107648-g1Ga",
+        "title": "RAG over complex documents (text, table)",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "retrieval/RAG focus evidence"
+      },
+      {
+        "id": "s19",
+        "url": "https://kr.linkedin.com/posts/dongjin-jang-kr_github-aws-samplessample-deep-insight-activity-7407226004164796416-LRcl",
+        "title": "aws-samples/sample-deep-insight",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "deep-insight repo / shipping behavior"
+      },
+      {
+        "id": "s27",
+        "url": "https://www.linkedin.com/posts/dongjin-jang-kr_awssummitseoul-anthropic-claude-activity-7462609425980211200-oUMU",
+        "title": "AWS Summit Seoul / Anthropic / Claude post",
+        "date": "2026-05-19",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "current title 'MTS at Anthropic | Founding member, Korea office'; whats_new"
+      },
+      {
+        "id": "s28",
+        "url": "https://seoulmetaweek.com/en/metacon/program",
+        "title": "Seoul Meta Week — Anthropic | Applied AI Architect",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "speaker role + Industrial AI focus + Extraversion signal"
+      },
+      {
+        "id": "s29",
+        "url": "https://luma.com/elhey8nv?locale=ko",
+        "title": "Push to Prod SEOUL hackathon",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Korea office hackathon hosting; ecosystem hook"
+      },
+      {
+        "id": "s35",
+        "url": "https://kr.linkedin.com/posts/dongjin-jang-kr_aws-ai-x-industry-week-2025-%EC%84%B8%EC%85%98-%EC%95%88%EB%82%B4-lg%EC%A0%84%EC%9E%90%EC%99%80-activity-7383688556134899712-g1bD",
+        "title": "AWS AI X Industry Week 2025 (LG전자 session)",
+        "date": "2025-10-13",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "enterprise/industrial AI activity"
+      },
+      {
+        "id": "s36",
+        "url": "https://aws.amazon.com/ko/blogs/tech/amazon-bedrock-contextual-retrieval/",
+        "title": "Amazon Bedrock Contextual Retrieval (co-author)",
+        "date": "2025-04-07",
+        "relation_to_target": "by_target",
+        "author_handle": "",
+        "used_for": "Bedrock retrieval expertise; AWS-to-Anthropic arc"
+      },
+      {
+        "id": "s15",
+        "url": "https://www.linkedin.com/posts/dongjin-jang-kr_awsome-awards-all-star-recipient-was-issued-activity-7339415274124734464-cgDP",
+        "title": "AWSome Awards All Star recipient",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "dongjin-jang-kr",
+        "used_for": "AWS recognition (career arc context)"
+      },
+      {
+        "id": "s37",
+        "url": "https://kr.linkedin.com/posts/briandj93_%ED%87%B4%EC%82%AC-activity-7014849013678047232-3Xqq",
+        "title": "#퇴사 post (briandj93)",
+        "date": "2022-12-30",
+        "relation_to_target": "third_party",
+        "author_handle": "briandj93",
+        "used_for": "EXCLUDED — handle mismatch + possible different identity ('Entrepreneur/VC'); not used for voice"
+      },
+      {
+        "id": "s14",
+        "url": "https://www.linkedin.com/in/dongjin-jang-4135bb139/",
+        "title": "Dongjin Jang - Hamilton, Ontario",
+        "date": "",
+        "relation_to_target": "third_party",
+        "author_handle": "dongjin-jang-4135bb139",
+        "used_for": "EXCLUDED — different person (quarantined)"
+      }
+    ],
+    "coverage_confidence": 0.6
+  },
+  "chemistry": {
+    "overall_read": "Two Seoul-based, proof-driven AI builders with real topical overlap on agentic/deep-research systems — likely a fast, substantive technical rapport, with the main caveat being an insider/builder asymmetry (Anthropic-side vs building-on-the-model) and Sunwoo's loyalty-gated guardedness. Moderate confidence.",
+    "chemistry_confidence": 0.55,
+    "chemistry_score": 7.8,
+    "mbti_compat": {
+      "me_type": "INTJ",
+      "them_type": "ENTJ",
+      "read": "Both Te-decisive, strategy-first and execution-biased, so they align quickly on what to build and ship; the friction risk is two strong-willed 'TJ' operators each defaulting to their own technical call. Them's E supplies reach/energy to me's heads-down I.",
+      "label": "directional"
+    },
+    "shared_interests": [
+      {
+        "point": "Building agentic deep-research / decision-intelligence systems",
+        "me_evidence": "Heads-down on the 'intelligence engine' — intelligence-without-search / decision-testing for D2C; cares about 'AI-native / agentic systems'",
+        "me_source_id": "s1",
+        "them_evidence": "Posts and demos 'deep research based on Bedrock Manus' + report-automation agents; cares about 'multi-step deep-research and report-automation agents'",
+        "them_source_id": "s17"
+      },
+      {
+        "point": "Growing the Korean AI/startup ecosystem from Seoul",
+        "me_evidence": "Names 'The Korean startup ecosystem' as an interest; runs orbt, a Seoul AI-native platform",
+        "me_source_id": "s1",
+        "them_evidence": "Founding member of Anthropic's Korea office and co-hosts Push to Prod Seoul to grow Korea's Claude developer ecosystem",
+        "them_source_id": "s29"
+      }
+    ],
+    "similar_traits": [
+      {
+        "trait": "High conscientiousness, proof-over-rhetoric",
+        "me_signal": "'Olympiad Medalist + CTO… proof over adjectives'; 'I ship, but I want the reasoning to hold up'",
+        "them_signal": "Ships reproducible hands-on demos, maintains ~30 GitHub repos, co-authored a formal AWS Contextual Retrieval guide",
+        "framework": "Big Five",
+        "basis": "inferred"
+      },
+      {
+        "trait": "Strategic, execution-biased operator",
+        "me_signal": "Frames self as the technical engine; works 'lean and fast but rigorous'",
+        "them_signal": "Crossed from Bedrock-partner side into Anthropic and immediately produces summit content and hackathons",
+        "framework": "comms-accommodation",
+        "basis": "inferred"
+      }
+    ],
+    "complementary_traits": [
+      {
+        "trait": "Introverted deep-builder vs extraverted ecosystem connector",
+        "me_signal": "INTJ, heads-down 'technical engine' working lean in a tight pre-orbt team",
+        "them_signal": "Recurring conference speaker and hackathon host, founding member inside Anthropic Korea",
+        "why_it_helps": "Them can open Claude-insider doors, distribution and ecosystem reach for what me builds quietly; me supplies the deep product substance them likes to showcase."
+      },
+      {
+        "trait": "Model-provider insider vs applied product owner",
+        "me_signal": "Builds an AI-native cross-border product on top of LLMs",
+        "them_signal": "Inside Anthropic with deep RAG/agent and Bedrock retrieval expertise",
+        "why_it_helps": "A natural give-and-take: them offers frontier-model and retrieval depth, me offers a concrete F&B/cosmetics deployment surface to ground that expertise."
+      }
+    ],
+    "potential_friction": [
+      {
+        "point": "Loyalty-gated trust meets broad networking",
+        "me_signal": "'I trust durable partnerships over flashy new ideas'; ~3-year pre-orbt team, slow to open the circle",
+        "them_signal": "Moves broadly across the ecosystem as speaker/host/connector",
+        "how_to_navigate": "Them should lead with a specific technical artifact or shared problem, not a pitch; me warms to demonstrated rigor, not relationship breadth."
+      },
+      {
+        "point": "Two decisive technical leads, one whiteboard",
+        "me_signal": "INTJ CTO who insists the reasoning hold up",
+        "them_signal": "ENTJ Ph.D. with strong opinions on retrieval/agent architecture",
+        "how_to_navigate": "Anchor disagreements to benchmarks/eval data so it stays about the result, not the ego."
+      },
+      {
+        "point": "Possible evangelist-vs-peer read",
+        "me_signal": "Asks to be judged on what he actually builds; allergic to adjectives",
+        "them_signal": "Part of his role is Claude/Anthropic ecosystem promotion",
+        "how_to_navigate": "If me senses sales/evangelism, rapport stalls; them should engage as a co-builder on a concrete orbt problem to stay peer-level."
+      }
+    ],
+    "interaction_simulation": {
+      "opening_30s": "Likely meeting in a Seoul AI/startup setting; they immediately share a vocabulary — agents, deep research, RAG over messy documents. Open on the 'intelligence engine' and watch them light up about deep-research/report-automation agents.",
+      "likely_arc": "Fast technical rapport: me probes for rigor and reasoning, them answers with concrete demos and retrieval/architecture detail; conversation drifts to Korean ecosystem and Claude tooling.",
+      "where_it_could_stall": "If them stays in broad-network/evangelist mode, me's loyalty filter keeps it cordial-but-surface; or two TJ operators dig in on whose agent architecture is right.",
+      "how_to_adapt": "Them: bring one reproducible artifact and ask about a specific orbt bottleneck. Me: name a concrete retrieval/agent problem to trade on; both keep it benchmark-grounded to convert respect into collaboration."
+    },
+    "honest_gaps": [
+      "chemistry is a low-confidence inference from public text, not a relationship prediction",
+      "directional, public-signal-based; coverage is moderate on both sides (me 0.7, them 0.6) and several traits are inferred",
+      "no evidence orbt actually builds on Claude/Anthropic, so the strongest practical overlap is assumed, not confirmed"
+    ],
+    "me_name": "Sunwoo Ju"
+  },
+  "slug": "dongjin-jang-anthropic",
+  "durationMs": 239025,
+  "nSources": 38,
+  "created_at": "2026-06-18T06:04:34.037Z"
+}

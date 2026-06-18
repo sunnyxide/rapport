@@ -48,10 +48,17 @@ export async function POST(req: Request) {
   };
 
   const persona = await synthesize({ identity, sources: [selfSource], output_lang: lang, mode: "live" });
+  // A complete self-report is authoritative for the person's own voice/values —
+  // it must NOT inherit the thin-WEB-data limited_data flag (that would make every
+  // chemistry read "insufficient"). Self-reported provenance, status ok.
+  const meProfile = {
+    ...persona,
+    status: "ok" as const,
+    coverage_confidence: Math.max(persona.coverage_confidence, 0.7),
+    identity: { ...persona.identity, ...identity, photo_url: "", photo_source_url: "", photo_provenance: "none" },
+  };
   const slug = `me-${slugify(name, company)}`;
-  writeReport(slug, { ...persona, identity: { ...persona.identity, ...identity, photo_url: "", photo_source_url: "", photo_provenance: "none" } }, null, {
-    created_at: new Date().toISOString(),
-  });
+  writeReport(slug, meProfile, null, { created_at: new Date().toISOString() });
 
   return new Response(JSON.stringify({ slug }), { headers: { "Content-Type": "application/json" } });
 }

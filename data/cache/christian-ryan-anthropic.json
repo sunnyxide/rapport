@@ -1,0 +1,555 @@
+{
+  "persona": {
+    "output_lang": "en",
+    "status": "ok",
+    "candidates": [],
+    "the_one_thing": "Christian literally teaches Anthropic's public 'Prompting 101' — an iterative, 5-version, evaluate-as-you-go method — so don't pitch Claude adoption abstractly: walk in with ONE concrete orbt agent prompt and its eval, show the before/after, and ask him to critique it. (high confidence; based on his own authored/co-presented material, s9/s7/s10.)",
+    "identity": {
+      "name": "Christian Ryan",
+      "title": "Applied AI Lead, Anthropic (also referenced as Manager, Applied AI Engineering / Product Engineer)",
+      "company": "Anthropic",
+      "location": "London, UK",
+      "confidence": 0.85,
+      "resolved_handle": "christian-ryan-38549ab4",
+      "photo_url": "https://media.licdn.com/dms/image/v2/D4E03AQE0gtG4XrjTQw/profile-displayphoto-scale_200_200/B4EZtcsMpaIgAY-/0/1766786651734?e=2147483647&v=beta&t=pWK-FAGZoOJpBZwBGiqNWpGgJiKTHlPap5CR7m8onl8",
+      "photo_source_url": "https://uk.linkedin.com/in/christian-ryan-38549ab4",
+      "photo_provenance": "linkedin"
+    },
+    "snapshot": "Christian Ryan is a product engineer / Applied AI Lead on Anthropic's Applied AI team, based in London, focused on building products and teaching how to get production-quality results out of Claude and agents (s1, s9). His public output centers on one craft: turning prompts and agents from brittle 'tick-box' automation into evaluated, autonomous systems that actually do what they should (s3, s10). He came up through digital/product (KTH education, Voi Technology) rather than AI research, and now operates as Anthropic's hands-on evangelist for real-world Claude deployment (s5, s8).",
+    "whats_new": "Extremely active in public over the last ~12 months as Anthropic's prompting-and-agents teacher: co-presented 'Prompting 101' with live console demos (May 2026, s9/s27), 'Claude Design by Anthropic Labs' (Apr 2026, s23), a Spotify x Anthropic agentic-development fireside (Mar–Apr 2026, s6/s24/s25), a Weave:London talk on autonomous agents (Mar 2026, s3), and the Anthropic Builder Summit in Bengaluru (Jan 2026, s30). The throughline: he's been on a sustained tour explaining how to build, prompt, and EVALUATE agents at scale.",
+    "recent_activity": [
+      {
+        "what": "Co-presented Anthropic's 'Prompting 101' — evolving a Claude prompt through 5 versions on a real Swedish insurance-form case",
+        "date": "2026-05-01",
+        "source_id": "s9"
+      },
+      {
+        "what": "Posted on 'Claude Design by Anthropic Labs'",
+        "date": "2026-04-17",
+        "source_id": "s23"
+      },
+      {
+        "what": "Authored personal take on AI engineering, 'evangelising digital since day one of my career'",
+        "date": "2026-04-26",
+        "source_id": "s8"
+      },
+      {
+        "what": "Weave:London talk — how AI agents are becoming autonomous (rigid automation → true autonomy)",
+        "date": "2026-03-30",
+        "source_id": "s3"
+      },
+      {
+        "what": "Spotify x Anthropic fireside on agentic-first development at scale",
+        "date": "2026-04-06",
+        "source_id": "s6"
+      },
+      {
+        "what": "Attended Anthropic Builder Summit, Bengaluru",
+        "date": "2026-01-26",
+        "source_id": "s30"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "Prompt iteration is his craft, not a buzzword",
+        "importance_score": 0.9,
+        "fact": "He co-presents Anthropic's 'Prompting 101', publicly evolving a single prompt through 5 versions on a real customer case (Swedish car-accident insurance forms) (s9).",
+        "source_id": "s9",
+        "inference": "He values demonstrated, staged improvement over claims — and will instantly read whether you actually iterate or just prompt-and-pray.",
+        "move": "Bring ONE real orbt agent prompt and show its evolution (v1 → current) with what each change fixed; let him critique it. This is exactly the language he teaches in."
+      },
+      {
+        "trait": "Evaluation-obsessed",
+        "importance_score": 0.85,
+        "fact": "On the AI Sweden podcast he focuses not just on building agents but on 'how to evaluate that they do what they should' (s10); his Weave talk frames the shift from tick-box automation to verified autonomy (s3).",
+        "source_id": "s10",
+        "inference": "For agents that run country strategy and ad creative, his first real question will be 'how do you know the output is right?' — capability alone won't impress him.",
+        "move": "Lead with how orbt evaluates its agents (test cases, guardrails, human-in-loop checks), not just what they can do. Make eval the headline, not a footnote."
+      },
+      {
+        "trait": "Thinks in enterprise-scale adoption + org change",
+        "importance_score": 0.6,
+        "fact": "He sat with Spotify's chief architect to discuss what agentic-first development looks like at scale — tools, infrastructure, and the organizational shifts it demands (s6).",
+        "source_id": "s6",
+        "inference": "He's interested in how teams actually adopt and operationalize agents in production, not lab demos.",
+        "move": "Frame orbt's Slack-delivered agents as a live production-adoption story (real Korean F&B/cosmetics brands using it daily) — a concrete deployment case is what he collects and amplifies."
+      }
+    ],
+    "non_obvious": {
+      "insight": "He's an evangelist/product builder, not an AI researcher — he says he's been 'evangelising digital since day one of my career' (s8) and came from Voi Technology (s5) and a KTH (Stockholm) engineering background (s1). His canonical teaching demo even uses a Swedish insurance case (s9) and he recurs on Swedish-language outlets (s7, s10). The lens to expect: real-world adoption, deployment, and developer experience — not model internals or research novelty.",
+      "source_id": "s8"
+    },
+    "career_arc": [
+      {
+        "period": "education",
+        "org": "KTH Royal Institute of Technology",
+        "role": "Engineering (Stockholm)",
+        "what_they_built": "Technical foundation",
+        "source_id": "s1"
+      },
+      {
+        "period": "pre-Anthropic",
+        "org": "Voi Technology",
+        "role": "Prior role (Stockholm-based mobility company)",
+        "what_they_built": "Digital/product work — basis of his 'evangelising digital' self-description",
+        "source_id": "s5"
+      },
+      {
+        "period": "~2025–present",
+        "org": "Anthropic",
+        "role": "Applied AI Lead / Product Engineer, Applied AI team (London)",
+        "what_they_built": "Products, prompting/agent education, tool-building for agents",
+        "source_id": "s4"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "Production prompt engineering (staged, iterative prompt design)",
+        "source_id": "s9",
+        "basis": "stated"
+      },
+      {
+        "point": "AI agent development and evaluation",
+        "source_id": "s10",
+        "basis": "stated"
+      },
+      {
+        "point": "Building/writing effective tools for AI agents (co-author, Anthropic engineering)",
+        "source_id": "s26",
+        "basis": "stated"
+      },
+      {
+        "point": "Applied AI / product engineering",
+        "source_id": "s1",
+        "basis": "stated"
+      },
+      {
+        "point": "Technical storytelling / developer evangelism",
+        "source_id": "s8",
+        "basis": "inferred"
+      }
+    ],
+    "notable_quotes": [
+      {
+        "quote": "Love the framing of this. Personal take (coming from evangelising digital since day one of my career)…",
+        "source_id": "s8",
+        "date": "2026-04-26",
+        "why_it_matters": "Self-identifies as a digital/AI evangelist — confirms his lens is adoption and framing, not research. (original_lang: en; fragment from blocked snippet — partial.)"
+      }
+    ],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "Open by showing a real orbt agent prompt's iteration and asking for his critique",
+        "evidence": "He publicly teaches evolving a prompt through 5 versions on a real case (Prompting 101)",
+        "source_id": "s9",
+        "basis": "stated"
+      },
+      "what_they_care_about": [
+        {
+          "point": "Prompt iteration as a disciplined craft",
+          "evidence": "Walks a prompt through 5 versions live on a real customer case",
+          "source_id": "s9",
+          "basis": "stated"
+        },
+        {
+          "point": "Whether agents can be evaluated/verified",
+          "evidence": "Focuses on 'how to evaluate that agents do what they should'",
+          "source_id": "s10",
+          "basis": "stated"
+        },
+        {
+          "point": "Agentic development at production scale + the org shifts it requires",
+          "evidence": "Spotify fireside on agentic-first dev at scale",
+          "source_id": "s6",
+          "basis": "stated"
+        },
+        {
+          "point": "Concrete real-world deployment cases over abstractions",
+          "evidence": "Anchors teaching in real Swedish insurance-form workflow",
+          "source_id": "s9",
+          "basis": "inferred"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "How do you actually know your agents produce correct outputs at scale?",
+          "counter": "Show orbt's eval setup — test cases per market, guardrails, and human checkpoints in the Slack delivery loop. Lead with this; it's his first instinct.",
+          "source_id": "s10"
+        },
+        {
+          "objection": "Is this a real production deployment or a demo?",
+          "counter": "Name the live Korean F&B/cosmetics brands using orbt's agents day-to-day; he collects real adoption stories.",
+          "source_id": "s6"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Bring a working artifact and walk it step-by-step",
+          "evidence": "His whole public method is live console demos and staged iteration",
+          "source_id": "s9",
+          "basis": "stated"
+        },
+        {
+          "point": "Make evaluation the headline of how orbt builds agents",
+          "evidence": "Repeatedly stresses verifying agents do what they should",
+          "source_id": "s10",
+          "basis": "stated"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Don't frame agents as fire-and-forget 'tick-box' automation",
+          "evidence": "He explicitly contrasts rigid tick-box automation against true autonomy",
+          "source_id": "s3",
+          "basis": "stated"
+        },
+        {
+          "point": "Don't pitch abstract vision with no demo or eval behind it",
+          "evidence": "His credibility rests on concrete worked examples, not slideware",
+          "source_id": "s9",
+          "basis": "inferred"
+        }
+      ],
+      "shared_hooks": [
+        {
+          "point": "Both build AI-native agentic systems as the core product",
+          "evidence": "Christian: agents talks/tooling (s3, s26); Sunwoo: orbt is AI agents running strategy/revenue/creative",
+          "source_id": "s26",
+          "basis": "stated"
+        },
+        {
+          "point": "Both treat rigor/evaluation as the bar — judged on what ships, not adjectives",
+          "evidence": "Christian stresses evaluating agents (s10); Sunwoo wants to be judged on rigor and what he ships",
+          "source_id": "s10",
+          "basis": "inferred"
+        }
+      ]
+    },
+    "honest_gaps": [
+      "Exact title is inconsistent across sources (Applied AI Lead / Manager, Applied AI Engineering / Product Engineer) — confirm live.",
+      "No reliably-dated full timeline; Anthropic start (~2025) inferred from his 'joining Anthropic' post, not a stated date.",
+      "Most LinkedIn snippets were blocked ('we cannot provide a description'), so no verified verbatim quotes beyond one fragment (s8).",
+      "Personality read is drawn entirely from public talks/posts — directional, not a profile.",
+      "No public signal on his views about Korean market or cross-border consumer-goods specifically."
+    ],
+    "behavioral_read": {
+      "note": "",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Extraversion",
+          "signal": "Sustained public-facing cadence: Weave:London talk, Spotify fireside, AI Sweden podcast, Builder Summit, live SF demos",
+          "source_id": "s3",
+          "confidence": 0.78,
+          "basis": "observed-behavior"
+        },
+        {
+          "trait": "Conscientiousness",
+          "signal": "Teaches a structured, staged 5-version prompt method and insists on evaluating agent outputs",
+          "source_id": "s9",
+          "confidence": 0.65,
+          "basis": "observed-behavior"
+        }
+      ],
+      "communication_adaptation": "He's a teacher-by-demo — speaks in concrete, worked, iterated examples. Match him: bring a real artifact, walk it step by step, and invite his critique rather than pitching abstractly.",
+      "predicted_mbti": {
+        "type": "ENTJ",
+        "label": "illustrative · public-signal estimate · not a clinical diagnosis",
+        "basis_per_letter": [
+          {
+            "letter": "E",
+            "signal": "Relentless public talks/demos and panels",
+            "source_id": "s3"
+          },
+          {
+            "letter": "N",
+            "signal": "Frames the conceptual shift to 'true autonomous' agents / future of the field",
+            "source_id": "s3"
+          },
+          {
+            "letter": "T",
+            "signal": "Centers verification/evaluation rigor for agents",
+            "source_id": "s10"
+          },
+          {
+            "letter": "J",
+            "signal": "Structured, staged 5-version prompt methodology",
+            "source_id": "s9"
+          }
+        ]
+      },
+      "likely_likes": [
+        {
+          "point": "A concrete working prompt/agent he can dig into",
+          "evidence": "His teaching is all live console demos and iteration (s9)"
+        },
+        {
+          "point": "A clear answer to 'how do you evaluate it?'",
+          "evidence": "Emphasizes verifying agents do what they should (s10)"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Agents framed as set-and-forget 'tick-box' automation",
+          "evidence": "Explicitly contrasts that against true autonomy (s3)"
+        },
+        {
+          "point": "Vision/hype without a working artifact behind it",
+          "evidence": "His credibility rests on demos, not adjectives (s9)"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "https://uk.linkedin.com/in/christian-ryan-38549ab4",
+        "title": "Christian Ryan - Applied AI Lead @ Anthropic",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "role, location, education, snapshot"
+      },
+      {
+        "id": "s2",
+        "url": "https://github.com/ChristianRyan",
+        "title": "ChristianRyan · GitHub",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Member of Technical Staff, London confirmation"
+      },
+      {
+        "id": "s3",
+        "url": "https://www.youtube.com/watch?v=JXf8MugmNXo",
+        "title": "How AI Agents are Becoming Autonomous | Christian Ryan (Anthropic) @ Weave:London 2026",
+        "date": "2026-03-30",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "autonomy vs tick-box framing, extraversion, MBTI N"
+      },
+      {
+        "id": "s4",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_im-thrilled-to-share-that-im-joining-anthropic-activity-7303310069582983168-kllE",
+        "title": "Joining Anthropic post",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "Anthropic start (~2025)"
+      },
+      {
+        "id": "s5",
+        "url": "https://rocketreach.co/christian-ryan-email_136968249",
+        "title": "Christian Ryan | Anthropic Manager, Applied AI Engineering",
+        "date": "",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "prior role Voi Technology, title variant, London"
+      },
+      {
+        "id": "s6",
+        "url": "https://engineering.atspotify.com/2026/4/anthropic-agentic-development",
+        "title": "Let's Talk Agentic Development: Spotify x Anthropic Live",
+        "date": "2026-04-06",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "agentic dev at scale, org change, adoption lens"
+      },
+      {
+        "id": "s7",
+        "url": "https://se.linkedin.com/posts/christian-ryan-38549ab4_anthropics-tips-f%C3%B6r-claude-prompter-activity-7411783186940284928-qXFD",
+        "title": "Anthropic's tips for Claude prompts",
+        "date": "",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "prompting focus"
+      },
+      {
+        "id": "s8",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_applied-ai-engineer-activity-7454272157712412673-5fA8",
+        "title": "Applied AI Engineer (personal take)",
+        "date": "2026-04-26",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "evangelist self-description, quote fragment"
+      },
+      {
+        "id": "s9",
+        "url": "https://dev.to/bokuno_log/anthropics-prompting-101-a-practical-guide-to-building-production-quality-claude-prompts-23k4",
+        "title": "Anthropic's Prompting 101",
+        "date": "2026-05-01",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "5-version prompt method, Swedish insurance case, conscientiousness"
+      },
+      {
+        "id": "s10",
+        "url": "https://podcasts.apple.com/cr/podcast/anthropics-tips-f%C3%B6r-claude-prompter/id1554984951?i=1000743017843",
+        "title": "Anthropic's tips for Claude prompts - AI Sweden Podcast",
+        "date": "2025-12-29",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "agent evaluation focus, MBTI T"
+      },
+      {
+        "id": "s11",
+        "url": "https://www.linkedin.com/in/christian-ryan-38549ab4/",
+        "title": "Christian Ryan - Anthropic | LinkedIn",
+        "date": "2 weeks ago",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "identity confirmation"
+      },
+      {
+        "id": "s23",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_introducing-claude-design-by-anthropic-labs-activity-7450948525477146624-m0qH",
+        "title": "Introducing Claude Design by Anthropic Labs",
+        "date": "2026-04-17",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "recent activity"
+      },
+      {
+        "id": "s24",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_lets-talk-agentic-development-spotify-x-activity-7441521102654369792-rbbz",
+        "title": "Spotify x Anthropic agentic dev",
+        "date": "2026-03-22",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "agentic dev activity"
+      },
+      {
+        "id": "s25",
+        "url": "https://www.linkedin.com/posts/spotify-r%26d_thanks-to-everyone-who-tuned-into-our-fireside-activity-7444445880629424128-9P-O",
+        "title": "Spotify R&D post",
+        "date": "2026-03-30",
+        "relation_to_target": "third_party",
+        "author_handle": "spotify-r%26d",
+        "used_for": "fact corroboration (facts-only)"
+      },
+      {
+        "id": "s26",
+        "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+        "title": "Writing effective tools for AI agents—using AI agents",
+        "date": "2025-09-11",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "co-author, tool-building skill, agentic shared hook"
+      },
+      {
+        "id": "s27",
+        "url": "https://substack.com/profile/211291300-opinion-ai/note/c-249382642",
+        "title": "Opinion AI - Substack",
+        "date": "2026-04-26",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Code w/ Claude event corroboration"
+      },
+      {
+        "id": "s28",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_anthropic-activity-7411001088826531840-thum",
+        "title": "Anthropic post (70 comments)",
+        "date": "2025-12-28",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "activity signal"
+      },
+      {
+        "id": "s30",
+        "url": "https://www.linkedin.com/posts/christian-ryan-38549ab4_anthropic-builder-summit-bengaluru-anthropic-activity-7421821566994321408-zGue",
+        "title": "Anthropic Builder Summit Bengaluru",
+        "date": "2026-01-26",
+        "relation_to_target": "by_target",
+        "author_handle": "christian-ryan-38549ab4",
+        "used_for": "extraversion, recent activity"
+      }
+    ],
+    "coverage_confidence": 0.78
+  },
+  "chemistry": {
+    "overall_read": "Two builders converging on the same live problem — making AI agents that are actually evaluated and production-ready, not brittle demos — so the technical conversation should click fast; moderate confidence, since the overlap is almost entirely professional and the temperaments (public evangelist vs. heads-down proof-over-adjectives builder) cut in opposite directions.",
+    "chemistry_confidence": 0.55,
+    "chemistry_score": 7.6,
+    "mbti_compat": {
+      "me_type": "INTJ",
+      "them_type": "ENTJ",
+      "read": "Both NTJ strategists who think in systems and outcomes; the I/E split means Christian drives the room while Sunwoo drives the depth, which tends to interlock rather than compete when there's real substance on the table.",
+      "label": "directional"
+    },
+    "shared_interests": [
+      {
+        "point": "Building AI agents as the core of their work, not a side bet",
+        "me_evidence": "Lists 'AI-native / agentic systems' first among what he cares about and is building orbt's agents that run strategy and creative for brands",
+        "me_source_id": "s1",
+        "them_evidence": "'AI agent development and evaluation' as a core stated skill",
+        "them_source_id": "s10"
+      },
+      {
+        "point": "Insisting agents be evaluated/verified rather than trusted blindly — rigor over vibes",
+        "me_evidence": "'I ship, but I want the reasoning to hold up'; frames himself on demonstrated rigor",
+        "me_source_id": "s1",
+        "them_evidence": "Focuses on 'how to evaluate that agents do what they should' and teaches a disciplined, staged method",
+        "them_source_id": "s10"
+      },
+      {
+        "point": "Grounding agent work in concrete real-world deployment over abstraction",
+        "me_evidence": "Ships agents delivered through Slack for real Korean F&B & cosmetics brands expanding cross-border",
+        "me_source_id": "s1",
+        "them_evidence": "Anchors teaching in a real Swedish insurance-form workflow and production-quality deployment cases",
+        "them_source_id": "s9"
+      }
+    ],
+    "similar_traits": [
+      {
+        "trait": "Conscientiousness (high) — structured, method-driven rigor",
+        "me_signal": "'lean and fast but rigorous… I want the reasoning to hold up'; Olympiad-style problem solving",
+        "them_signal": "Teaches a staged 5-version prompt method and insists on evaluating every agent output",
+        "framework": "Big Five",
+        "basis": "inferred"
+      }
+    ],
+    "complementary_traits": [
+      {
+        "trait": "Extraversion / public framing vs. heads-down depth",
+        "me_signal": "INTJ builder, 'proof over adjectives,' currently heads-down on the intelligence engine",
+        "them_signal": "Sustained public cadence — conference talks, firesides, podcasts, live demos as Anthropic's evangelist",
+        "why_it_helps": "Christian's adoption-and-framing instinct can help Sunwoo translate orbt's deep engine into something an audience and customers grasp, while Sunwoo offers exactly the concrete deployed case Christian's teaching feeds on."
+      },
+      {
+        "trait": "Teaching deployment best-practice vs. owning a deployed product",
+        "me_signal": "Runs a real cross-border agent product end-to-end for paying brands",
+        "them_signal": "Co-authors Anthropic guidance on writing effective tools for agents and how to prompt/eval at scale",
+        "why_it_helps": "Sunwoo can lift production prompt/eval discipline straight from Christian's playbook; Christian gets a live non-Anglophone, cross-border F&B/cosmetics use case that most of his examples don't cover."
+      }
+    ],
+    "potential_friction": [
+      {
+        "point": "Evangelist register vs. proof-only skepticism",
+        "me_signal": "'I trust durable partnerships over flashy new ideas'; judges on what's actually built",
+        "them_signal": "Self-identifies as 'evangelising digital since day one' — lens is adoption and framing",
+        "how_to_navigate": "Christian should lead with the concrete customer case (his Swedish insurance-form style anchor) rather than the stage pitch; Sunwoo respects demonstrated work, so substance-first defuses the 'is this just rhetoric' reflex."
+      },
+      {
+        "point": "Two strong-willed NTJ operators with firm methods",
+        "me_signal": "Frames self as the technical engine, Olympiad Medalist, wants the reasoning to hold up",
+        "them_signal": "ENTJ, directive teacher with a prescribed prompt/eval methodology",
+        "how_to_navigate": "Keep disagreements on the artifact, not the person — compare eval results and failure cases directly; both default to evidence, so a shared whiteboard problem resolves faster than debate over principles."
+      }
+    ],
+    "interaction_simulation": {
+      "opening_30s": "Sunwoo describes orbt's agents running country-by-country strategy and ad creative for Korean brands through Slack; Christian immediately latches onto 'how do you evaluate that those agents are doing the right thing?' — and they're off.",
+      "likely_arc": "Fast convergence into a peer-level technical exchange: orbt's production eval challenges meet Anthropic's staged prompting/agent-eval frameworks, with mutual credibility building because both anchor in real deployed cases rather than slideware.",
+      "where_it_could_stall": "If Christian stays in broadcast/teaching mode while Sunwoo wants a sparring partner, or if talk drifts toward abstractions and adoption narrative — Sunwoo quietly disengages from anything that reads as 'flashy.' There's also no surfaced non-work common ground to fall back on.",
+      "how_to_adapt": "Sunwoo: bring one specific eval problem from the intelligence engine to make Christian a co-debugger, not a lecturer. Christian: drop the stage voice and go engineer-to-engineer with a real failure case; that's the register Sunwoo rewards."
+    },
+    "honest_gaps": [
+      "chemistry is a low-confidence inference from public text, not a relationship prediction",
+      "overlap is almost entirely professional (agents + evaluation); no shared personal interests, geography, or background surfaced in the data",
+      "MBTI types are self/illustrative-labeled and used only as directional framing"
+    ],
+    "me_name": "Sunwoo Ju"
+  },
+  "slug": "christian-ryan-anthropic",
+  "durationMs": 235130,
+  "nSources": 30,
+  "created_at": "2026-06-18T06:08:29.199Z"
+}

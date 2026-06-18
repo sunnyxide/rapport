@@ -1,0 +1,275 @@
+{
+  "persona": {
+    "output_lang": "en",
+    "status": "ok",
+    "candidates": [],
+    "the_one_thing": "Open with concrete product/architecture specifics — his intelligence engine and cross-border agent product — not a business deck; he explicitly judges people on what they build, peer-to-peer (high confidence, but note this is entirely self-reported, single source).",
+    "identity": {
+      "name": "Sunwoo Ju",
+      "title": "Co-Founder & CTO",
+      "company": "orbt",
+      "location": "",
+      "confidence": 1,
+      "resolved_handle": "",
+      "photo_url": "",
+      "photo_source_url": "",
+      "photo_provenance": "none",
+      "linkedin_url": "",
+      "distinguishing_signal": "self-reported profile"
+    },
+    "snapshot": "Sunwoo Ju (주선우) is Co-Founder & CTO of orbt, an AI-native consulting platform in Seoul whose AI agents run country-by-country strategy, new revenue lines, and ad creative for Korean F&B and cosmetics brands expanding cross-border, delivered through Slack. He frames himself as the technical engine of a team that worked together ~3 years before orbt existed, and asks to be judged on rigor and what he actually builds. He works lean and fast but insists the reasoning hold up.",
+    "whats_new": "Currently heads-down on two things: the 'intelligence engine' — intelligence-without-search / decision-testing for D2C — and the cross-border expansion product. Recent proof points: Meet the Drapers S7 (first and youngest Korean team, top-4 global in the AI category) and a Mashup Ventures pre-seed round.",
+    "recent_activity": [
+      {
+        "what": "Building orbt's intelligence engine (decision-testing for D2C) and cross-border expansion product",
+        "date": "2026-06-18",
+        "source_id": "s1"
+      },
+      {
+        "what": "Meet the Drapers S7 — first and youngest Korean team, top-4 global in AI category",
+        "date": "2026",
+        "source_id": "s1"
+      },
+      {
+        "what": "Closed Mashup Ventures pre-seed",
+        "date": "2026",
+        "source_id": "s1"
+      }
+    ],
+    "top_moves": [
+      {
+        "trait": "Proof-over-adjectives builder",
+        "importance_score": 0.9,
+        "fact": "States 'Judge me on what I actually build and on rigor… proof over adjectives' (s1)",
+        "source_id": "s1",
+        "inference": "He will discount narrative/hype and weight demonstrated technical substance.",
+        "move": "Lead with a concrete, specific point about his architecture or a real technical question; bring a built artifact or a sharp observation rather than positioning language."
+      },
+      {
+        "trait": "Lean-and-fast but rigorous",
+        "importance_score": 0.8,
+        "fact": "'I work lean and fast but rigorous — I ship, but I want the reasoning to hold up' (s1)",
+        "source_id": "s1",
+        "inference": "He values speed paired with sound reasoning; sloppy fast or slow-thorough both miss.",
+        "move": "Keep it tight and high-bandwidth, but be ready to defend the 'why' behind any claim — show the reasoning, not just the conclusion."
+      },
+      {
+        "trait": "Allergic to overstated familiarity",
+        "importance_score": 0.75,
+        "fact": "Turn-offs include 'people overstating that they know me' and being treated like enterprise procurement (s1)",
+        "source_id": "s1",
+        "inference": "Manufactured rapport or a procurement-style pitch will actively backfire.",
+        "move": "Don't claim you already know him, his stack, or that you're 'fellow builders'; state real common ground plainly and let it stand on its own."
+      }
+    ],
+    "non_obvious": {
+      "insight": "His core differentiator isn't the AI agents per se — it's a team that worked together ~3 years BEFORE orbt existed, and a stated preference for 'durable partnerships over flashy new ideas.' The relationship/durability axis, not novelty, is how he evaluates a counterpart.",
+      "source_id": "s1"
+    },
+    "career_arc": [
+      {
+        "period": "present",
+        "org": "orbt",
+        "role": "Co-Founder & CTO",
+        "what_they_built": "AI-native consulting platform: AI agents for country-by-country strategy, new revenue lines, and ad creative for Korean F&B/cosmetics brands expanding cross-border, delivered via Slack; the 'intelligence engine' for D2C decision-testing",
+        "source_id": "s1"
+      }
+    ],
+    "skills_expertise": [
+      {
+        "point": "AI-native / agentic systems architecture",
+        "source_id": "s1",
+        "basis": "stated"
+      },
+      {
+        "point": "Cross-border consumer-goods go-to-market (F&B & cosmetics)",
+        "source_id": "s1",
+        "basis": "stated"
+      },
+      {
+        "point": "Competitive/Olympiad-style problem solving (self-described Olympiad Medalist)",
+        "source_id": "s1",
+        "basis": "stated"
+      }
+    ],
+    "notable_quotes": [
+      {
+        "quote": "Olympiad Medalist + CTO is how I frame myself; proof over adjectives.",
+        "source_id": "s1",
+        "date": "2026-06-18",
+        "why_it_matters": "His self-defined yardstick — demonstrated rigor over rhetoric.",
+        "original_lang": "en"
+      },
+      {
+        "quote": "I work lean and fast but rigorous — I ship, but I want the reasoning to hold up; I trust durable partnerships over flashy new ideas.",
+        "source_id": "s1",
+        "date": "2026-06-18",
+        "why_it_matters": "Names both his operating mode and how he chooses partners.",
+        "original_lang": "en"
+      }
+    ],
+    "sales_playbook": {
+      "best_hook": {
+        "point": "Engage on the intelligence engine — intelligence-without-search / decision-testing for D2C",
+        "evidence": "Self-reports being 'recently heads-down' on exactly this",
+        "source_id": "s1",
+        "basis": "stated"
+      },
+      "what_they_care_about": [
+        {
+          "point": "AI-native / agentic systems",
+          "evidence": "Listed first among what he cares about; building orbt's agents",
+          "source_id": "s1",
+          "basis": "stated"
+        },
+        {
+          "point": "Cross-border consumer goods (Korean F&B & cosmetics expansion)",
+          "evidence": "orbt's core market; named interest",
+          "source_id": "s1",
+          "basis": "stated"
+        },
+        {
+          "point": "Rigor / competition (Olympiad-style problem solving)",
+          "evidence": "'judge me on… rigor'; frames self as Olympiad Medalist",
+          "source_id": "s1",
+          "basis": "stated"
+        },
+        {
+          "point": "The Korean startup ecosystem",
+          "evidence": "Named interest",
+          "source_id": "s1",
+          "basis": "stated"
+        }
+      ],
+      "likely_objections": [
+        {
+          "objection": "This is hype with no substance.",
+          "counter": "Come with a concrete technical artifact, demo, or specific reasoning he can interrogate — let the build do the talking.",
+          "source_id": "s1"
+        },
+        {
+          "objection": "You're treating me like enterprise procurement.",
+          "counter": "Skip the formal deck/process framing; keep it founder-to-founder, lean, and fast.",
+          "source_id": "s1"
+        }
+      ],
+      "approach_do": [
+        {
+          "point": "Lead with technical specifics, skip the deck",
+          "evidence": "'lead with the technical specifics, skip the deck… lean and fast'",
+          "source_id": "s1",
+          "basis": "stated"
+        },
+        {
+          "point": "Be ready to defend the reasoning behind your claims",
+          "evidence": "'I want the reasoning to hold up'",
+          "source_id": "s1",
+          "basis": "stated"
+        }
+      ],
+      "approach_avoid": [
+        {
+          "point": "Buzzwords and hype without substance",
+          "evidence": "Listed turn-offs: 'buzzwords… hype with no substance'",
+          "source_id": "s1",
+          "basis": "stated"
+        },
+        {
+          "point": "Overstating that you know him or claiming false familiarity",
+          "evidence": "Turn-off: 'people overstating that they know me'",
+          "source_id": "s1",
+          "basis": "stated"
+        }
+      ],
+      "shared_hooks": []
+    },
+    "honest_gaps": [
+      "Entire persona derives from a single self-reported profile (s1) — none of it is externally verified; treat claims (Olympiad medal, Drapers S7 top-4, pre-seed) as self-asserted.",
+      "No LinkedIn handle or other public footprint provided, so authorship/voice could not be cross-checked beyond the self-profile.",
+      "No specific tech-stack details, team size, traction metrics, or dates beyond the named milestones.",
+      "No meeting_context was provided, so the playbook is general to a sell/meet scenario rather than tuned to a specific ask."
+    ],
+    "behavioral_read": {
+      "note": "Thin public footprint — single self-reported source; low-confidence read, max 2 grounded traits.",
+      "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
+      "big_five": [
+        {
+          "trait": "Conscientiousness (high)",
+          "signal": "'I ship… I want the reasoning to hold up'; frames self as Olympiad Medalist + CTO, proof over adjectives",
+          "source_id": "s1",
+          "confidence": 0.7,
+          "basis": "stated"
+        },
+        {
+          "trait": "Agreeableness — selective/loyalty-weighted",
+          "signal": "'I trust durable partnerships over flashy new ideas'; ~3-year pre-orbt team",
+          "source_id": "s1",
+          "confidence": 0.5,
+          "basis": "stated"
+        }
+      ],
+      "communication_adaptation": "Go high-bandwidth and technical, founder-to-founder; show your reasoning and an artifact, and never claim familiarity you haven't earned.",
+      "predicted_mbti": {
+        "type": "INTJ",
+        "label": "illustrative · public-signal estimate · not a clinical diagnosis",
+        "basis_per_letter": [
+          {
+            "letter": "I",
+            "signal": "Describes self as the 'technical engine,' currently heads-down — weak signal",
+            "source_id": "s1"
+          },
+          {
+            "letter": "N",
+            "signal": "Drawn to abstract/agentic systems and an 'intelligence engine'",
+            "source_id": "s1"
+          },
+          {
+            "letter": "T",
+            "signal": "'proof over adjectives,' judge me on rigor",
+            "source_id": "s1"
+          },
+          {
+            "letter": "J",
+            "signal": "'lean and fast but rigorous,' ships, prefers durable over flashy",
+            "source_id": "s1"
+          }
+        ]
+      },
+      "likely_likes": [
+        {
+          "point": "Concrete technical depth and demonstrated builds",
+          "evidence": "'judge me on what I actually build'"
+        },
+        {
+          "point": "Lean, fast, deck-free conversation",
+          "evidence": "'skip the deck… lean and fast'"
+        }
+      ],
+      "likely_dislikes": [
+        {
+          "point": "Buzzwords / substance-free hype",
+          "evidence": "named turn-off"
+        },
+        {
+          "point": "Being handled like enterprise procurement or false familiarity",
+          "evidence": "named turn-offs"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "s1",
+        "url": "self://profile",
+        "title": "Sunwoo Ju — self-reported profile",
+        "date": "2026-06-18",
+        "relation_to_target": "by_target",
+        "author_handle": "",
+        "used_for": "all fields (identity, snapshot, whats_new, top_moves, playbook, behavioral_read, quotes)"
+      }
+    ],
+    "coverage_confidence": 0.7
+  },
+  "chemistry": null,
+  "slug": "me-sunwoo-ju-orbt",
+  "created_at": "2026-06-18T06:14:48.491Z"
+}
