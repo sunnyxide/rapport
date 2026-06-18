@@ -1,121 +1,125 @@
 {
   "persona": {
-    "output_lang": "en",
     "status": "ok",
+    "output_lang": "en",
     "candidates": [],
-    "the_one_thing": "Don't walk in asking 'how do we prompt better' — Hannah teaches that clarity of thinking beats clever prompting ('the model isn't confused, it's waiting for you to be clear'), so arrive with ONE precisely-scoped use case (your Slack-delivered country-strategy agents) and she'll engage on craft, not basics. (high confidence; from her own repeated public framing, s3/s8.)",
+    "the_one_thing": "She literally teaches enterprises how to adopt Claude, and her thesis is 'an AI pilot is a product launch, not an IT trial' (s5) plus 'clear thinking beats coding' (s3) — so walk in framing Orbt's Claude adoption as a workflow-change product launch and demonstrate prompting rigor, not as a procurement evaluation or a request for basics. Confidence: high (multiple about_target talk transcripts/reports).",
     "identity": {
       "name": "Hannah Moran",
       "title": "Applied AI",
       "company": "Anthropic",
-      "location": "San Francisco, CA",
+      "location": "San Francisco, CA, US",
       "confidence": 0.92,
       "resolved_handle": "hannahemoran",
-      "photo_url": "https://static.rocketreach.co/images/profile_pics/v2.1/dppm5.png",
-      "photo_source_url": "https://rocketreach.co/hannah-moran-email_154063931",
-      "photo_provenance": "article"
+      "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQEuATD9vm7oAQ/profile-displayphoto-crop_800_800/B56ZvEuL_SK0AI-/0/1768532001019?e=1783555200&v=beta&t=7gaAps8AgnBPu8No-oNBVTziX_pLUw5Zqir4VQD3Kd4",
+      "photo_source_url": "https://www.linkedin.com/in/hannahemoran/",
+      "photo_provenance": "linkedin"
     },
-    "snapshot": "Hannah Moran is on Anthropic's Applied AI team (since March 2025) and is one of the public faces of Anthropic's prompting and deployment education — co-presenter of Prompting 101 / Code w/ Claude and contributor to Anthropic's context-engineering-for-agents guide. Her background is consulting, not ML research: Georgetown B.S. in International Political Economy / Business Diplomacy, then PwC (AI Technical Product Lead, ML Data Science Manager, Tech Lead at the AI & Emerging Tech Innovation Hub). Her recurring public message is that clear, structured thinking — not clever tricks — is what makes Claude useful.",
-    "whats_new": "Through late 2025 into 2026 her public teaching crystallized around 'clear thinking beats coding' (s3, Apr 2026) and the Prompting 101 practical guide got wide community pickup (s6, May 2026); she also contributed to Anthropic's 'Effective context engineering for AI agents' guide (s14, s17).",
+    "snapshot": "Hannah Moran is on Anthropic's Applied AI team (since ~March 2025, per s10), where she is one of the public faces teaching how to actually build with and deploy Claude — co-presenting the 'Prompting 101' / 'Prompting for Agents' sessions at Code w/ Claude and contributing to Anthropic's context-engineering guidance (s6, s7, s30, s14). She came to AI through consulting rather than pure engineering: prior roles span PwC's Innovation Hub (AI & Emerging Tech), PwC Labs (ML data science), and PwC Digital, on top of a Georgetown degree in International Political Economy / International Business Diplomacy (s10, s1). Her recurring message is that structured, clear thinking — not coding fluency — is what makes AI work in the enterprise (s3).",
+    "whats_new": "Over the last ~12 months she has become a recognizable public teacher of prompting and agents at Anthropic: her 'agents are models using tools in a loop' line from the May 2025 workshop circulated widely (s2, s9, s12), her 'Prompting 101' talk with Christian Ryan is still being written up into 2026 (s7, dated May 2026), and her enterprise-pilot framing ('product launch, not IT trial') landed in Sep 2025 deployment coverage (s5, s8).",
     "recent_activity": [
       {
-        "what": "Quoted on clarity in prompting — 'The model isn't confused. It's waiting for you to be clear.'",
-        "date": "2026-04-29",
-        "source_id": "s3"
+        "what": "Co-presented 'Prompting 101' / 'Prompting for Agents' at Code w/ Claude, including a live Swedish car-accident insurance-form prompt evolved through five versions",
+        "date": "2025-05-22",
+        "source_id": "s7"
       },
       {
-        "what": "Prompting 101 practical guide (Swedish insurance-form case, 5-version prompt evolution) widely written up",
-        "date": "2026-05-01",
-        "source_id": "s6"
+        "what": "Quoted on AI-pilot strategy: pilots should be run like a product launch, not an IT trial; 'don't teach too much of the basics'",
+        "date": "2025-09-26",
+        "source_id": "s8"
       },
       {
-        "what": "Contributed to Anthropic's 'Effective context engineering for AI agents'; posted celebrating the team",
+        "what": "Listed as a contributor to Anthropic's 'Effective context engineering for AI agents' write-up; celebrated it on her own LinkedIn",
         "date": "",
         "source_id": "s17"
-      },
-      {
-        "what": "Spoke on AI pilots as 'product launch, not IT trial' (deployment philosophy)",
-        "date": "2025-09-26",
-        "source_id": "s5"
-      },
-      {
-        "what": "Presented Prompting 101 at Code w/ Claude, SF — coined 'agents are models using tools in a loop'",
-        "date": "2025-05-22",
-        "source_id": "s30"
       }
     ],
     "top_moves": [
       {
-        "trait": "Clarity over cleverness",
+        "trait": "Teaches prompting rigor publicly",
         "importance_score": 0.9,
-        "fact": "Publicly attributed: 'The model isn't confused. It's waiting for you to be clear.' (s3)",
-        "source_id": "s3",
-        "inference": "She values structured problem framing over prompt-hacking; a vague 'help us prompt better' ask will underwhelm her.",
-        "move": "Bring ONE concrete, structured use case from Orbt — e.g. an actual country-strategy agent prompt that's underperforming — and ask her to sharpen its structure. You'll get her real engagement."
+        "fact": "She co-leads Anthropic's 'Prompting 101' and contributed to its context-engineering guidance, walking audiences through evolving a real customer prompt over five versions (s7, s14).",
+        "source_id": "s7",
+        "inference": "She judges counterparts on whether they actually understand structured, iterative prompting rather than on AI buzzwords.",
+        "move": "Bring one concrete prompt-iteration artifact from Orbt's agents (a before/after across versions, like her insurance-form demo) instead of a capabilities pitch — show your work."
       },
       {
-        "trait": "Deployment-as-product-launch",
+        "trait": "Frames adoption as workflow change, not tooling",
         "importance_score": 0.85,
-        "fact": "'AI Pilots: Product Launch, Not IT Trial' (s5); 'Don't teach too much of the basics... help them understand how to actually do their job differently, and better' (s8).",
+        "fact": "She says an AI pilot is 'a product launch, not an IT trial' and 'don't teach too much of the basics... help them do their job differently, and better' (s5, s8).",
         "source_id": "s8",
-        "inference": "She frames adoption around changing how people work, not running a sandbox eval; she's impatient with basics.",
-        "move": "Frame Orbt's Claude adoption as a workflow transformation for your cross-border consulting delivery — show the consultant's job being done better — not as a model evaluation or 101 session."
+        "inference": "She cares about changed workflows and outcomes, not feature tours or procurement checklists.",
+        "move": "Frame Orbt's Claude adoption as a workflow transformation for your consulting agents — name the job that gets done differently/better and the success metric, not the feature list."
       },
       {
-        "trait": "Pragmatic, hype-deflating agent framing",
-        "importance_score": 0.8,
-        "fact": "Coined the plain-spoken 'Agents are models using tools in a loop' at the Prompting for Agents workshop (s2, s9).",
+        "trait": "Precise about agent architecture",
+        "importance_score": 0.7,
+        "fact": "Her crisp definition 'agents are models using tools in a loop' became a widely-shared reference point (s2, s9, s12).",
         "source_id": "s2",
-        "inference": "She rewards concrete architecture over buzzwords; Orbt literally builds agents-in-a-loop delivered through Slack — that's her exact mental model.",
-        "move": "Walk her through Orbt's agent loop concretely (tools, the Slack delivery surface, where Claude sits in the loop). Speak in her vocabulary, not 'autonomous AI' hype."
+        "inference": "She thinks about agents in clean architectural terms and will respond to precise language.",
+        "move": "Describe Orbt's Slack-delivered agents in her own framing — 'models using tools in a loop' running country strategy/revenue/creative — to speak her language directly."
       }
     ],
     "non_obvious": {
-      "insight": "She's not an ML researcher — her arc is Georgetown International Political Economy / Business Diplomacy → PwC consulting & innovation hub → Anthropic Applied AI (s1, s10). Her real edge is translating between business clients and the model, i.e. deployment and prompting craft, not transformer internals. Engage her on adoption and structure, not architecture deep-dives, and you'll hit her strength.",
-      "source_id": "s10"
+      "insight": "Her authority on prompting is built on a non-engineering foundation: a Georgetown degree in International Political Economy / International Business Diplomacy and a consulting path through PwC (Innovation Hub, Labs, Digital) — not a CS pipeline (s1, s10). That background is exactly why her public message is 'clear thinking beats coding' (s3); she is living proof of the thesis, which is why she leads with structure-of-language over code.",
+      "source_id": "s3"
     },
     "career_arc": [
       {
-        "period": "—",
-        "org": "Georgetown University",
-        "role": "B.S., International Political Economy / International Business Diplomacy",
-        "what_they_built": "Non-technical foundation; business/policy lens",
-        "source_id": "s1"
-      },
-      {
-        "period": "through ~2025",
-        "org": "PwC",
-        "role": "AI Technical Product Lead (Digital); ML Data Science Manager (Labs); Technical Lead/Senior Manager (AI & Emerging Tech Innovation Hub)",
-        "what_they_built": "Applied AI products and deployments inside a consulting org",
-        "source_id": "s10"
-      },
-      {
-        "period": "Mar 2025–present",
+        "period": "2025-03–present",
         "org": "Anthropic",
         "role": "Applied AI",
-        "what_they_built": "Customer-facing prompting & deployment education (Prompting 101, Code w/ Claude, webinars); contributor to context-engineering guide",
+        "what_they_built": "Public prompting/agent education (Prompting 101, Prompting for Agents), enterprise deployment guidance, contributor to context-engineering write-up",
         "source_id": "s10"
+      },
+      {
+        "period": "pre-2025",
+        "org": "PwC (Innovation Hub / AI & Emerging Technology)",
+        "role": "Technical Lead / Senior Manager",
+        "what_they_built": "AI & emerging-technology technical leadership",
+        "source_id": "s10"
+      },
+      {
+        "period": "pre-2025",
+        "org": "PwC Labs",
+        "role": "Machine Learning Data Science Manager",
+        "what_they_built": "ML / data science delivery",
+        "source_id": "s10"
+      },
+      {
+        "period": "pre-2025",
+        "org": "PwC Digital",
+        "role": "AI Technical Product Lead",
+        "what_they_built": "AI technical product leadership",
+        "source_id": "s10"
+      },
+      {
+        "period": "education",
+        "org": "Georgetown University",
+        "role": "B.S., International Political Economy / International Business Diplomacy",
+        "what_they_built": "—",
+        "source_id": "s1"
       }
     ],
     "skills_expertise": [
       {
-        "point": "Prompt engineering education and practical Claude best-practices",
-        "source_id": "s6",
+        "point": "Production-quality prompt engineering and iterative prompt design",
+        "source_id": "s7",
         "basis": "stated"
       },
       {
-        "point": "Enterprise AI adoption / pilot design ('product launch, not IT trial')",
-        "source_id": "s5",
+        "point": "AI agent design and context engineering",
+        "source_id": "s14",
         "basis": "stated"
       },
       {
-        "point": "Agentic-systems framing (tools-in-a-loop)",
-        "source_id": "s2",
+        "point": "Enterprise AI adoption / pilot strategy",
+        "source_id": "s8",
         "basis": "stated"
       },
       {
-        "point": "Translating between business clients and models (consulting-to-technical bridge)",
-        "source_id": "s10",
+        "point": "Bridging business/communication and AI (consulting + IPE background)",
+        "source_id": "s1",
         "basis": "inferred"
       }
     ],
@@ -124,162 +128,158 @@
         "quote": "Agents are models using tools in a loop",
         "source_id": "s2",
         "date": "2025-05-22",
-        "why_it_matters": "Her plain, hype-free definition of agents — reported from her Prompting for Agents workshop; mirror this vocabulary."
-      },
-      {
-        "quote": "The model isn't confused. It's waiting for you to be clear.",
-        "source_id": "s3",
-        "date": "2026-04-29",
-        "why_it_matters": "Her core teaching — clarity of thinking over prompt tricks. Bring structure, not hacks."
+        "why_it_matters": "Her clean agent definition that practitioners widely adopted — use it to speak her language about Orbt's agents.",
+        "original_lang": "en"
       }
     ],
     "sales_playbook": {
       "best_hook": {
-        "point": "Open with Orbt's agent loop as a live instance of her own framing",
-        "evidence": "Orbt runs Slack-delivered agents for country strategy; she defines agents as 'models using tools in a loop' (s2)",
-        "source_id": "s2",
+        "point": "Position Orbt's Claude adoption as a workflow-change product launch, evidenced by agents that already run consulting work end-to-end via Slack",
+        "evidence": "She frames pilots as 'product launch, not IT trial'",
+        "source_id": "s5",
         "basis": "inferred"
       },
       "what_they_care_about": [
         {
-          "point": "Structured, clear problem framing over clever prompting",
-          "evidence": "'the model is waiting for you to be clear' (s3)",
+          "point": "Structured, clear thinking over coding fluency",
+          "evidence": "'Clear thinking beats coding' framing of prompting",
           "source_id": "s3",
           "basis": "stated"
         },
         {
-          "point": "Adoption that changes how people work, not basics training",
-          "evidence": "'help them do their job differently and better' (s8)",
+          "point": "Pilots that change how people work, not feature demos",
+          "evidence": "'help them do their job differently, and better'",
           "source_id": "s8",
           "basis": "stated"
         },
         {
-          "point": "Treating AI rollouts as product launches",
-          "evidence": "(reported by @matijagrcic) 'AI Pilots: Product Launch, Not IT Trial' (s5)",
-          "source_id": "s5",
-          "basis": "inferred"
+          "point": "Precise agent architecture",
+          "evidence": "'agents are models using tools in a loop'",
+          "source_id": "s2",
+          "basis": "stated"
         }
       ],
       "likely_objections": [
         {
-          "objection": "Is this a real production deployment or an exploration?",
-          "counter": "Show the live Slack-delivered agent workflow doing actual cross-border consulting work — concrete, not a demo sandbox.",
-          "source_id": "s8"
+          "objection": "Is your prompting production-grade or just demo-grade?",
+          "counter": "Walk through a multi-version prompt iteration from Orbt's agents the way she evolves a prompt across five versions.",
+          "source_id": "s7"
         },
         {
-          "objection": "Generic 'teach us to prompt' asks won't be a good use of her time",
-          "counter": "Bring specific failing prompts / use cases for her to sharpen, not a 101 request.",
-          "source_id": "s3"
+          "objection": "Teams often over-index on basics/tooling instead of changing the actual work.",
+          "counter": "Show that Orbt already redesigned consulting workflows (country strategy, revenue lines, ad creative) around agents, not bolted AI onto old steps.",
+          "source_id": "s8"
         }
       ],
       "approach_do": [
         {
-          "point": "Bring one concrete, structured use case with example prompts",
-          "evidence": "she rewards clarity; '5-version prompt evolution' on a real insurance case (s6)",
-          "source_id": "s6",
+          "point": "Bring a concrete prompt-iteration artifact to discuss",
+          "evidence": "Her Prompting 101 evolves a real customer prompt through five versions",
+          "source_id": "s7",
           "basis": "inferred"
         },
         {
-          "point": "Frame the conversation as workflow/job transformation",
-          "evidence": "'product launch, not IT trial' (s5)",
-          "source_id": "s5",
-          "basis": "stated"
+          "point": "Use precise agent-architecture language",
+          "evidence": "Her definition 'models using tools in a loop'",
+          "source_id": "s2",
+          "basis": "inferred"
         }
       ],
       "approach_avoid": [
         {
-          "point": "Don't ask her to cover prompting basics",
-          "evidence": "'Don't teach too much of the basics' (s8)",
+          "point": "Don't ask for or dwell on prompting 101 / basics",
+          "evidence": "'Don't teach too much of the basics'",
           "source_id": "s8",
-          "basis": "stated"
+          "basis": "inferred"
         },
         {
-          "point": "Don't lead with model-internals or 'autonomous AI' hype",
-          "evidence": "she deflates hype with 'models using tools in a loop' (s2)",
-          "source_id": "s2",
+          "point": "Don't frame it as an IT/procurement trial",
+          "evidence": "Pilots are 'a product launch, not an IT trial'",
+          "source_id": "s5",
           "basis": "inferred"
         }
       ],
       "shared_hooks": [
         {
-          "point": "Agentic systems as the core build",
-          "evidence": "Hannah: 'agents are models using tools in a loop' (s2); Sunwoo: builds AI-native/agentic systems (me cares_about)",
+          "point": "Agentic systems as the core unit of work",
+          "evidence": "Orbt's AI agents run country strategy/revenue/ad creative delivered via Slack (me); Moran's public definition is 'agents are models using tools in a loop' and she contributed to context-engineering guidance (them)",
           "source_id": "s2",
-          "basis": "stated"
+          "basis": "inferred"
         },
         {
-          "point": "AI-native consulting delivery",
-          "evidence": "Hannah came from PwC consulting/innovation (s10); Orbt is an AI-native consulting platform (me snapshot)",
-          "source_id": "s10",
+          "point": "Disciplined reasoning over flash",
+          "evidence": "Sunwoo asks to be judged on rigor and what he actually builds (me); Moran's thesis is 'clear thinking beats coding' / structured prompting (them)",
+          "source_id": "s3",
           "basis": "inferred"
         }
       ]
     },
     "honest_gaps": [
-      "Only one source is authored by the target herself (s17, a contribution note) — her quotes are all reported by third parties, so we have her words but little unfiltered first-person voice.",
-      "No public data on her decision authority or buying/partnership influence inside Anthropic.",
-      "No evidence she has any specific familiarity with Korea, F&B/cosmetics, or cross-border consumer-goods markets.",
-      "Personality reads below are inferred from public-speaking behavior, not from extended written output — treat as directional."
+      "Almost no first-person authored content survives the attribution gate under her current handle (hannahemoran) — voice is inferred largely from third-party reports of her talks (s2, s8, s9).",
+      "Her personal-interest signal (chair-yoga teaching / VolunteerMatch in SF) comes from a 2015 post and may be stale (s36).",
+      "Unknown whether she works directly with cross-border or consumer-goods clients — no public evidence either way.",
+      "Several same-name profiles were quarantined and NOT used: Hannah Moran-Ellis (aviation-law partner, s16/s33/s34), a different LinkedIn Hannah Moran (s15), NT Corrections appointee (s35), and biblical/author 'Hannah More/Moore' results (s18–s27), plus hannah_moran on Instagram/X (s29/s32) which appear to be different people.",
+      "No location/title beyond 'Applied AI, San Francisco' is confirmed for current scope of role."
     ],
     "behavioral_read": {
-      "note": "",
+      "note": "Voice/personal footprint under the resolved handle is thin (2 by_target sources); reads below lean on plentiful about_target talk reports — moderate confidence.",
       "method_note": "Big Five from observed public behavior; illustrative MBTI only; communication-adaptation, not profiling — traits we couldn't ground are omitted, not guessed.",
       "big_five": [
         {
           "trait": "Conscientiousness",
-          "signal": "Builds methodical, structured teaching — e.g. a real insurance-form case evolved through five prompt versions",
-          "source_id": "s6",
+          "signal": "Builds production-quality prompts via systematic 5-version iteration and contributes structured context-engineering guidance",
+          "source_id": "s7",
           "confidence": 0.7,
           "basis": "observed-behavior"
         },
         {
           "trait": "Extraversion",
-          "signal": "Repeated public-facing workshops, conference talks, and webinars (Code w/ Claude, Claude-for-Work webinar)",
+          "signal": "Repeatedly presents to public/large audiences (Code w/ Claude workshops, webinars)",
           "source_id": "s30",
           "confidence": 0.6,
           "basis": "observed-behavior"
         }
       ],
-      "communication_adaptation": "Lead with concrete, well-structured specifics and she'll engage deeply; vagueness or basics-level questions will lose her. Speak in plain, precise terms — match her 'tools in a loop' register, not hype.",
+      "communication_adaptation": "Come with a precise, well-structured ask and a concrete prompt/workflow example; skip basics and match her 'clear thinking' register. Speak in outcomes and agent-architecture terms, not feature lists.",
       "predicted_mbti": {
-        "type": "EST?",
+        "type": "ENT?",
         "label": "illustrative · public-signal estimate · not a clinical diagnosis",
         "basis_per_letter": [
           {
             "letter": "E",
-            "signal": "Frequent public workshops/webinars and live teaching",
+            "signal": "Repeatedly teaches/presents to public audiences",
             "source_id": "s30"
           },
           {
-            "letter": "S",
-            "signal": "Teaches concrete, practical, real-case walkthroughs (Swedish insurance forms, step-by-step)",
-            "source_id": "s6"
+            "letter": "N",
+            "signal": "Works at the level of concepts and clean definitions ('agents are models using tools in a loop')",
+            "source_id": "s2"
           },
           {
             "letter": "T",
-            "signal": "Logic-first framing — 'the model isn't confused, it's waiting for you to be clear'",
+            "signal": "Logic-first framing: 'clear thinking beats coding' and systematic prompt iteration",
             "source_id": "s3"
           }
         ]
       },
       "likely_likes": [
         {
-          "point": "Concrete use cases with real data and clear structure",
-          "evidence": "her real-case, multi-version prompt teaching (s6)"
+          "point": "Concrete, iterated prompt examples",
+          "evidence": "Her own demo evolves a real customer prompt across five versions (s7)"
         },
         {
-          "point": "Counterparts who've done their homework on their own workflow",
-          "evidence": "'help them do their job differently and better' (s8)"
+          "point": "Adoption framed as outcome/workflow change",
+          "evidence": "'do their job differently, and better' (s8)"
         }
       ],
       "likely_dislikes": [
         {
-          "point": "Hand-wavy hype and 'autonomous AI' framing",
-          "evidence": "deflates with 'models using tools in a loop' (s2)"
+          "point": "Requests to cover prompting basics",
+          "evidence": "'Don't teach too much of the basics' (s8)"
         },
         {
-          "point": "Requests to re-teach the basics / vague asks",
-          "evidence": "'Don't teach too much of the basics' (s8)"
+          "point": "Treating Claude rollout as an IT/procurement trial",
+          "evidence": "'product launch, not IT trial' (s5)"
         }
       ]
     },
@@ -287,20 +287,20 @@
       {
         "id": "s1",
         "url": "https://rocketreach.co/hannah-moran-email_154063931",
-        "title": "Hannah Moran | Anthropic Applied AI",
+        "title": "Hannah Moran Email & Phone Number | Anthropic Applied AI Contact Information",
         "date": "",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "role, PwC background, Georgetown degree"
+        "used_for": "role, prior PwC experience, Georgetown degree, SF location"
       },
       {
         "id": "s2",
         "url": "https://fedi.simonwillison.net/@simon/114553134501983053",
-        "title": "Simon Willison on Hannah Moran's agents quote",
+        "title": "Simon Willison on Hannah Moran's agent definition",
         "date": "2025-05-22",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "agents-in-a-loop quote"
+        "used_for": "agent definition quote (reported)"
       },
       {
         "id": "s3",
@@ -309,7 +309,7 @@
         "date": "2026-04-29",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "clarity quote, recency"
+        "used_for": "'clear thinking beats coding' thesis, non-engineering authority"
       },
       {
         "id": "s5",
@@ -318,16 +318,25 @@
         "date": "2025-09-26",
         "relation_to_target": "third_party",
         "author_handle": "matijagrcic",
-        "used_for": "pilot-as-product-launch (facts only)"
+        "used_for": "pilot-as-product-launch framing (reported by third party)"
       },
       {
         "id": "s6",
+        "url": "https://generativeprogrammer.com/p/generative-programmer-issue-16",
+        "title": "Generative Programmer Issue #16",
+        "date": "2025-11-02",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "Prompting 101 co-presentation"
+      },
+      {
+        "id": "s7",
         "url": "https://dev.to/bokuno_log/anthropics-prompting-101-a-practical-guide-to-building-production-quality-claude-prompts-23k4",
-        "title": "Anthropic's Prompting 101 — Practical Guide",
+        "title": "Anthropic's Prompting 101 — A Practical Guide",
         "date": "2026-05-01",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "teaching method, 5-version prompt case"
+        "used_for": "5-version prompt iteration demo, production-quality prompting"
       },
       {
         "id": "s8",
@@ -336,7 +345,7 @@
         "date": "2025-09-27",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "deployment philosophy quote"
+        "used_for": "'don't teach the basics' pilot quote"
       },
       {
         "id": "s9",
@@ -345,7 +354,7 @@
         "date": "2025-05-22",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "agents quote corroboration"
+        "used_for": "agent definition (reported)"
       },
       {
         "id": "s10",
@@ -354,7 +363,16 @@
         "date": "",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "career arc, PwC roles, March 2025 start"
+        "used_for": "Anthropic start date and PwC role history"
+      },
+      {
+        "id": "s12",
+        "url": "https://www.thingelstad.com/2025/05/22/ive-been-a-bit-obsessed.html",
+        "title": "Jamie Thingelstad on the agent definition",
+        "date": "2025-05-22",
+        "relation_to_target": "about_target",
+        "author_handle": "",
+        "used_for": "corroborates agent-definition spread"
       },
       {
         "id": "s14",
@@ -363,7 +381,7 @@
         "date": "",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "context-engineering contribution"
+        "used_for": "contributor to context-engineering guidance"
       },
       {
         "id": "s17",
@@ -372,126 +390,139 @@
         "date": "",
         "relation_to_target": "by_target",
         "author_handle": "hannahemoran",
-        "used_for": "identity confirmation, contribution post"
+        "used_for": "self-confirmation of context-engineering contribution (handle match)"
       },
       {
         "id": "s28",
         "url": "https://www.anthropic.com/webinars/claude-for-work-research-google-integration",
-        "title": "Claude for Work — Research & Google integration webinar",
+        "title": "Unlocking the power of Claude with research and the Google integration",
         "date": "2025-02-23",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "public-speaking behavior"
+        "used_for": "public webinar presenting"
       },
       {
         "id": "s30",
         "url": "https://www.youtube.com/watch?v=ysPbXH0LpIE",
         "title": "Prompting 101 | Code w/ Claude",
-        "date": "2025-05-22",
+        "date": "2025-07-31",
         "relation_to_target": "about_target",
         "author_handle": "",
-        "used_for": "Prompting 101 talk, public-speaking behavior"
+        "used_for": "public-speaker behavior signal"
+      },
+      {
+        "id": "s31",
+        "url": "https://www.linkedin.com/posts/hoang-van-hao_prompting-isnt-just-about-writing-instructions-activity-7365584798146326528-eTG6",
+        "title": "Hao Hoang's Post on Prompting 101",
+        "date": "2025-08-24",
+        "relation_to_target": "third_party",
+        "author_handle": "hoang-van-hao",
+        "used_for": "corroborates reach of Prompting 101 (facts only)"
+      },
+      {
+        "id": "s36",
+        "url": "https://www.linkedin.com/posts/hannahemoran_introduction-to-volunteermatch-3-good-people-activity-6036918083627528192-E4Tm",
+        "title": "VolunteerMatch / chair-yoga repost",
+        "date": "2015-08-11",
+        "relation_to_target": "by_target",
+        "author_handle": "hannahemoran",
+        "used_for": "personal/community interest signal (handle match; may be stale)"
       }
     ],
-    "coverage_confidence": 0.67
+    "coverage_confidence": 0.5
   },
   "chemistry": {
-    "overall_read": "Real overlap: both live at the consulting-meets-AI seam, both build/teach around agents, and both preach substance over flash — that's enough for a genuinely engaged conversation. Moderate confidence; their roles (heads-down builder vs. public-facing educator) are complementary but he may quietly probe her ML depth.",
+    "overall_read": "A genuinely well-matched practitioner pairing: both build agentic AI for real-world deployment and both prize disciplined reasoning over hype, so a substantive working conversation is likely — though confidence is moderate given Hannah's thinner public record and the consulting-vs-engineering tilt.",
     "chemistry_confidence": 0.55,
-    "chemistry_score": 7.4,
+    "chemistry_score": 7.8,
     "mbti_compat": {
       "me_type": "INTJ",
-      "them_type": "ESTJ (EST?)",
-      "read": "Introverted-strategist builder meets extraverted-structured operator: she externalizes and teaches what he internalizes and architects, which can mesh well if both stay concrete. illustrative · not clinical",
+      "them_type": "ENTJ (illustrative)",
+      "read": "INTJ's quiet system-building meets ENTJ-style public articulation; the shared intuitive-thinking core makes for fast technical alignment, with her extraversion carrying the social load — illustrative · not clinical",
       "label": "directional"
     },
     "shared_interests": [
       {
-        "point": "Agentic AI systems (agents as tools-in-a-loop)",
-        "me_evidence": "'AI-native / agentic systems architecture'; building orbt's AI agents and an 'intelligence engine'",
+        "point": "AI agent architecture as a first-class engineering object",
+        "me_evidence": "AI-native / agentic systems architecture listed first among skills and cares-about; building orbt's agents",
         "me_source_id": "s1",
-        "them_evidence": "'Agents are models using tools in a loop'; contributed to Anthropic's 'Effective context engineering for AI agents' guide",
+        "them_evidence": "'Agents are models using tools in a loop' — her clean, widely-adopted agent definition",
         "them_source_id": "s2"
       },
       {
-        "point": "Substance over flash — rigor/clarity beats clever tricks",
-        "me_evidence": "'proof over adjectives'; 'I trust durable partnerships over flashy new ideas; I want the reasoning to hold up'",
+        "point": "Rigor / structured thinking over surface flash",
+        "me_evidence": "'I ship, but I want the reasoning to hold up… proof over adjectives'",
         "me_source_id": "s1",
-        "them_evidence": "'The model isn't confused. It's waiting for you to be clear' — clear structured thinking, not prompt hacks",
+        "them_evidence": "'Clear thinking beats coding' framing of prompting — structured thinking, not coding fluency, makes AI work",
         "them_source_id": "s3"
       },
       {
-        "point": "Operating at the consulting × AI intersection",
-        "me_evidence": "orbt is 'an AI-native consulting platform' running country-by-country strategy for brands",
+        "point": "AI applied to consumer/enterprise go-to-market, not pure research",
+        "me_evidence": "orbt is an AI-native consulting platform running cross-border GTM for F&B & cosmetics brands",
         "me_source_id": "s1",
-        "them_evidence": "Consulting background (PwC AI Technical Product Lead); translates between business clients and models",
-        "them_source_id": "s10"
+        "them_evidence": "Enterprise AI adoption / pilot strategy — 'product launch, not IT trial', help people do their job differently",
+        "them_source_id": "s8"
       }
     ],
     "similar_traits": [
       {
-        "trait": "High Conscientiousness / methodical builders",
-        "me_signal": "'I ship… I want the reasoning to hold up'; frames self via Olympiad rigor",
-        "them_signal": "Builds teaching from a real insurance-form case iterated through five prompt versions",
+        "trait": "Conscientiousness (high)",
+        "me_signal": "'work lean and fast but rigorous'; Olympiad Medalist + CTO self-framing",
+        "them_signal": "Production-quality prompts via systematic 5-version iteration; structured context-engineering guidance",
         "framework": "Big Five",
         "basis": "inferred"
       },
       {
-        "trait": "Plain, hype-free, proof-driven register",
-        "me_signal": "'proof over adjectives'",
-        "them_signal": "'Agents are models using tools in a loop' — deliberately de-hyped vocabulary",
+        "trait": "Preference for precise, definitional language",
+        "me_signal": "Insists reasoning hold up; proof-over-adjectives yardstick",
+        "them_signal": "Crisp reusable formulations like 'agents are models using tools in a loop'",
         "framework": "comms-accommodation",
         "basis": "inferred"
       }
     ],
     "complementary_traits": [
       {
-        "trait": "Builder vs. communicator orientation",
-        "me_signal": "INTJ, 'technical engine,' heads-down on the intelligence engine",
-        "them_signal": "Extraverted public face — workshops, Prompting 101, conference talks",
-        "why_it_helps": "She can articulate and socialize the systems he builds; he can supply the depth behind her teaching frames."
+        "trait": "Introverted builder vs. extraverted explainer",
+        "me_signal": "INTJ technical engine, judged on what he builds",
+        "them_signal": "Public teacher who presents prompting/agents to large audiences",
+        "why_it_helps": "He can supply depth and live system detail while she frames and externalizes it — useful if they ever co-explain orbt's agents to a non-technical audience"
       },
       {
-        "trait": "Architecture depth vs. deployment/adoption craft",
-        "me_signal": "Agentic systems architecture and cross-border GTM product",
-        "them_signal": "'AI pilots are a product launch, not an IT trial'; adoption that changes how people work",
-        "why_it_helps": "Pairs his system-building with her playbook for getting AI actually adopted inside organizations."
+        "trait": "Engineering-first vs. deployment/adoption-first lens",
+        "me_signal": "Architecture and the 'intelligence engine'",
+        "them_signal": "How pilots actually change user behavior in the enterprise",
+        "why_it_helps": "She can pressure-test whether orbt's agents land with real operators, not just whether they're elegant"
       }
     ],
     "potential_friction": [
       {
-        "point": "Proof-of-rigor bar vs. consulting/education background",
-        "me_signal": "Judges people on demonstrated rigor; 'Olympiad Medalist + CTO'",
-        "them_signal": "Strength is applied/practical teaching and deployment, not ML research",
-        "how_to_navigate": "Frame her empirical, iterate-five-versions credibility as its own rigor; she can lead with a concrete deployment artifact rather than credentials."
+        "point": "Proof-vs-narrative emphasis",
+        "me_signal": "Wants to be judged on rigor and shipped artifacts, skeptical of 'flashy'",
+        "them_signal": "Role centers on teaching, framing, and memorable lines for broad audiences",
+        "how_to_navigate": "Lead with a concrete orbt agent trace or eval result; she responds to clear structure, so give her the mechanism before the message"
       },
       {
-        "point": "Reserved/loyalty-weighted warmth vs. outgoing default",
-        "me_signal": "'Trust durable partnerships over flashy new ideas' — slow to open",
-        "them_signal": "Repeated public-facing, high-energy presenting",
-        "how_to_navigate": "She shouldn't read his initial cool as disinterest; trust builds for him through demonstrated substance, not rapport speed."
-      },
-      {
-        "point": "Technical depth vs. accessibility level",
-        "me_signal": "Lean, fast, wants reasoning to hold up",
-        "them_signal": "Optimizes for clarity to broad, non-expert audiences",
-        "how_to_navigate": "Pick a shared altitude early — go deep on context-engineering specifics where both can meet."
+        "point": "Loyalty-weighted, durable-partnership stance vs. a new acquaintance",
+        "me_signal": "'I trust durable partnerships over flashy new ideas'; ~3-year pre-orbt team",
+        "them_signal": "No signal of overlapping network; relationship would start cold",
+        "how_to_navigate": "Don't expect instant trust; offer something rigorous and reciprocal early to start the durability clock"
       }
     ],
     "interaction_simulation": {
-      "opening_30s": "Open on agents in his exact-but-plain terms — 'orbt's agents are models using tools in a loop' — which lands directly on her vocabulary and signals you've read her work.",
-      "likely_arc": "Quick convergence on clarity-over-tricks; she trades deployment/prompting structure, he trades architecture and the intelligence-engine reasoning — productive, fast, substance-dense.",
-      "where_it_could_stall": "If it stays at education/intro level he may disengage; if he over-indexes on ML-research pedigree he undervalues her applied depth; her breadth vs. his focused rigor can talk past each other.",
-      "how_to_adapt": "Bring one concrete artifact, mirror 'the model is waiting for you to be clear,' and ask her a specific context-engineering question about real agent deployments to pull the conversation to shared depth."
+      "opening_30s": "He opens with orbt's agents-for-cross-border-GTM and how the intelligence engine tests decisions without search; she immediately maps it onto 'models using tools in a loop' and asks how the loop is bounded.",
+      "likely_arc": "Fast convergence on agent design and context engineering; she probes deployment realism (do Korean F&B/cosmetics operators actually change behavior?), he answers with architecture and proof points like Meet the Drapers top-4.",
+      "where_it_could_stall": "If talk drifts to audience-facing framing/positioning, he may go quiet and want to return to the mechanism; if she stays at the adoption-narrative layer too long it can feel thin to him.",
+      "how_to_adapt": "Bring a specific eval or failure mode of orbt's agents and ask how she'd structure the prompt/context for it — turns her teaching instinct into collaborative debugging, his preferred register."
     },
     "honest_gaps": [
       "chemistry is a low-confidence inference from public text, not a relationship prediction",
-      "directional, public-signal-based — coverage on both sides is ~0.67–0.70 and her MBTI is only partially inferred (EST?)"
+      "Hannah's coverage is 0.5 and her MBTI is uncertain (ENT?), so personality complementarity is loosely inferred",
+      "no evidence of shared network, geography, or prior contact"
     ],
     "me_name": "Sunwoo Ju"
   },
   "slug": "hannah-moran-anthropic",
-  "durationMs": 194972,
-  "nSources": 35,
-  "created_at": "2026-06-18T06:00:34.663Z"
+  "durationMs": 246742,
+  "nSources": 36,
+  "created_at": "2026-06-18T07:29:47.114Z"
 }

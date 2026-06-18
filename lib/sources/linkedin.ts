@@ -28,6 +28,38 @@ interface LiPost {
   repost?: unknown; // object when reposted, else null
   repostId?: string | number | null;
   repostedBy?: unknown; // truthy when this entry is a repost
+  author?: Record<string, unknown>;
+  authorProfilePicture?: unknown;
+  profilePicture?: unknown;
+}
+
+// Pull a LinkedIn profile picture (licdn) out of the actor response — field names
+// vary by build, so probe common shapes (string, {url}, sized array). This is the
+// PREFERRED photo source: trust-first (a real LinkedIn headshot, never a random
+// article face). Only the target's OWN entries carry their author picture.
+function extractProfilePic(items: LiPost[]): string {
+  const pick = (v: unknown): string => {
+    if (typeof v === "string" && /^https?:\/\//.test(v)) return v;
+    if (Array.isArray(v)) {
+      for (const e of v) {
+        const u = pick(e && typeof e === "object" ? (e as Record<string, unknown>).url : e);
+        if (u) return u;
+      }
+    }
+    if (v && typeof v === "object") {
+      const o = v as Record<string, unknown>;
+      return pick(o.url) || pick(o.src) || pick(o.imageUrl) || "";
+    }
+    return "";
+  };
+  for (const p of items) {
+    const a = (p.author || {}) as Record<string, unknown>;
+    const cand =
+      pick(a.profilePicture) || pick(a.profilePictureUrl) || pick(a.picture) || pick(a.image) || pick(a.avatar) ||
+      pick(p.authorProfilePicture) || pick(p.profilePicture);
+    if (cand && /licdn\.com/i.test(cand)) return cand;
+  }
+  return "";
 }
 
 export async function linkedInPostsTrack(id: ResolvedIdentity, emit: Emit): Promise<SourceHit[]> {
@@ -71,5 +103,23 @@ export async function linkedInPostsTrack(id: ResolvedIdentity, emit: Emit): Prom
     hits.push(h);
     emit({ stage: "fanout", status: "hit", track: "linkedin-posts", host: h.host, title: h.title, url: h.url, type: "linkedin", relation: h.relation_to_target });
   }
+
+  // Attach the profile photo as a synthetic /in/{handle} source so resolvePhoto
+  // prefers the real LinkedIn headshot (even when CSE didn't return an og:image).
+  const pic = extractProfilePic(items);
+  if (pic) {
+    const profile = toSourceHit({
+      url: `https://www.linkedin.com/in/${handle}/`,
+      title: `LinkedIn profile — ${id.name}`,
+      snippet: "",
+      type: "linkedin",
+      relation_to_target: "by_target",
+      author_handle: handle,
+      og_image: pic,
+    });
+    hits.unshift(profile);
+    emit({ stage: "fanout", status: "hit", track: "linkedin-posts", host: profile.host, title: "profile photo", url: profile.url, type: "linkedin", relation: "by_target" });
+  }
+
   return hits;
 }
