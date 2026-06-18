@@ -1,30 +1,47 @@
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { slugify } from "./slug";
 import type { CachedReport, Chemistry, Persona } from "./types";
 
 export { slugify };
 
-const CACHE_DIR = join(process.cwd(), "data", "cache");
+// SEED_DIR = the committed/bundled demo caches (read-only on Vercel).
+// WRITE_DIR = runtime writes. On Vercel the FS is read-only except /tmp, so live
+// runs + feedback go to /tmp; locally both point at data/cache. Reads check the
+// writable dir first, then fall back to the bundled seed.
+const SEED_DIR = join(process.cwd(), "data", "cache");
+const WRITE_DIR = process.env.VERCEL ? "/tmp/rapport-cache" : SEED_DIR;
+
+function readDir(dir: string): string[] {
+  try {
+    return readdirSync(dir).filter((f) => f.endsWith(".json"));
+  } catch {
+    return [];
+  }
+}
 
 // Cache = encore/fallback + saved-reports list. Live cold-run is the main story.
 export function readReport(slug: string): CachedReport | null {
-  const f = join(CACHE_DIR, `${slug}.json`);
-  if (!existsSync(f)) return null;
-  try {
-    const raw = JSON.parse(readFileSync(f, "utf8"));
-    // Back-compat: a bare Persona file is wrapped into a CachedReport.
-    if (raw && raw.persona) return raw as CachedReport;
-    return { persona: raw as Persona, slug };
-  } catch {
-    return null;
+  for (const dir of [WRITE_DIR, SEED_DIR]) {
+    const f = join(dir, `${slug}.json`);
+    if (!existsSync(f)) continue;
+    try {
+      const raw = JSON.parse(readFileSync(f, "utf8"));
+      // Back-compat: a bare Persona file is wrapped into a CachedReport.
+      if (raw && raw.persona) return raw as CachedReport;
+      return { persona: raw as Persona, slug };
+    } catch {
+      // try the next dir
+    }
   }
+  return null;
 }
 
 export function writeReport(slug: string, persona: Persona, chemistry?: Chemistry | null, meta?: { durationMs?: number; nSources?: number; created_at?: string }): void {
   try {
+    if (!existsSync(WRITE_DIR)) mkdirSync(WRITE_DIR, { recursive: true });
     const report: CachedReport = { persona, chemistry: chemistry ?? null, slug, ...meta };
-    writeFileSync(join(CACHE_DIR, `${slug}.json`), JSON.stringify(report, null, 2), "utf8");
+    writeFileSync(join(WRITE_DIR, `${slug}.json`), JSON.stringify(report, null, 2), "utf8");
   } catch {
     // cache write failure never crashes a run
   }
@@ -42,10 +59,9 @@ export interface ReportSummary {
 
 export function listReports(): ReportSummary[] {
   try {
-    return readdirSync(CACHE_DIR)
-      .filter((f) => f.endsWith(".json"))
-      .map((f) => {
-        const slug = f.replace(/\.json$/, "");
+    const slugs = Array.from(new Set([...readDir(WRITE_DIR), ...readDir(SEED_DIR)].map((f) => f.replace(/\.json$/, ""))));
+    return slugs
+      .map((slug) => {
         const r = readReport(slug);
         if (!r) return null;
         const p = r.persona;
