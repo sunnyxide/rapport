@@ -10,3 +10,6 @@ ralph_run_*.log
 data/feedback.jsonl
 *.tsbuildinfo
 .vercel
+
+# tool/editor junk
+.playwright-mcp/

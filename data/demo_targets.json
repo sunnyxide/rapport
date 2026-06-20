@@ -1,0 +1,77 @@
+{
+  "targets": [
+    {
+      "name": "Yeop Lee",
+      "org": "Anthropic",
+      "role": "APAC Startup Partnerships",
+      "linkedin": "https://www.linkedin.com/in/yeoplee927/",
+      "x": "@yeopleekorea",
+      "seed_query": "Yeop Lee Anthropic APAC startup partnerships",
+      "footprint": "rich",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Hannah Moran",
+      "org": "Anthropic",
+      "role": "Applied AI",
+      "linkedin": "https://www.linkedin.com/in/hannahemoran/",
+      "seed_query": "Hannah Moran Anthropic Applied AI",
+      "footprint": "rich",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Dongjin Jang",
+      "org": "Anthropic",
+      "role": "Applied AI, Korea",
+      "linkedin": "https://www.linkedin.com/in/dongjin-jang-kr/",
+      "seed_query": "Dongjin Jang Anthropic deep research agent",
+      "footprint": "rich",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Christian Ryan",
+      "org": "Anthropic",
+      "role": "Applied AI",
+      "linkedin": "https://www.linkedin.com/in/christian-ryan-38549ab4/",
+      "seed_query": "Christian Ryan Anthropic Applied AI prompting",
+      "footprint": "rich",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Rebecca Harbeck",
+      "org": "Anthropic",
+      "role": "International GTM",
+      "linkedin": "https://uk.linkedin.com/in/rebecca-harbeck",
+      "seed_query": "Rebecca Harbeck Anthropic GTM startups",
+      "footprint": "moderate",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Wookjae Maeng",
+      "org": "Anthropic",
+      "role": "Applied AI",
+      "linkedin": "https://www.linkedin.com/in/wookjae-maeng/",
+      "seed_query": "Wookjae Maeng Anthropic AI engineer",
+      "footprint": "moderate",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Megan Ruan",
+      "org": "Replit",
+      "role": "Head of International & Growth",
+      "linkedin": "https://www.linkedin.com/in/megan-ruan/",
+      "seed_query": "Megan Ruan Replit international growth",
+      "footprint": "moderate",
+      "demo_role": "demo"
+    },
+    {
+      "name": "Nick Co",
+      "org": "Replit",
+      "role": "Head of Field Engineering",
+      "linkedin": "https://www.linkedin.com/in/nicholas-co/",
+      "seed_query": "Nicholas Co Replit field engineer",
+      "footprint": "thin",
+      "demo_role": "demo"
+    }
+  ]
+}
